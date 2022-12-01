@@ -29,6 +29,7 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton metroButton2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
     }
 }
 

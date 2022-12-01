@@ -7,22 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Diagnostics;
 
 namespace QuanLyKiTucXa
 {
-    public partial class dangky : MetroFramework.Forms.MetroForm  
+    public partial class sinhvien : MetroFramework.Forms.MetroForm
     {
-        public dangky()
+        public sinhvien()
         {
             InitializeComponent();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form1 obj = new Form1();
-            obj.Show();
+
         }
     }
 }
