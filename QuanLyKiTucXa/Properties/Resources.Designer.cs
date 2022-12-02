@@ -63,6 +63,16 @@ namespace QuanLyKiTucXa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8541895_house_user_icon {
+            get {
+                object obj = ResourceManager.GetObject("8541895_house_user_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background_xanh_duong {
             get {
                 object obj = ResourceManager.GetObject("background-xanh-duong", resourceCulture);
@@ -96,6 +106,16 @@ namespace QuanLyKiTucXa.Properties {
         internal static System.Drawing.Bitmap images1 {
             get {
                 object obj = ResourceManager.GetObject("images1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1224031650_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1224031650-612x612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

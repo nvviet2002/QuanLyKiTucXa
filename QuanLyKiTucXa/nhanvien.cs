@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace QuanLyKiTucXa
 {
-    public partial class sinhvien : MetroFramework.Forms.MetroForm
+    public partial class nhanvien : MetroFramework.Forms.MetroForm
     {
-        public sinhvien()
+        public nhanvien()
         {
             InitializeComponent();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void metroTabPage1_Click(object sender, EventArgs e)
+        private void metroTabPage5_Click(object sender, EventArgs e)
         {
 
         }
