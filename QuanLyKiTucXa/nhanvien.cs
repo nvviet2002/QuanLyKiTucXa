@@ -21,5 +21,11 @@ namespace QuanLyKiTucXa
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 obj = new Form1();
+            obj.Show();
+        }
     }
 }
