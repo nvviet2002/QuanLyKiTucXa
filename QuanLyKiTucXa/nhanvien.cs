@@ -27,5 +27,20 @@ namespace QuanLyKiTucXa
             Form1 obj = new Form1();
             obj.Show();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void htmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
