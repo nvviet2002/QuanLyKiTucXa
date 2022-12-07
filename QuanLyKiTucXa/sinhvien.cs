@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework;
 
 namespace QuanLyKiTucXa
 {
@@ -42,16 +43,16 @@ namespace QuanLyKiTucXa
 
         private void SetEnableStudentControls(bool _enable)
         {
-            txtStudent_Idenity.Enabled = txtStudent_Name.Enabled = txtStudent_Class.Enabled =
-            txtStudent_Faculty.Enabled = txtStudent_PhoneNumber.Enabled = txtStudent_Address.Enabled
-            = dtpStudent_BirthDay.Enabled = cbbStudent_Sex.Enabled = btnStudent_Save.Enabled = _enable;
+            //txtStudent_Class.Enabled = txtStudent_Faculty.Enabled = 
+            txtStudent_PhoneNumber.Enabled = txtStudent_Address.Enabled = btnStudent_Save.Enabled = _enable;
             btnStudent_Change.Enabled = !_enable;
+            /*= dtpStudent_BirthDay.Enabled = cbbStudent_Sex.Enabled =*/
         }
 
         private void LoadStudentData()
         {
             student.SetDataSINHVIEN(CSDL.CSDL.Instance.ExecuteQuery($@"select * from SINHVIEN"));
-            //txtStudent_Idenity.Text = student.MaSV;
+            txtStudent_Idenity.Text = student.MaSV;
             txtStudent_Name.Text = student.TenSV;
             txtStudent_Faculty.Text = student.Khoa;
             txtStudent_Class.Text = student.Lop;
@@ -81,7 +82,28 @@ namespace QuanLyKiTucXa
 
         private void btnStudent_Save_Click(object sender, EventArgs e)
         {
-            
+            if (txtStudent_PhoneNumber.Text == "" || txtStudent_Address.Text == "" ||)
+            {
+                MetroMessageBox.Show(this, "Không được để trống dữ liệu", "Thông báo lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning, 100);
+                return;
+            }
+
+            student.Diachi = txtStudent_Address.Text;
+            student.SDT = txtStudent_PhoneNumber.Text;
+            student.Ghichu = txtStudent_Note.Text;
+            if (CSDL.CSDL.Instance.ChangeStudentInfomation(student) >= 1)
+            {
+                MetroMessageBox.Show(this, "Cập nhật thông tin cá nhân thành công", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information, 100);
+            }
+            else
+            {
+                MetroMessageBox.Show(this, "Cập nhật thông tin cá nhân thất bại", "Thông báo",
+                   MessageBoxButtons.OK, MessageBoxIcon.Warning, 100);
+            }
+            LoadStudentData();
+            SetEnableStudentControls(true);
         }
 
         private void sinhvien_Load(object sender, EventArgs e)

@@ -30,7 +30,6 @@ namespace QuanLyKiTucXa.CSDL
                 using (SqlConnection connection = new SqlConnection(connectionStr))
                 {
                     connection.Open();
-
                     SqlCommand command = new SqlCommand(query, connection);
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     adapter.Fill(data);
@@ -46,9 +45,32 @@ namespace QuanLyKiTucXa.CSDL
             }
         }
 
-        public void ChangeStudentInfomation()
+        public int ChangeStudentInfomation(SINHVIEN _student)
         {
+            return ExcuteNonQuery($@"update SINHVIEN set SDT = '{_student.SDT
+                }', DiaChi = N'{_student.Diachi}', GhiChu = N'{_student.Ghichu
+                }' where MaSV = '{_student.MaSV}' ");
+        }
 
+        public int ExcuteNonQuery(string query)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionStr))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(query, connection);
+                    int temp = command.ExecuteNonQuery();
+                    connection.Close();
+                    return temp;
+                }
+            }
+            catch (Exception ex)
+            {
+                MetroFramework.Forms.MetroForm tempForm = new MetroFramework.Forms.MetroForm();
+                MetroMessageBox.Show(tempForm, "Không thể kết nối cơ sở dữ liệu !", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error, 14);
+                return 0;
+            }
         }
     }
 }

@@ -176,6 +176,7 @@ namespace QuanLyKiTucXa
             this.metroTextBox10 = new MetroFramework.Controls.MetroTextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.lbAccountName = new MetroFramework.Controls.MetroLabel();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -211,11 +212,12 @@ namespace QuanLyKiTucXa
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
+            this.metroTabControl1.Controls.Add(this.tabPage1);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.metroTabControl1.Location = new System.Drawing.Point(23, 98);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(1331, 675);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -398,6 +400,7 @@ namespace QuanLyKiTucXa
             // 
             // cbbStudent_Sex
             // 
+            this.cbbStudent_Sex.Enabled = false;
             this.cbbStudent_Sex.FormattingEnabled = true;
             this.cbbStudent_Sex.ItemHeight = 23;
             this.cbbStudent_Sex.Items.AddRange(new object[] {
@@ -441,6 +444,7 @@ namespace QuanLyKiTucXa
             // 
             // dtpStudent_BirthDay
             // 
+            this.dtpStudent_BirthDay.Enabled = false;
             this.dtpStudent_BirthDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpStudent_BirthDay.Location = new System.Drawing.Point(170, 190);
             this.dtpStudent_BirthDay.MinimumSize = new System.Drawing.Size(0, 29);
@@ -462,6 +466,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Class.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtStudent_Class.CustomButton.UseSelectable = true;
             this.txtStudent_Class.CustomButton.Visible = false;
+            this.txtStudent_Class.Enabled = false;
             this.txtStudent_Class.Lines = new string[0];
             this.txtStudent_Class.Location = new System.Drawing.Point(564, 121);
             this.txtStudent_Class.MaxLength = 32767;
@@ -554,6 +559,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Faculty.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtStudent_Faculty.CustomButton.UseSelectable = true;
             this.txtStudent_Faculty.CustomButton.Visible = false;
+            this.txtStudent_Faculty.Enabled = false;
             this.txtStudent_Faculty.Lines = new string[0];
             this.txtStudent_Faculty.Location = new System.Drawing.Point(564, 60);
             this.txtStudent_Faculty.MaxLength = 32767;
@@ -584,6 +590,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtStudent_Name.CustomButton.UseSelectable = true;
             this.txtStudent_Name.CustomButton.Visible = false;
+            this.txtStudent_Name.Enabled = false;
             this.txtStudent_Name.Lines = new string[0];
             this.txtStudent_Name.Location = new System.Drawing.Point(170, 121);
             this.txtStudent_Name.MaxLength = 32767;
@@ -1111,7 +1118,7 @@ namespace QuanLyKiTucXa
             // 
             this.dtpEndDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpEndDay.Location = new System.Drawing.Point(200, 163);
-            this.dtpEndDay.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpEndDay.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpEndDay.Name = "dtpEndDay";
             this.dtpEndDay.Size = new System.Drawing.Size(218, 29);
             this.dtpEndDay.TabIndex = 30;
@@ -1120,7 +1127,7 @@ namespace QuanLyKiTucXa
             // 
             this.dtpTargetDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpTargetDay.Location = new System.Drawing.Point(580, 29);
-            this.dtpTargetDay.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpTargetDay.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpTargetDay.Name = "dtpTargetDay";
             this.dtpTargetDay.Size = new System.Drawing.Size(196, 29);
             this.dtpTargetDay.TabIndex = 29;
@@ -1129,7 +1136,7 @@ namespace QuanLyKiTucXa
             // 
             this.dtpBeginDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpBeginDay.Location = new System.Drawing.Point(200, 121);
-            this.dtpBeginDay.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpBeginDay.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpBeginDay.Name = "dtpBeginDay";
             this.dtpBeginDay.Size = new System.Drawing.Size(218, 29);
             this.dtpBeginDay.TabIndex = 28;
@@ -1138,7 +1145,7 @@ namespace QuanLyKiTucXa
             // 
             this.dtpCreateDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpCreateDay.Location = new System.Drawing.Point(200, 74);
-            this.dtpCreateDay.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpCreateDay.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpCreateDay.Name = "dtpCreateDay";
             this.dtpCreateDay.Size = new System.Drawing.Size(218, 29);
             this.dtpCreateDay.TabIndex = 27;
@@ -2835,6 +2842,14 @@ namespace QuanLyKiTucXa
             this.lbAccountName.TabIndex = 8;
             this.lbAccountName.Text = "metroLabel1";
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 44);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(1323, 627);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Xem hợp đồng";
+            // 
             // sinhvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3025,5 +3040,6 @@ namespace QuanLyKiTucXa
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button btnBillDetail;
         private MetroFramework.Controls.MetroLabel lbAccountName;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
