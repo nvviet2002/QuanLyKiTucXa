@@ -9,122 +9,134 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using MetroFramework;
 
 namespace QuanLyKiTucXa
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
+        private char passwordChar;
         public Form1()
         {
             InitializeComponent();
+            InitializeControls();
+
+
+        }
+
+        private void InitializeControls()
+        {
+            passwordChar = txtPassword.PasswordChar;
+            ckbHidePassword.Checked = false;
         }
 
         private void InitializeComponent()
         {
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.txtAccountName = new MetroFramework.Controls.MetroTextBox();
+            this.txtPassword = new MetroFramework.Controls.MetroTextBox();
+            this.btnSignIn = new MetroFramework.Controls.MetroButton();
+            this.btnExit = new MetroFramework.Controls.MetroButton();
+            this.llbSignUp = new System.Windows.Forms.LinkLabel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.ckbHidePassword = new MetroFramework.Controls.MetroCheckBox();
             this.SuspendLayout();
             // 
-            // metroTextBox1
+            // txtAccountName
             // 
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(149, 2);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(81, 209);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.PromptText = "Nhập tài khoản";
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.ShortcutsEnabled = true;
-            this.metroTextBox1.Size = new System.Drawing.Size(177, 30);
-            this.metroTextBox1.TabIndex = 2;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMark = "Nhập tài khoản";
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAccountName.CustomButton.Image = null;
+            this.txtAccountName.CustomButton.Location = new System.Drawing.Point(149, 2);
+            this.txtAccountName.CustomButton.Name = "";
+            this.txtAccountName.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtAccountName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtAccountName.CustomButton.TabIndex = 1;
+            this.txtAccountName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtAccountName.CustomButton.UseSelectable = true;
+            this.txtAccountName.CustomButton.Visible = false;
+            this.txtAccountName.Lines = new string[0];
+            this.txtAccountName.Location = new System.Drawing.Point(81, 209);
+            this.txtAccountName.MaxLength = 32767;
+            this.txtAccountName.Name = "txtAccountName";
+            this.txtAccountName.PasswordChar = '\0';
+            this.txtAccountName.PromptText = "Nhập tài khoản";
+            this.txtAccountName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtAccountName.SelectedText = "";
+            this.txtAccountName.SelectionLength = 0;
+            this.txtAccountName.SelectionStart = 0;
+            this.txtAccountName.ShortcutsEnabled = true;
+            this.txtAccountName.Size = new System.Drawing.Size(177, 30);
+            this.txtAccountName.TabIndex = 2;
+            this.txtAccountName.UseSelectable = true;
+            this.txtAccountName.WaterMark = "Nhập tài khoản";
+            this.txtAccountName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtAccountName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroTextBox2
-            // 
-            // 
+            // txtPassword
             // 
             // 
-            this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(111, 2);
-            this.metroTextBox2.CustomButton.Name = "";
-            this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox2.CustomButton.TabIndex = 1;
-            this.metroTextBox2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox2.CustomButton.UseSelectable = true;
-            this.metroTextBox2.CustomButton.Visible = false;
-            this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(81, 267);
-            this.metroTextBox2.MaxLength = 32767;
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
-            this.metroTextBox2.PromptText = "Nhập mật khẩu";
-            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox2.SelectedText = "";
-            this.metroTextBox2.SelectionLength = 0;
-            this.metroTextBox2.SelectionStart = 0;
-            this.metroTextBox2.ShortcutsEnabled = true;
-            this.metroTextBox2.Size = new System.Drawing.Size(177, 30);
-            this.metroTextBox2.TabIndex = 4;
-            this.metroTextBox2.UseSelectable = true;
-            this.metroTextBox2.WaterMark = "Nhập mật khẩu";
-            this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(36, 339);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(83, 34);
-            this.metroButton1.TabIndex = 5;
-            this.metroButton1.Text = "Đăng nhập";
-            this.metroButton1.UseSelectable = true;
+            this.txtPassword.CustomButton.Image = null;
+            this.txtPassword.CustomButton.Location = new System.Drawing.Point(149, 2);
+            this.txtPassword.CustomButton.Name = "";
+            this.txtPassword.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.txtPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPassword.CustomButton.TabIndex = 1;
+            this.txtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPassword.CustomButton.UseSelectable = true;
+            this.txtPassword.CustomButton.Visible = false;
+            this.txtPassword.Lines = new string[0];
+            this.txtPassword.Location = new System.Drawing.Point(81, 267);
+            this.txtPassword.MaxLength = 32767;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.PromptText = "Nhập mật khẩu";
+            this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.SelectionLength = 0;
+            this.txtPassword.SelectionStart = 0;
+            this.txtPassword.ShortcutsEnabled = true;
+            this.txtPassword.Size = new System.Drawing.Size(177, 30);
+            this.txtPassword.TabIndex = 4;
+            this.txtPassword.UseSelectable = true;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.WaterMark = "Nhập mật khẩu";
+            this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroButton2
+            // btnSignIn
             // 
-            this.metroButton2.Location = new System.Drawing.Point(175, 339);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(83, 34);
-            this.metroButton2.TabIndex = 6;
-            this.metroButton2.Text = "Thoát";
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            this.btnSignIn.Location = new System.Drawing.Point(36, 339);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(83, 34);
+            this.btnSignIn.TabIndex = 5;
+            this.btnSignIn.Text = "Đăng nhập";
+            this.btnSignIn.UseSelectable = true;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
-            // linkLabel1
+            // btnExit
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(109, 385);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(73, 13);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Đăng ký ngay";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.btnExit.Location = new System.Drawing.Point(175, 339);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(83, 34);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseSelectable = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // llbSignUp
+            // 
+            this.llbSignUp.AutoSize = true;
+            this.llbSignUp.Location = new System.Drawing.Point(109, 385);
+            this.llbSignUp.Name = "llbSignUp";
+            this.llbSignUp.Size = new System.Drawing.Size(73, 13);
+            this.llbSignUp.TabIndex = 7;
+            this.llbSignUp.TabStop = true;
+            this.llbSignUp.Text = "Đăng ký ngay";
             // 
             // metroPanel3
             // 
@@ -173,29 +185,29 @@ namespace QuanLyKiTucXa
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // metroCheckBox1
+            // ckbHidePassword
             // 
-            this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.Checked = true;
-            this.metroCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.metroCheckBox1.Location = new System.Drawing.Point(81, 303);
-            this.metroCheckBox1.Name = "metroCheckBox1";
-            this.metroCheckBox1.Size = new System.Drawing.Size(101, 15);
-            this.metroCheckBox1.TabIndex = 8;
-            this.metroCheckBox1.Text = "Hiện mật khẩu";
-            this.metroCheckBox1.UseSelectable = true;
-            this.metroCheckBox1.CheckedChanged += new System.EventHandler(this.metroCheckBox1_CheckedChanged);
+            this.ckbHidePassword.AutoSize = true;
+            this.ckbHidePassword.Checked = true;
+            this.ckbHidePassword.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckbHidePassword.Location = new System.Drawing.Point(81, 303);
+            this.ckbHidePassword.Name = "ckbHidePassword";
+            this.ckbHidePassword.Size = new System.Drawing.Size(101, 15);
+            this.ckbHidePassword.TabIndex = 8;
+            this.ckbHidePassword.Text = "Hiện mật khẩu";
+            this.ckbHidePassword.UseSelectable = true;
+            this.ckbHidePassword.CheckedChanged += new System.EventHandler(this.ckbHidePassword_CheckedChanged);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(307, 418);
-            this.Controls.Add(this.metroCheckBox1);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.metroTextBox2);
+            this.Controls.Add(this.ckbHidePassword);
+            this.Controls.Add(this.llbSignUp);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnSignIn);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.metroPanel3);
-            this.Controls.Add(this.metroTextBox1);
+            this.Controls.Add(this.txtAccountName);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
             this.Name = "Form1";
@@ -204,30 +216,50 @@ namespace QuanLyKiTucXa
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void ckbHidePassword_CheckedChanged(object sender, EventArgs e)
         {
-            dangky obj = new dangky();
-            obj.Show();
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            DialogResult dt = MessageBox.Show("Bạn có muốn thoát hay không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dt == DialogResult.Yes)
+            if (ckbHidePassword.Checked)
             {
-                this.Close();
-            }
-        }
-
-        private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox1.Checked)
-            {
-                metroTextBox2.UseSystemPasswordChar = false;
+                txtPassword.PasswordChar = passwordChar;
+                
             }
             else
             {
-                metroTextBox2.UseSystemPasswordChar = true;
+                txtPassword.PasswordChar = '*';
+                
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if(DialogResult.OK == MetroMessageBox.Show(this, "Bạn có muốn thoát chương trình không ?", "Thông báo",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question, 100)){
+                Application.Exit();
+            }
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            DataTable table = CSDL.CSDL.Instance.ExecuteQuery(
+                $@"select * from TAIKHOAN where TaiKhoan = '{txtAccountName.Text}' and MatKhau = '{txtPassword.Text}' ");
+            if(table.Rows.Count == 1)
+            {
+                
+                CSDL.TAIKHOAN tempTK = new CSDL.TAIKHOAN();
+                tempTK.MaTK = (int) table.Rows[0]["MaTK"];
+                tempTK.TaiKhoan1 = table.Rows[0]["TaiKhoan"].ToString();
+                tempTK.MatKhau = table.Rows[0]["MatKhau"].ToString();
+                tempTK.LoaiTK = table.Rows[0]["LoaiTK"].ToString();
+                tempTK.Email = table.Rows[0]["Email"].ToString();
+                tempTK.Ghichu = table.Rows[0]["GhiChu"].ToString();
+                if(tempTK.LoaiTK.Equals("Sinh viên"))
+                {
+                    sinhvien form = new sinhvien();
+                    form.Tag = tempTK;
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Show();
+                }
             }
         }
     }

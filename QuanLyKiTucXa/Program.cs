@@ -16,7 +16,7 @@ namespace QuanLyKiTucXa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new nhanvien());
+            Application.Run(new Form1());
         }
     }
 }

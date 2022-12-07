@@ -23,13 +23,13 @@ namespace QuanLyKiTucXa
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroPanel metroPanel2;
-        private MetroFramework.Controls.MetroTextBox txtAccountName;
-        private MetroFramework.Controls.MetroTextBox txtPassword;
+        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox metroTextBox2;
         private MetroFramework.Controls.MetroPanel metroPanel3;
-        private MetroFramework.Controls.MetroButton btnSignIn;
-        private MetroFramework.Controls.MetroButton btnExit;
-        private System.Windows.Forms.LinkLabel llbSignUp;
-        private MetroFramework.Controls.MetroCheckBox ckbHidePassword;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
     }
 }
 

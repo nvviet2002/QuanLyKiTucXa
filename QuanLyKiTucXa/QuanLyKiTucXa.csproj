@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -43,7 +49,10 @@
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,6 +64,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSDL\CHITIETHOADON.cs" />
+    <Compile Include="CSDL\CHUCVU.cs" />
+    <Compile Include="CSDL\CSDL.cs" />
+    <Compile Include="CSDL\HOADON.cs" />
+    <Compile Include="CSDL\HOPDONG.cs" />
+    <Compile Include="CSDL\KHU.cs" />
+    <Compile Include="CSDL\KTXModel.cs" />
+    <Compile Include="CSDL\LOAIPHONG.cs" />
+    <Compile Include="CSDL\NHANVIEN.cs" />
+    <Compile Include="CSDL\PHONG.cs" />
+    <Compile Include="CSDL\SINHVIEN.cs" />
+    <Compile Include="CSDL\TAIKHOAN.cs" />
+    <Compile Include="CSDL\TOANHA.cs" />
     <Compile Include="dangky.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,5 +199,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-trash-32.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

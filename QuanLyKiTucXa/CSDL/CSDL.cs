@@ -45,5 +45,10 @@ namespace QuanLyKiTucXa.CSDL
                 return null;
             }
         }
+
+        public void ChangeStudentInfomation()
+        {
+
+        }
     }
 }
