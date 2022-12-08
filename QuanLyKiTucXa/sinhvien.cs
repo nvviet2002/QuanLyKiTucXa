@@ -15,6 +15,7 @@ namespace QuanLyKiTucXa
     {
         private CSDL.SINHVIEN student;
         private CSDL.TAIKHOAN studentAccount;
+        string maHD;
 
         public sinhvien()
         {
@@ -44,10 +45,12 @@ namespace QuanLyKiTucXa
         private void SetEnableStudentControls(bool _enable)
         {
             //txtStudent_Class.Enabled = txtStudent_Faculty.Enabled = 
-            txtStudent_PhoneNumber.Enabled = txtStudent_Address.Enabled = btnStudent_Save.Enabled = _enable;
+            txtStudent_PhoneNumber.Enabled = txtStudent_Address.Enabled = 
+            txtStudent_Note.Enabled = btnStudent_Save.Enabled = _enable;
             btnStudent_Change.Enabled = !_enable;
             /*= dtpStudent_BirthDay.Enabled = cbbStudent_Sex.Enabled =*/
         }
+
 
         private void LoadStudentData()
         {
@@ -70,6 +73,30 @@ namespace QuanLyKiTucXa
             }
         }
 
+        private void LoadRoomData()
+        {
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery(
+            $@"select PHONG.*,LOAIPHONG.TenLoaiPhong,LOAIPHONG.SoNguoi,
+            LOAIPHONG.GiaPhong,LOAIPHONG.DienTich,TenKhu,TenTN from 
+            LOAIPHONG inner join PHONG on LOAIPHONG.MaLoaiPhong = PHONG.MaLoaiPhong
+            inner join TOANHA on TOANHA.MaTN = PHONG.MaTN
+            inner join KHU on KHU.MaKhu = TOANHA.MaKhu
+            where PHONG.MaPhong  = '{txtContract_RoomID.Text}'");
+            if(temp.Rows.Count >= 1)
+            {
+                txtRoom_ID.Text = temp.Rows[0]["MaPhong"].ToString();
+                txtRoom_Area.Text = temp.Rows[0]["TenKhu"].ToString();
+                txtRoom_Building.Text = temp.Rows[0]["TenTN"].ToString();
+                txtRoom_Note.Text = temp.Rows[0]["GhiChu"].ToString();
+                txtRoom_S.Text = temp.Rows[0]["DienTich"].ToString() + " m2";
+                txtRoom_Type.Text = temp.Rows[0]["TenLoaiPhong"].ToString();
+                txtRoom_Max.Text = temp.Rows[0]["SoNguoi"].ToString();
+                txtRoom_Living.Text = temp.Rows[0]["TongSoHD"].ToString();
+                txtRoom_Money.Text = temp.Rows[0]["GiaPhong"].ToString() + @" VND / 1 người";
+            }
+            
+        }
+
         private void llbLogOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Close();
@@ -82,7 +109,7 @@ namespace QuanLyKiTucXa
 
         private void btnStudent_Save_Click(object sender, EventArgs e)
         {
-            if (txtStudent_PhoneNumber.Text == "" || txtStudent_Address.Text == "" ||)
+            if (txtStudent_PhoneNumber.Text == "" || txtStudent_Address.Text == "" )
             {
                 MetroMessageBox.Show(this, "Không được để trống dữ liệu", "Thông báo lỗi",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning, 100);
@@ -110,6 +137,32 @@ namespace QuanLyKiTucXa
         {
             LoadData();
             LoadStudentData();
+            LoadContractData();
+            LoadRoomData();
         }
+
+        private void LoadContractData()
+        {
+            DataTable tempTable = CSDL.CSDL.Instance.ExecuteQuery(
+                $@"select NHANVIEN.TenNV,HOPDONG.*,SINHVIEN.TenSV,HOPDONG.MaPhong from 
+                NHANVIEN inner join HOPDONG on NHANVIEN.MaNV = HOPDONG.MaNV
+                inner join SINHVIEN on HOPDONG.MaSV = SINHVIEN.MaSV
+                where HOPDONG.MaSV = '{student.MaSV}' and TrangThai = 1");
+           if(tempTable.Rows.Count >= 1)
+            {
+                txtContract_Identity.Text = tempTable.Rows[0]["MaHD"].ToString();
+                txtContract_Note.Text = tempTable.Rows[0]["GhiChu"].ToString();
+                txtContract_RoomID.Text = tempTable.Rows[0]["MaPhong"].ToString();
+                txtContract_StaffIdentity.Text = tempTable.Rows[0]["MaNV"].ToString();
+                txtContract_StaffName.Text = tempTable.Rows[0]["TenNV"].ToString();
+                txtContract_StudentIdentity.Text = tempTable.Rows[0]["MaSV"].ToString();
+                txtContract_StudentName.Text = tempTable.Rows[0]["TenNV"].ToString();
+                dtpContract_CreateDay.Value = (DateTime)tempTable.Rows[0]["NgayLap"];
+                dtpContract_BeginDay.Value = (DateTime)tempTable.Rows[0]["NgayBatDau"];
+                dtpContract_EndDay.Value = (DateTime)tempTable.Rows[0]["NgayHetHan"];
+            }
+        }
+
+
     }
 }

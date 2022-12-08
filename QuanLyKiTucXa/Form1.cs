@@ -20,7 +20,7 @@ namespace QuanLyKiTucXa
         {
             InitializeComponent();
             InitializeControls();
-
+            txtAccountName.Focus();
 
         }
 
