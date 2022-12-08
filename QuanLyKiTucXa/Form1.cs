@@ -20,6 +20,7 @@ namespace QuanLyKiTucXa
         {
             InitializeComponent();
             InitializeControls();
+            this.Focus();
             txtAccountName.Focus();
 
         }
@@ -200,6 +201,7 @@ namespace QuanLyKiTucXa
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnSignIn;
             this.ClientSize = new System.Drawing.Size(307, 418);
             this.Controls.Add(this.ckbHidePassword);
             this.Controls.Add(this.llbSignUp);
@@ -211,6 +213,7 @@ namespace QuanLyKiTucXa
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,6 +241,13 @@ namespace QuanLyKiTucXa
             }
         }
 
+        private void SignInAutomaticly()
+        {
+            txtAccountName.Text = txtPassword.Text = "Nhanvien1";
+            btnSignIn_Click(new object(),new EventArgs());
+        }
+
+
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             DataTable table = CSDL.CSDL.Instance.ExecuteQuery(
@@ -259,8 +269,23 @@ namespace QuanLyKiTucXa
                     this.Hide();
                     form.ShowDialog();
                     this.Show();
+                    return;
+                }
+                if (tempTK.LoaiTK.Equals("Nhân viên"))
+                {
+                    nhanvien form = new nhanvien();
+                    form.Tag = tempTK;
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Show();
+                    return;
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            SignInAutomaticly();
         }
     }
 }

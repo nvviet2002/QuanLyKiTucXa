@@ -122,11 +122,6 @@ namespace QuanLyKiTucXa.CSDL
                 .IsUnicode(false);
 
             modelBuilder.Entity<NHANVIEN>()
-                .Property(e => e.MaCV)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<NHANVIEN>()
                 .HasMany(e => e.HOPDONGs)
                 .WithRequired(e => e.NHANVIEN)
                 .WillCascadeOnDelete(false);

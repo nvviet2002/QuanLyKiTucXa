@@ -15,7 +15,7 @@ namespace QuanLyKiTucXa
     {
         private CSDL.SINHVIEN student;
         private CSDL.TAIKHOAN studentAccount;
-        string maHD;
+        string maPhong;
 
         public sinhvien()
         {
@@ -23,7 +23,7 @@ namespace QuanLyKiTucXa
 
         }
 
-        public void LoadData()
+        public void LoadAccountData()
         {
             studentAccount = (CSDL.TAIKHOAN)this.Tag;
             student = new CSDL.SINHVIEN();
@@ -94,8 +94,20 @@ namespace QuanLyKiTucXa
                 txtRoom_Living.Text = temp.Rows[0]["TongSoHD"].ToString();
                 txtRoom_Money.Text = temp.Rows[0]["GiaPhong"].ToString() + @" VND / 1 người";
             }
-            
+            LoadDeviceList();
         }
+
+        private void LoadDeviceList()
+        {
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery(
+            $@"select TenTB,SoLuong,TrangThai from THIETBIPHONG inner join THIETBI on THIETBIPHONG.MaTB = THIETBI.MaTB
+            where MaPhong = '{txtContract_RoomID.Text}'");
+            temp.Columns["TenTB"].ColumnName = "Tên thiết bị";
+            temp.Columns["SoLuong"].ColumnName = "Số lượng";
+            temp.Columns["TrangThai"].ColumnName = "Tình trạng";
+            dgvRoom_ShowDevice.DataSource = temp;
+        }
+
 
         private void llbLogOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -130,12 +142,12 @@ namespace QuanLyKiTucXa
                    MessageBoxButtons.OK, MessageBoxIcon.Warning, 100);
             }
             LoadStudentData();
-            SetEnableStudentControls(true);
+            SetEnableStudentControls(false);
         }
 
         private void sinhvien_Load(object sender, EventArgs e)
         {
-            LoadData();
+            LoadAccountData();
             LoadStudentData();
             LoadContractData();
             LoadRoomData();

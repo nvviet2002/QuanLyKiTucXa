@@ -72,5 +72,23 @@ namespace QuanLyKiTucXa.CSDL
                 return 0;
             }
         }
+
+        public DataTable Search(string _searchType, string _searchIn, string _searchTablePosition,bool _nvarchar)
+        {
+            if (_nvarchar)
+            {
+                DataTable temp = ExecuteQuery($@"Select * from {_searchTablePosition} where
+                {_searchType} like N'%{_searchIn}%'");
+                return temp;
+            }
+            else
+            {
+                DataTable temp = ExecuteQuery($@"Select * from {_searchTablePosition} where
+                {_searchType} like '%{_searchIn}%'");
+                return temp;
+            }
+            return null;
+            
+        }
     }
 }
