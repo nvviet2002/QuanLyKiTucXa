@@ -27,7 +27,7 @@ namespace QuanLyKiTucXa
         {
             studentAccount = (CSDL.TAIKHOAN)this.Tag;
             student = new CSDL.SINHVIEN();
-            DataTable tempTable = CSDL.CSDL.Instance.ExecuteQuery($@"select * from SINHVIEN where MaTK = {studentAccount.MaTK}");
+            DataTable tempTable = CSDL.CSDL.Instance.ExecuteQuery($@"select * from SINHVIEN where TaiKhoan = {studentAccount.TaiKhoan}");
             if(tempTable.Rows.Count == 1)
             {
                 student.SetDataSINHVIEN(tempTable);

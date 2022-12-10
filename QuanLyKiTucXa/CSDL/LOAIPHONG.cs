@@ -9,11 +9,7 @@ namespace QuanLyKiTucXa.CSDL
     [Table("LOAIPHONG")]
     public partial class LOAIPHONG
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public LOAIPHONG()
-        {
-            PHONGs = new HashSet<PHONG>();
-        }
+
 
         [Key]
         [StringLength(5)]
@@ -32,7 +28,5 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(200)]
         public string Ghichu { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PHONG> PHONGs { get; set; }
     }
 }

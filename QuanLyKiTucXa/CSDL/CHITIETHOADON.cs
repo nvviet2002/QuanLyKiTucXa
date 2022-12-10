@@ -23,6 +23,5 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(100)]
         public string GhiChu { get; set; }
 
-        public virtual HOADON HOADON { get; set; }
     }
 }

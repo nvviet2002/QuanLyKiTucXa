@@ -256,8 +256,7 @@ namespace QuanLyKiTucXa
             {
                 
                 CSDL.TAIKHOAN tempTK = new CSDL.TAIKHOAN();
-                tempTK.MaTK = (int) table.Rows[0]["MaTK"];
-                tempTK.TaiKhoan1 = table.Rows[0]["TaiKhoan"].ToString();
+                tempTK.TaiKhoan = table.Rows[0]["TaiKhoan"].ToString();
                 tempTK.MatKhau = table.Rows[0]["MatKhau"].ToString();
                 tempTK.LoaiTK = table.Rows[0]["LoaiTK"].ToString();
                 tempTK.Email = table.Rows[0]["Email"].ToString();

@@ -65,12 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSDL\CHITIETHOADON.cs" />
-    <Compile Include="CSDL\CHUCVU.cs" />
     <Compile Include="CSDL\CSDL.cs" />
     <Compile Include="CSDL\HOADON.cs" />
     <Compile Include="CSDL\HOPDONG.cs" />
     <Compile Include="CSDL\KHU.cs" />
-    <Compile Include="CSDL\KTXModel.cs" />
     <Compile Include="CSDL\LOAIPHONG.cs" />
     <Compile Include="CSDL\NHANVIEN.cs" />
     <Compile Include="CSDL\PHONG.cs" />
@@ -103,11 +101,18 @@
     <Compile Include="sinhvien.Designer.cs">
       <DependentUpon>sinhvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stages.cs" />
     <Compile Include="ThongTinNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThongTinNhanVien.Designer.cs">
       <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinSinhVien.Designer.cs">
+      <DependentUpon>ThongTinSinhVien.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="dangky.resx">
       <DependentUpon>dangky.cs</DependentUpon>
@@ -133,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinNhanVien.resx">
       <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinSinhVien.resx">
+      <DependentUpon>ThongTinSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

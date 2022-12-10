@@ -40,7 +40,8 @@ namespace QuanLyKiTucXa.CSDL
             catch (Exception ex)
             {
                 MetroFramework.Forms.MetroForm tempForm = new MetroFramework.Forms.MetroForm();
-                MetroMessageBox.Show(tempForm, "Không thể kết nối cơ sở dữ liệu !", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error, 14);
+                MetroMessageBox.Show(tempForm, "Không thể kết nối cơ sở dữ liệu !", "Lỗi kết nối", MessageBoxButtons.OK, 
+                    MessageBoxIcon.Error, 14);
                 return null;
             }
         }
@@ -68,7 +69,8 @@ namespace QuanLyKiTucXa.CSDL
             catch (Exception ex)
             {
                 MetroFramework.Forms.MetroForm tempForm = new MetroFramework.Forms.MetroForm();
-                MetroMessageBox.Show(tempForm, "Không thể kết nối cơ sở dữ liệu !", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error, 14);
+                MetroMessageBox.Show(tempForm, "Không thể kết nối cơ sở dữ liệu !", "Lỗi kết nối", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error, 14);
                 return 0;
             }
         }
@@ -90,5 +92,251 @@ namespace QuanLyKiTucXa.CSDL
             return null;
             
         }
+
+        public bool AddAccount(TAIKHOAN _TK)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into TAIKHOAN values(@tk, @mk, @loaitk, @email, @ghichu)", connect);
+                    command.Parameters.Add("@tk", SqlDbType.Char).Value = _TK.TaiKhoan;
+                    command.Parameters.Add("@mk", SqlDbType.Char).Value = _TK.MatKhau;
+                    command.Parameters.Add("@loaitk", SqlDbType.NVarChar).Value = _TK.LoaiTK;
+                    command.Parameters.Add("@email", SqlDbType.Char).Value = _TK.Email;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _TK.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool UpdateAccount(TAIKHOAN _TK)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update TAIKHOAN set MatKhau = @mk,LoaiTK = @loaiTK,Email = @email, Ghichu = @ghichu
+                    where TaiKhoan = @tk", connect);
+                    command.Parameters.Add("@tk", SqlDbType.Char).Value = _TK.TaiKhoan;
+                    command.Parameters.Add("@mk", SqlDbType.Char).Value = _TK.MatKhau;
+                    command.Parameters.Add("@loaitk", SqlDbType.NVarChar).Value = _TK.LoaiTK;
+                    command.Parameters.Add("@email", SqlDbType.Char).Value = _TK.Email;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _TK.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteAccount(string _maTK)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from TAIKHOAN where TaiKhoan = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _maTK;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool AddStaff(NHANVIEN _staff)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into NHANVIEN values(@ma, @ten, @ngaysinh,@gioitinh,@sdt, @chucvu,@ghichu,@matk)", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _staff.MaNV;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _staff.TenNV;
+                    command.Parameters.Add("@ngaysinh", SqlDbType.DateTime).Value = _staff.Ngaysinh.ToShortTimeString();
+                    command.Parameters.Add("@gioitinh", SqlDbType.NVarChar).Value = _staff.Gioitinh;
+                    command.Parameters.Add("@sdt", SqlDbType.Char).Value = _staff.SDT;
+                    command.Parameters.Add("@chucvu", SqlDbType.NVarChar).Value = _staff.ChucVu;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _staff.Ghichu;
+                    command.Parameters.Add("@matk", SqlDbType.Char).Value = _staff.TaiKhoan;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool UpdateStaff(NHANVIEN _staff)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update NHANVIEN set TenNV = @ten,Ngaysinh = @ngaysinh,Gioitinh = @gioitinh,
+                    SDT = @sdt,ChucVu = @chucvu,Ghichu = @ghichu, TaiKhoan = @matk where MaNV = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _staff.MaNV;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _staff.TenNV;
+                    command.Parameters.Add("@ngaysinh", SqlDbType.DateTime).Value = _staff.Ngaysinh.ToShortTimeString();
+                    command.Parameters.Add("@gioitinh", SqlDbType.NVarChar).Value = _staff.Gioitinh;
+                    command.Parameters.Add("@sdt", SqlDbType.NVarChar).Value = _staff.SDT;
+                    command.Parameters.Add("@chucvu", SqlDbType.NVarChar).Value = _staff.ChucVu;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _staff.Ghichu;
+                    command.Parameters.Add("@matk", SqlDbType.Char).Value = _staff.TaiKhoan;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteStaff(string _maNV)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from NHANVIEN where MaNV = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _maNV;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool AddStudent(SINHVIEN _student)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into SINHVIEN values(@ma, @ten, @ngaysinh,@gioitinh,@khoa,@lop,@sdt, @diachi,@ghichu,@matk)", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _student.MaSV;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _student.TenSV;
+                    command.Parameters.Add("@ngaysinh", SqlDbType.DateTime).Value = _student.Ngaysinh.ToShortTimeString();
+                    command.Parameters.Add("@gioitinh", SqlDbType.NVarChar).Value = _student.Gioitinh;
+                    command.Parameters.Add("@khoa", SqlDbType.NVarChar).Value = _student.Khoa;
+                    command.Parameters.Add("@lop", SqlDbType.NVarChar).Value = _student.Lop;
+                    command.Parameters.Add("@sdt", SqlDbType.Char).Value = _student.SDT;
+                    command.Parameters.Add("@diachi", SqlDbType.NVarChar).Value = _student.Diachi;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _student.Ghichu;
+                    command.Parameters.Add("@matk", SqlDbType.Char).Value = _student.TaiKhoan;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool UpdateStudent(SINHVIEN _student)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update SINHVIEN set TenSV = @ten,Ngaysinh = @ngaysinh,Gioitinh = @gioitinh,
+                    Khoa = @khoa, Lop = @lop,SDT = @sdt,DiaChi = @diachi,Ghichu = @ghichu, TaiKhoan = @matk where MaSV = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _student.MaSV;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _student.TenSV;
+                    command.Parameters.Add("@ngaysinh", SqlDbType.DateTime).Value = _student.Ngaysinh.ToShortTimeString();
+                    command.Parameters.Add("@gioitinh", SqlDbType.NVarChar).Value = _student.Gioitinh;
+                    command.Parameters.Add("@khoa", SqlDbType.NVarChar).Value = _student.Khoa;
+                    command.Parameters.Add("@lop", SqlDbType.NVarChar).Value = _student.Lop;
+                    command.Parameters.Add("@sdt", SqlDbType.Char).Value = _student.SDT;
+                    command.Parameters.Add("@diachi", SqlDbType.NVarChar).Value = _student.Diachi;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _student.Ghichu;
+                    command.Parameters.Add("@matk", SqlDbType.Char).Value = _student.TaiKhoan;
+                    
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+
+        public bool DeleteStudent(string _maSV)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from SINHVIEN where MaSV = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _maSV;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        
+
     }
 }

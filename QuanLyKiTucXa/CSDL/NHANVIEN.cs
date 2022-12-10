@@ -10,11 +10,6 @@ namespace QuanLyKiTucXa.CSDL
     [Table("NHANVIEN")]
     public partial class NHANVIEN
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public NHANVIEN()
-        {
-            HOPDONGs = new HashSet<HOPDONG>();
-        }
 
         [Key]
         [StringLength(5)]
@@ -34,21 +29,15 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(15)]
         public string SDT { get; set; }
 
-        [Required]
         [StringLength(50)]
         public string ChucVu { get; set; }
 
         [StringLength(100)]
         public string Ghichu { get; set; }
 
-        public int? MaTK { get; set; }
+        public string TaiKhoan { get; set; }
 
-        public virtual CHUCVU CHUCVU { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
-
-        public virtual TAIKHOAN TAIKHOAN { get; set; }
 
         public void SetDataNHANVIEN(DataTable _table)
         {
@@ -59,7 +48,20 @@ namespace QuanLyKiTucXa.CSDL
             this.SDT = _table.Rows[0]["SDT"].ToString();
             this.ChucVu = _table.Rows[0]["ChucVu"].ToString();
             this.Ghichu = _table.Rows[0]["GhiChu"].ToString();
-            this.MaTK = (int)_table.Rows[0]["MaTK"];
+            this.TaiKhoan = _table.Rows[0]["TaiKhoan"].ToString();
+        }
+
+        public void SetNHANVIEN(string _maNV,string _tenNV,DateTime _ngaySinh,string _gioiTinh,
+            string _sdt, string _chucVu, string _ghiChu, string _TK)
+        {
+            this.MaNV = _maNV;
+            this.TenNV = _tenNV;
+            this.Ngaysinh = _ngaySinh;
+            this.Gioitinh = _gioiTinh;
+            this.SDT = _sdt;
+            this.ChucVu = _chucVu;
+            this.Ghichu = _ghiChu;
+            this.TaiKhoan = _TK;
         }
     }
 }

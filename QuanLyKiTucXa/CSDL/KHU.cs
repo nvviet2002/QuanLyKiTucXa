@@ -9,11 +9,7 @@ namespace QuanLyKiTucXa.CSDL
     [Table("KHU")]
     public partial class KHU
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public KHU()
-        {
-            TOANHAs = new HashSet<TOANHA>();
-        }
+
 
         [Key]
         [StringLength(5)]
@@ -30,7 +26,5 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(100)]
         public string Ghichu { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TOANHA> TOANHAs { get; set; }
     }
 }

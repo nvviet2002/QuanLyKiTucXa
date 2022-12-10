@@ -10,11 +10,6 @@ namespace QuanLyKiTucXa.CSDL
     [Table("SINHVIEN")]
     public partial class SINHVIEN
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public SINHVIEN()
-        {
-            HOPDONGs = new HashSet<HOPDONG>();
-        }
 
         [Key]
         [StringLength(5)]
@@ -49,15 +44,11 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(200)]
         public string Ghichu { get; set; }
 
-        public int? MaTK { get; set; }
+        public string TaiKhoan { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
-
-        public virtual TAIKHOAN TAIKHOAN { get; set; }
-
+        
         public void SetDataSINHVIEN(string _MSV,string _tenSV,DateTime _ngaySinh,string _GioiTinh
-            ,string _khoa, string _lop, string _sdt,string _diaChi,string _ghiChu)
+            ,string _khoa, string _lop, string _sdt,string _diaChi,string _ghiChu,string _tk)
         {
             this.MaSV = _MSV;
             this.TenSV = _tenSV;
@@ -68,6 +59,7 @@ namespace QuanLyKiTucXa.CSDL
             this.SDT = _sdt;
             this.Diachi = _diaChi;
             this.Ghichu = _ghiChu;
+            this.TaiKhoan = _tk;
         }
 
         public void SetDataSINHVIEN(DataTable _table)
@@ -81,6 +73,7 @@ namespace QuanLyKiTucXa.CSDL
             this.SDT = _table.Rows[0]["SDT"].ToString();
             this.Diachi = _table.Rows[0]["DiaChi"].ToString();
             this.Ghichu = _table.Rows[0]["GhiChu"].ToString();
+            this.TaiKhoan = _table.Rows[0]["TaiKhoan"].ToString();
         }
     }
 }

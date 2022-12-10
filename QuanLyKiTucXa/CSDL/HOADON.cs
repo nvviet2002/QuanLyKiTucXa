@@ -9,11 +9,6 @@ namespace QuanLyKiTucXa.CSDL
     [Table("HOADON")]
     public partial class HOADON
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public HOADON()
-        {
-            CHITIETHOADONs = new HashSet<CHITIETHOADON>();
-        }
 
         [Key]
         public int MaHoaDon { get; set; }

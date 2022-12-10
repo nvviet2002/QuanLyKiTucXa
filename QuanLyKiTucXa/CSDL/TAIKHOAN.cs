@@ -9,20 +9,10 @@ namespace QuanLyKiTucXa.CSDL
     [Table("TAIKHOAN")]
     public partial class TAIKHOAN
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TAIKHOAN()
-        {
-            NHANVIENs = new HashSet<NHANVIEN>();
-            SINHVIENs = new HashSet<SINHVIEN>();
-        }
-
         [Key]
-        public int MaTK { get; set; }
-
-        [Column("TaiKhoan")]
         [Required]
         [StringLength(50)]
-        public string TaiKhoan1 { get; set; }
+        public string TaiKhoan { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -38,10 +28,14 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(200)]
         public string Ghichu { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NHANVIEN> NHANVIENs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SINHVIEN> SINHVIENs { get; set; }
+        public void SetTAIKHOAN(string _tenTK,string _matkhau,string _email,
+            string _ghiChu,string _loaiTK)
+        {
+            this.TaiKhoan = _tenTK;
+            this.MatKhau = _matkhau;
+            this.Email = _email;
+            this.Ghichu = _ghiChu;
+            this.LoaiTK = _loaiTK;
+        }
     }
 }

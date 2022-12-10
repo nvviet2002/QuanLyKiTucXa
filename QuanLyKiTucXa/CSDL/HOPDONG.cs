@@ -9,11 +9,6 @@ namespace QuanLyKiTucXa.CSDL
     [Table("HOPDONG")]
     public partial class HOPDONG
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public HOPDONG()
-        {
-            HOADONs = new HashSet<HOADON>();
-        }
 
         [Key]
         [StringLength(5)]
@@ -42,13 +37,5 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(200)]
         public string GhiChu { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADONs { get; set; }
-
-        public virtual NHANVIEN NHANVIEN { get; set; }
-
-        public virtual SINHVIEN SINHVIEN { get; set; }
-
-        public virtual PHONG PHONG { get; set; }
     }
 }

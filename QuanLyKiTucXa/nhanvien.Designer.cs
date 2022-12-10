@@ -33,38 +33,26 @@ namespace QuanLyKiTucXa
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.btnDetail = new System.Windows.Forms.Button();
+            this.btnStaff_Delete = new System.Windows.Forms.Button();
+            this.btnSstaff_Edit = new System.Windows.Forms.Button();
+            this.btnStaff_Add = new System.Windows.Forms.Button();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.btnStaff_Search = new System.Windows.Forms.Button();
             this.txtStaff_SearchInput = new MetroFramework.Controls.MetroTextBox();
             this.cbbStaff_SearchType = new MetroFramework.Controls.MetroComboBox();
             this.dgvStaff_Show = new System.Windows.Forms.DataGridView();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.metroTextBox32 = new MetroFramework.Controls.MetroTextBox();
-            this.metroComboBox6 = new MetroFramework.Controls.MetroComboBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.metroComboBox3 = new MetroFramework.Controls.MetroComboBox();
-            this.metroTextBox4 = new MetroFramework.Controls.MetroTextBox();
-            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
-            this.metroTextBox10 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox11 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox12 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox13 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox14 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox15 = new MetroFramework.Controls.MetroTextBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage7 = new MetroFramework.Controls.MetroTabPage();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -78,7 +66,13 @@ namespace QuanLyKiTucXa
             this.metroTextBox19 = new MetroFramework.Controls.MetroTextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.metroTabPage8 = new MetroFramework.Controls.MetroTabPage();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button25 = new System.Windows.Forms.Button();
             this.metroTextBox20 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox5 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -93,6 +87,7 @@ namespace QuanLyKiTucXa
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.metroTabPage9 = new MetroFramework.Controls.MetroTabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.button58 = new System.Windows.Forms.Button();
             this.metroTextBox21 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox7 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -108,9 +103,15 @@ namespace QuanLyKiTucXa
             this.metroTextBox25 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox26 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox30 = new MetroFramework.Controls.MetroTextBox();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.metroTabPage10 = new MetroFramework.Controls.MetroTabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button59 = new System.Windows.Forms.Button();
             this.metroTextBox33 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox8 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
@@ -122,9 +123,20 @@ namespace QuanLyKiTucXa
             this.metroTextBox35 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox36 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox37 = new MetroFramework.Controls.MetroTextBox();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.button60 = new System.Windows.Forms.Button();
             this.metroTextBox38 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox9 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
@@ -151,6 +163,7 @@ namespace QuanLyKiTucXa
             this.metroTabControl3 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage11 = new MetroFramework.Controls.MetroTabPage();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.button56 = new System.Windows.Forms.Button();
             this.metroTextBox43 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox10 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
@@ -174,9 +187,15 @@ namespace QuanLyKiTucXa
             this.metroTextBox59 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox60 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox61 = new MetroFramework.Controls.MetroTextBox();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.metroTabPage12 = new MetroFramework.Controls.MetroTabPage();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.button57 = new System.Windows.Forms.Button();
             this.metroTextBox46 = new MetroFramework.Controls.MetroTextBox();
             this.metroComboBox11 = new MetroFramework.Controls.MetroComboBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
@@ -190,71 +209,29 @@ namespace QuanLyKiTucXa
             this.metroTextBox50 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox51 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox52 = new MetroFramework.Controls.MetroTextBox();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
-            this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
-            this.lbAccountName = new MetroFramework.Controls.MetroLabel();
-            this.btnDetail = new System.Windows.Forms.Button();
-            this.btnStaff_Delete = new System.Windows.Forms.Button();
-            this.btnSstaff_Edit = new System.Windows.Forms.Button();
-            this.btnStaff_Add = new System.Windows.Forms.Button();
-            this.btnStaff_Search = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button58 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button43 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
             this.button53 = new System.Windows.Forms.Button();
             this.button54 = new System.Windows.Forms.Button();
             this.button55 = new System.Windows.Forms.Button();
+            this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
+            this.lbAccountName = new MetroFramework.Controls.MetroLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.btnStudent_Detail = new System.Windows.Forms.Button();
+            this.btnStudent_Delete = new System.Windows.Forms.Button();
+            this.btnStudent_Edit = new System.Windows.Forms.Button();
+            this.btnStudent_Add = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnStudent_Search = new System.Windows.Forms.Button();
+            this.txtStudent_SearchInput = new MetroFramework.Controls.MetroTextBox();
+            this.cbbStudent_SearchType = new MetroFramework.Controls.MetroComboBox();
+            this.dgvStudent_Show = new System.Windows.Forms.DataGridView();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff_Show)).BeginInit();
             this.metroTabPage2.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.metroTabPage3.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
             this.metroTabPage7.SuspendLayout();
@@ -287,6 +264,8 @@ namespace QuanLyKiTucXa
             this.groupBox17.SuspendLayout();
             this.groupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent_Show)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -323,7 +302,7 @@ namespace QuanLyKiTucXa
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.metroTabControl1.Location = new System.Drawing.Point(30, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(1348, 703);
             this.metroTabControl1.TabIndex = 12;
             this.metroTabControl1.UseSelectable = true;
@@ -336,7 +315,7 @@ namespace QuanLyKiTucXa
             this.metroTabPage1.Controls.Add(this.btnStaff_Add);
             this.metroTabPage1.Controls.Add(this.groupBox20);
             this.metroTabPage1.Controls.Add(this.dgvStaff_Show);
-            this.metroTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
@@ -348,6 +327,66 @@ namespace QuanLyKiTucXa
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // btnDetail
+            // 
+            this.btnDetail.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDetail.Image = global::QuanLyKiTucXa.Properties.Resources.file;
+            this.btnDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDetail.Location = new System.Drawing.Point(983, 155);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.Size = new System.Drawing.Size(137, 44);
+            this.btnDetail.TabIndex = 43;
+            this.btnDetail.Text = "CHI TIẾT";
+            this.btnDetail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDetail.UseVisualStyleBackColor = false;
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
+            // 
+            // btnStaff_Delete
+            // 
+            this.btnStaff_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStaff_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStaff_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.btnStaff_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaff_Delete.Location = new System.Drawing.Point(725, 155);
+            this.btnStaff_Delete.Name = "btnStaff_Delete";
+            this.btnStaff_Delete.Size = new System.Drawing.Size(121, 44);
+            this.btnStaff_Delete.TabIndex = 42;
+            this.btnStaff_Delete.Text = "XÓA";
+            this.btnStaff_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStaff_Delete.UseVisualStyleBackColor = false;
+            this.btnStaff_Delete.Click += new System.EventHandler(this.btnStaff_Delete_Click);
+            // 
+            // btnSstaff_Edit
+            // 
+            this.btnSstaff_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSstaff_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSstaff_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.btnSstaff_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSstaff_Edit.Location = new System.Drawing.Point(447, 155);
+            this.btnSstaff_Edit.Name = "btnSstaff_Edit";
+            this.btnSstaff_Edit.Size = new System.Drawing.Size(121, 44);
+            this.btnSstaff_Edit.TabIndex = 41;
+            this.btnSstaff_Edit.Text = "SỬA";
+            this.btnSstaff_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSstaff_Edit.UseVisualStyleBackColor = false;
+            this.btnSstaff_Edit.Click += new System.EventHandler(this.btnSstaff_Edit_Click);
+            // 
+            // btnStaff_Add
+            // 
+            this.btnStaff_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStaff_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStaff_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.btnStaff_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaff_Add.Location = new System.Drawing.Point(200, 155);
+            this.btnStaff_Add.Name = "btnStaff_Add";
+            this.btnStaff_Add.Size = new System.Drawing.Size(121, 44);
+            this.btnStaff_Add.TabIndex = 40;
+            this.btnStaff_Add.Text = "THÊM";
+            this.btnStaff_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStaff_Add.UseVisualStyleBackColor = false;
+            this.btnStaff_Add.Click += new System.EventHandler(this.btnStaff_Add_Click);
             // 
             // groupBox20
             // 
@@ -362,6 +401,20 @@ namespace QuanLyKiTucXa
             this.groupBox20.TabIndex = 38;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Tìm kiếm nhân viên";
+            // 
+            // btnStaff_Search
+            // 
+            this.btnStaff_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStaff_Search.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.btnStaff_Search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaff_Search.Location = new System.Drawing.Point(1046, 48);
+            this.btnStaff_Search.Name = "btnStaff_Search";
+            this.btnStaff_Search.Size = new System.Drawing.Size(136, 34);
+            this.btnStaff_Search.TabIndex = 2;
+            this.btnStaff_Search.Text = "TÌM KIẾM";
+            this.btnStaff_Search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStaff_Search.UseVisualStyleBackColor = true;
+            this.btnStaff_Search.Click += new System.EventHandler(this.btnStaff_Search_Click);
             // 
             // txtStaff_SearchInput
             // 
@@ -420,14 +473,13 @@ namespace QuanLyKiTucXa
             // 
             // metroTabPage2
             // 
-            this.metroTabPage2.Controls.Add(this.groupBox11);
-            this.metroTabPage2.Controls.Add(this.groupBox4);
-            this.metroTabPage2.Controls.Add(this.dataGridView3);
-            this.metroTabPage2.Controls.Add(this.button14);
-            this.metroTabPage2.Controls.Add(this.button15);
-            this.metroTabPage2.Controls.Add(this.button16);
-            this.metroTabPage2.Controls.Add(this.button17);
-            this.metroTabPage2.Controls.Add(this.button18);
+            this.metroTabPage2.Controls.Add(this.btnStudent_Detail);
+            this.metroTabPage2.Controls.Add(this.btnStudent_Delete);
+            this.metroTabPage2.Controls.Add(this.btnStudent_Edit);
+            this.metroTabPage2.Controls.Add(this.btnStudent_Add);
+            this.metroTabPage2.Controls.Add(this.groupBox3);
+            this.metroTabPage2.Controls.Add(this.dgvStudent_Show);
+            this.metroTabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
@@ -439,434 +491,6 @@ namespace QuanLyKiTucXa
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox11.Controls.Add(this.button7);
-            this.groupBox11.Controls.Add(this.metroTextBox32);
-            this.groupBox11.Controls.Add(this.metroComboBox6);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.Location = new System.Drawing.Point(951, 17);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(358, 182);
-            this.groupBox11.TabIndex = 35;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Tìm kiếm sinh viên";
-            // 
-            // metroTextBox32
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox32.CustomButton.Image = null;
-            this.metroTextBox32.CustomButton.Location = new System.Drawing.Point(296, 1);
-            this.metroTextBox32.CustomButton.Name = "";
-            this.metroTextBox32.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox32.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox32.CustomButton.TabIndex = 1;
-            this.metroTextBox32.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox32.CustomButton.UseSelectable = true;
-            this.metroTextBox32.CustomButton.Visible = false;
-            this.metroTextBox32.Lines = new string[0];
-            this.metroTextBox32.Location = new System.Drawing.Point(21, 111);
-            this.metroTextBox32.MaxLength = 32767;
-            this.metroTextBox32.Name = "metroTextBox32";
-            this.metroTextBox32.PasswordChar = '\0';
-            this.metroTextBox32.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox32.SelectedText = "";
-            this.metroTextBox32.SelectionLength = 0;
-            this.metroTextBox32.SelectionStart = 0;
-            this.metroTextBox32.ShortcutsEnabled = true;
-            this.metroTextBox32.Size = new System.Drawing.Size(324, 29);
-            this.metroTextBox32.TabIndex = 1;
-            this.metroTextBox32.UseSelectable = true;
-            this.metroTextBox32.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox32.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroComboBox6
-            // 
-            this.metroComboBox6.FormattingEnabled = true;
-            this.metroComboBox6.ItemHeight = 23;
-            this.metroComboBox6.Items.AddRange(new object[] {
-            "Mã sinh viên",
-            "Tên sinh viên",
-            "Giới tính",
-            "Khoa",
-            "Lớp"});
-            this.metroComboBox6.Location = new System.Drawing.Point(21, 55);
-            this.metroComboBox6.Name = "metroComboBox6";
-            this.metroComboBox6.Size = new System.Drawing.Size(161, 29);
-            this.metroComboBox6.TabIndex = 0;
-            this.metroComboBox6.UseSelectable = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Controls.Add(this.label17);
-            this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Controls.Add(this.metroComboBox3);
-            this.groupBox4.Controls.Add(this.metroTextBox4);
-            this.groupBox4.Controls.Add(this.metroDateTime2);
-            this.groupBox4.Controls.Add(this.metroTextBox10);
-            this.groupBox4.Controls.Add(this.metroTextBox11);
-            this.groupBox4.Controls.Add(this.metroTextBox12);
-            this.groupBox4.Controls.Add(this.metroTextBox13);
-            this.groupBox4.Controls.Add(this.metroTextBox14);
-            this.groupBox4.Controls.Add(this.metroTextBox15);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(3, 17);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(934, 182);
-            this.groupBox4.TabIndex = 34;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Thông tin sinh viên";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(658, 136);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 20);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "Ghi chú:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(665, 91);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 20);
-            this.label14.TabIndex = 30;
-            this.label14.Text = "Địa chỉ:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(620, 44);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(106, 20);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "Số điện thoại:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(356, 136);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(40, 20);
-            this.label16.TabIndex = 28;
-            this.label16.Text = "Lớp:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(346, 91);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(50, 20);
-            this.label17.TabIndex = 27;
-            this.label17.Text = "Khoa:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(325, 44);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(71, 20);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "Giới tính:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(34, 136);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(82, 20);
-            this.label19.TabIndex = 25;
-            this.label19.Text = "Ngày sinh:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(11, 91);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(105, 20);
-            this.label20.TabIndex = 24;
-            this.label20.Text = "Tên sinh viên:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(16, 44);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(100, 20);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "Mã sinh viên:";
-            // 
-            // metroComboBox3
-            // 
-            this.metroComboBox3.FormattingEnabled = true;
-            this.metroComboBox3.ItemHeight = 23;
-            this.metroComboBox3.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.metroComboBox3.Location = new System.Drawing.Point(402, 38);
-            this.metroComboBox3.Name = "metroComboBox3";
-            this.metroComboBox3.Size = new System.Drawing.Size(170, 29);
-            this.metroComboBox3.TabIndex = 22;
-            this.metroComboBox3.UseSelectable = true;
-            // 
-            // metroTextBox4
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox4.CustomButton.Image = null;
-            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(142, 1);
-            this.metroTextBox4.CustomButton.Name = "";
-            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox4.CustomButton.TabIndex = 1;
-            this.metroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox4.CustomButton.UseSelectable = true;
-            this.metroTextBox4.CustomButton.Visible = false;
-            this.metroTextBox4.Lines = new string[0];
-            this.metroTextBox4.Location = new System.Drawing.Point(727, 38);
-            this.metroTextBox4.MaxLength = 32767;
-            this.metroTextBox4.Name = "metroTextBox4";
-            this.metroTextBox4.PasswordChar = '\0';
-            this.metroTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox4.SelectedText = "";
-            this.metroTextBox4.SelectionLength = 0;
-            this.metroTextBox4.SelectionStart = 0;
-            this.metroTextBox4.ShortcutsEnabled = true;
-            this.metroTextBox4.Size = new System.Drawing.Size(170, 29);
-            this.metroTextBox4.TabIndex = 18;
-            this.metroTextBox4.UseSelectable = true;
-            this.metroTextBox4.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox4.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroDateTime2
-            // 
-            this.metroDateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.metroDateTime2.Location = new System.Drawing.Point(122, 129);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(4, 29);
-            this.metroDateTime2.Name = "metroDateTime2";
-            this.metroDateTime2.Size = new System.Drawing.Size(170, 29);
-            this.metroDateTime2.TabIndex = 20;
-            // 
-            // metroTextBox10
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox10.CustomButton.Image = null;
-            this.metroTextBox10.CustomButton.Location = new System.Drawing.Point(142, 1);
-            this.metroTextBox10.CustomButton.Name = "";
-            this.metroTextBox10.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox10.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox10.CustomButton.TabIndex = 1;
-            this.metroTextBox10.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox10.CustomButton.UseSelectable = true;
-            this.metroTextBox10.CustomButton.Visible = false;
-            this.metroTextBox10.Lines = new string[0];
-            this.metroTextBox10.Location = new System.Drawing.Point(402, 129);
-            this.metroTextBox10.MaxLength = 32767;
-            this.metroTextBox10.Name = "metroTextBox10";
-            this.metroTextBox10.PasswordChar = '\0';
-            this.metroTextBox10.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox10.SelectedText = "";
-            this.metroTextBox10.SelectionLength = 0;
-            this.metroTextBox10.SelectionStart = 0;
-            this.metroTextBox10.ShortcutsEnabled = true;
-            this.metroTextBox10.Size = new System.Drawing.Size(170, 29);
-            this.metroTextBox10.TabIndex = 19;
-            this.metroTextBox10.UseSelectable = true;
-            this.metroTextBox10.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox10.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroTextBox11
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox11.CustomButton.Image = null;
-            this.metroTextBox11.CustomButton.Location = new System.Drawing.Point(142, 1);
-            this.metroTextBox11.CustomButton.Name = "";
-            this.metroTextBox11.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox11.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox11.CustomButton.TabIndex = 1;
-            this.metroTextBox11.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox11.CustomButton.UseSelectable = true;
-            this.metroTextBox11.CustomButton.Visible = false;
-            this.metroTextBox11.Lines = new string[0];
-            this.metroTextBox11.Location = new System.Drawing.Point(727, 129);
-            this.metroTextBox11.MaxLength = 32767;
-            this.metroTextBox11.Name = "metroTextBox11";
-            this.metroTextBox11.PasswordChar = '\0';
-            this.metroTextBox11.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox11.SelectedText = "";
-            this.metroTextBox11.SelectionLength = 0;
-            this.metroTextBox11.SelectionStart = 0;
-            this.metroTextBox11.ShortcutsEnabled = true;
-            this.metroTextBox11.Size = new System.Drawing.Size(170, 29);
-            this.metroTextBox11.TabIndex = 17;
-            this.metroTextBox11.UseSelectable = true;
-            this.metroTextBox11.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox11.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroTextBox12
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox12.CustomButton.Image = null;
-            this.metroTextBox12.CustomButton.Location = new System.Drawing.Point(142, 1);
-            this.metroTextBox12.CustomButton.Name = "";
-            this.metroTextBox12.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox12.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox12.CustomButton.TabIndex = 1;
-            this.metroTextBox12.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox12.CustomButton.UseSelectable = true;
-            this.metroTextBox12.CustomButton.Visible = false;
-            this.metroTextBox12.Lines = new string[0];
-            this.metroTextBox12.Location = new System.Drawing.Point(727, 87);
-            this.metroTextBox12.MaxLength = 32767;
-            this.metroTextBox12.Name = "metroTextBox12";
-            this.metroTextBox12.PasswordChar = '\0';
-            this.metroTextBox12.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox12.SelectedText = "";
-            this.metroTextBox12.SelectionLength = 0;
-            this.metroTextBox12.SelectionStart = 0;
-            this.metroTextBox12.ShortcutsEnabled = true;
-            this.metroTextBox12.Size = new System.Drawing.Size(170, 29);
-            this.metroTextBox12.TabIndex = 16;
-            this.metroTextBox12.UseSelectable = true;
-            this.metroTextBox12.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox12.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroTextBox13
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox13.CustomButton.Image = null;
-            this.metroTextBox13.CustomButton.Location = new System.Drawing.Point(142, 1);
-            this.metroTextBox13.CustomButton.Name = "";
-            this.metroTextBox13.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox13.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox13.CustomButton.TabIndex = 1;
-            this.metroTextBox13.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox13.CustomButton.UseSelectable = true;
-            this.metroTextBox13.CustomButton.Visible = false;
-            this.metroTextBox13.Lines = new string[0];
-            this.metroTextBox13.Location = new System.Drawing.Point(402, 87);
-            this.metroTextBox13.MaxLength = 32767;
-            this.metroTextBox13.Name = "metroTextBox13";
-            this.metroTextBox13.PasswordChar = '\0';
-            this.metroTextBox13.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox13.SelectedText = "";
-            this.metroTextBox13.SelectionLength = 0;
-            this.metroTextBox13.SelectionStart = 0;
-            this.metroTextBox13.ShortcutsEnabled = true;
-            this.metroTextBox13.Size = new System.Drawing.Size(170, 29);
-            this.metroTextBox13.TabIndex = 15;
-            this.metroTextBox13.UseSelectable = true;
-            this.metroTextBox13.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox13.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroTextBox14
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox14.CustomButton.Image = null;
-            this.metroTextBox14.CustomButton.Location = new System.Drawing.Point(142, 1);
-            this.metroTextBox14.CustomButton.Name = "";
-            this.metroTextBox14.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox14.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox14.CustomButton.TabIndex = 1;
-            this.metroTextBox14.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox14.CustomButton.UseSelectable = true;
-            this.metroTextBox14.CustomButton.Visible = false;
-            this.metroTextBox14.Lines = new string[0];
-            this.metroTextBox14.Location = new System.Drawing.Point(122, 87);
-            this.metroTextBox14.MaxLength = 32767;
-            this.metroTextBox14.Name = "metroTextBox14";
-            this.metroTextBox14.PasswordChar = '\0';
-            this.metroTextBox14.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox14.SelectedText = "";
-            this.metroTextBox14.SelectionLength = 0;
-            this.metroTextBox14.SelectionStart = 0;
-            this.metroTextBox14.ShortcutsEnabled = true;
-            this.metroTextBox14.Size = new System.Drawing.Size(170, 29);
-            this.metroTextBox14.TabIndex = 12;
-            this.metroTextBox14.UseSelectable = true;
-            this.metroTextBox14.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox14.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroTextBox15
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox15.CustomButton.Image = null;
-            this.metroTextBox15.CustomButton.Location = new System.Drawing.Point(142, 1);
-            this.metroTextBox15.CustomButton.Name = "";
-            this.metroTextBox15.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.metroTextBox15.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox15.CustomButton.TabIndex = 1;
-            this.metroTextBox15.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox15.CustomButton.UseSelectable = true;
-            this.metroTextBox15.CustomButton.Visible = false;
-            this.metroTextBox15.Lines = new string[0];
-            this.metroTextBox15.Location = new System.Drawing.Point(122, 41);
-            this.metroTextBox15.MaxLength = 32767;
-            this.metroTextBox15.Name = "metroTextBox15";
-            this.metroTextBox15.PasswordChar = '\0';
-            this.metroTextBox15.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox15.SelectedText = "";
-            this.metroTextBox15.SelectionLength = 0;
-            this.metroTextBox15.SelectionStart = 0;
-            this.metroTextBox15.ShortcutsEnabled = true;
-            this.metroTextBox15.Size = new System.Drawing.Size(170, 29);
-            this.metroTextBox15.TabIndex = 11;
-            this.metroTextBox15.UseSelectable = true;
-            this.metroTextBox15.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox15.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 279);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1293, 359);
-            this.dataGridView3.TabIndex = 26;
             // 
             // metroTabPage3
             // 
@@ -921,6 +545,81 @@ namespace QuanLyKiTucXa
             this.metroTabPage7.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage7.VerticalScrollbarSize = 10;
             // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button20.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
+            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button20.Location = new System.Drawing.Point(942, 168);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(114, 44);
+            this.button20.TabIndex = 45;
+            this.button20.Text = "LƯU";
+            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button21.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(724, 168);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(154, 44);
+            this.button21.TabIndex = 44;
+            this.button21.Text = "CẬP NHẬT";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button22.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(520, 168);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(121, 44);
+            this.button22.TabIndex = 43;
+            this.button22.Text = "XÓA";
+            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button22.UseVisualStyleBackColor = false;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button23.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button23.Location = new System.Drawing.Point(338, 168);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(121, 44);
+            this.button23.TabIndex = 42;
+            this.button23.Text = "SỬA";
+            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button24.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(177, 168);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(121, 44);
+            this.button24.TabIndex = 41;
+            this.button24.Text = "THÊM";
+            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button24.UseVisualStyleBackColor = false;
+            // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -934,6 +633,19 @@ namespace QuanLyKiTucXa
             this.groupBox7.TabIndex = 7;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Tìm kiếm khu";
+            // 
+            // button19
+            // 
+            this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button19.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button19.Location = new System.Drawing.Point(244, 33);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(136, 42);
+            this.button19.TabIndex = 2;
+            this.button19.Text = "TÌM KIẾM";
+            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button19.UseVisualStyleBackColor = true;
             // 
             // metroTextBox3
             // 
@@ -1193,6 +905,81 @@ namespace QuanLyKiTucXa
             this.metroTabPage8.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage8.VerticalScrollbarSize = 10;
             // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button26.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button26.Location = new System.Drawing.Point(959, 174);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(114, 44);
+            this.button26.TabIndex = 50;
+            this.button26.Text = "LƯU";
+            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button26.UseVisualStyleBackColor = false;
+            // 
+            // button27
+            // 
+            this.button27.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button27.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
+            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button27.Location = new System.Drawing.Point(741, 174);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(154, 44);
+            this.button27.TabIndex = 49;
+            this.button27.Text = "CẬP NHẬT";
+            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button27.UseVisualStyleBackColor = false;
+            // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button28.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.Location = new System.Drawing.Point(537, 174);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(121, 44);
+            this.button28.TabIndex = 48;
+            this.button28.Text = "XÓA";
+            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button28.UseVisualStyleBackColor = false;
+            // 
+            // button29
+            // 
+            this.button29.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button29.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button29.Location = new System.Drawing.Point(355, 174);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(121, 44);
+            this.button29.TabIndex = 47;
+            this.button29.Text = "SỬA";
+            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button29.UseVisualStyleBackColor = false;
+            // 
+            // button30
+            // 
+            this.button30.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button30.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button30.Location = new System.Drawing.Point(194, 174);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(121, 44);
+            this.button30.TabIndex = 46;
+            this.button30.Text = "THÊM";
+            this.button30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button30.UseVisualStyleBackColor = false;
+            // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -1206,6 +993,19 @@ namespace QuanLyKiTucXa
             this.groupBox9.TabIndex = 9;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Tìm kiếm tòa nhà";
+            // 
+            // button25
+            // 
+            this.button25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button25.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button25.Location = new System.Drawing.Point(258, 32);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(136, 42);
+            this.button25.TabIndex = 2;
+            this.button25.Text = "TÌM KIẾM";
+            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button25.UseVisualStyleBackColor = true;
             // 
             // metroTextBox20
             // 
@@ -1478,6 +1278,19 @@ namespace QuanLyKiTucXa
             this.groupBox10.TabIndex = 52;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Tìm kiếm tòa nhà";
+            // 
+            // button58
+            // 
+            this.button58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button58.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.button58.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button58.Location = new System.Drawing.Point(222, 39);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(136, 42);
+            this.button58.TabIndex = 2;
+            this.button58.Text = "TÌM KIẾM";
+            this.button58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button58.UseVisualStyleBackColor = true;
             // 
             // metroTextBox21
             // 
@@ -1794,6 +1607,81 @@ namespace QuanLyKiTucXa
             this.metroTextBox30.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox30.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // button31
+            // 
+            this.button31.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button31.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
+            this.button31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button31.Location = new System.Drawing.Point(983, 218);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(114, 44);
+            this.button31.TabIndex = 50;
+            this.button31.Text = "LƯU";
+            this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button31.UseVisualStyleBackColor = false;
+            // 
+            // button32
+            // 
+            this.button32.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button32.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
+            this.button32.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button32.Location = new System.Drawing.Point(765, 218);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(154, 44);
+            this.button32.TabIndex = 49;
+            this.button32.Text = "CẬP NHẬT";
+            this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button32.UseVisualStyleBackColor = false;
+            // 
+            // button33
+            // 
+            this.button33.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button33.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.button33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button33.Location = new System.Drawing.Point(561, 218);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(121, 44);
+            this.button33.TabIndex = 48;
+            this.button33.Text = "XÓA";
+            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button33.UseVisualStyleBackColor = false;
+            // 
+            // button34
+            // 
+            this.button34.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button34.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button34.Location = new System.Drawing.Point(379, 218);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(121, 44);
+            this.button34.TabIndex = 47;
+            this.button34.Text = "SỬA";
+            this.button34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button34.UseVisualStyleBackColor = false;
+            // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button35.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button35.Location = new System.Drawing.Point(218, 218);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(121, 44);
+            this.button35.TabIndex = 46;
+            this.button35.Text = "THÊM";
+            this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button35.UseVisualStyleBackColor = false;
+            // 
             // dataGridView5
             // 
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1838,6 +1726,19 @@ namespace QuanLyKiTucXa
             this.groupBox2.TabIndex = 52;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm tòa nhà";
+            // 
+            // button59
+            // 
+            this.button59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button59.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.button59.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button59.Location = new System.Drawing.Point(223, 34);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(136, 42);
+            this.button59.TabIndex = 2;
+            this.button59.Text = "TÌM KIẾM";
+            this.button59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button59.UseVisualStyleBackColor = true;
             // 
             // metroTextBox33
             // 
@@ -2066,6 +1967,81 @@ namespace QuanLyKiTucXa
             this.metroTextBox37.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox37.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // button36
+            // 
+            this.button36.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button36.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
+            this.button36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button36.Location = new System.Drawing.Point(972, 180);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(114, 44);
+            this.button36.TabIndex = 50;
+            this.button36.Text = "LƯU";
+            this.button36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button36.UseVisualStyleBackColor = false;
+            // 
+            // button37
+            // 
+            this.button37.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button37.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
+            this.button37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button37.Location = new System.Drawing.Point(754, 180);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(154, 44);
+            this.button37.TabIndex = 49;
+            this.button37.Text = "CẬP NHẬT";
+            this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button37.UseVisualStyleBackColor = false;
+            // 
+            // button38
+            // 
+            this.button38.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button38.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button38.Location = new System.Drawing.Point(550, 180);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(121, 44);
+            this.button38.TabIndex = 48;
+            this.button38.Text = "XÓA";
+            this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button38.UseVisualStyleBackColor = false;
+            // 
+            // button39
+            // 
+            this.button39.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button39.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.button39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button39.Location = new System.Drawing.Point(368, 180);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(121, 44);
+            this.button39.TabIndex = 47;
+            this.button39.Text = "SỬA";
+            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button39.UseVisualStyleBackColor = false;
+            // 
+            // button40
+            // 
+            this.button40.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button40.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button40.Location = new System.Drawing.Point(207, 180);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(121, 44);
+            this.button40.TabIndex = 46;
+            this.button40.Text = "THÊM";
+            this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button40.UseVisualStyleBackColor = false;
+            // 
             // dataGridView6
             // 
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -2096,6 +2072,81 @@ namespace QuanLyKiTucXa
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage4.VerticalScrollbarSize = 10;
             // 
+            // button41
+            // 
+            this.button41.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button41.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
+            this.button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button41.Location = new System.Drawing.Point(964, 227);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(114, 44);
+            this.button41.TabIndex = 50;
+            this.button41.Text = "LƯU";
+            this.button41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button41.UseVisualStyleBackColor = false;
+            // 
+            // button42
+            // 
+            this.button42.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button42.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
+            this.button42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button42.Location = new System.Drawing.Point(746, 227);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(154, 44);
+            this.button42.TabIndex = 49;
+            this.button42.Text = "CẬP NHẬT";
+            this.button42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button42.UseVisualStyleBackColor = false;
+            // 
+            // button43
+            // 
+            this.button43.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button43.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button43.Location = new System.Drawing.Point(542, 227);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(121, 44);
+            this.button43.TabIndex = 48;
+            this.button43.Text = "XÓA";
+            this.button43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button43.UseVisualStyleBackColor = false;
+            // 
+            // button44
+            // 
+            this.button44.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button44.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.button44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button44.Location = new System.Drawing.Point(360, 227);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(121, 44);
+            this.button44.TabIndex = 47;
+            this.button44.Text = "SỬA";
+            this.button44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button44.UseVisualStyleBackColor = false;
+            // 
+            // button45
+            // 
+            this.button45.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button45.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.button45.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button45.Location = new System.Drawing.Point(199, 227);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(121, 44);
+            this.button45.TabIndex = 46;
+            this.button45.Text = "THÊM";
+            this.button45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button45.UseVisualStyleBackColor = false;
+            // 
             // groupBox13
             // 
             this.groupBox13.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -2109,6 +2160,20 @@ namespace QuanLyKiTucXa
             this.groupBox13.TabIndex = 36;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Tìm kiếm hợp đồng";
+            // 
+            // button60
+            // 
+            this.button60.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button60.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.button60.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button60.Location = new System.Drawing.Point(174, 45);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(136, 42);
+            this.button60.TabIndex = 3;
+            this.button60.Text = "TÌM KIẾM";
+            this.button60.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button60.UseVisualStyleBackColor = true;
             // 
             // metroTextBox38
             // 
@@ -2564,6 +2629,19 @@ namespace QuanLyKiTucXa
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Tìm kiếm hóa đơn";
             // 
+            // button56
+            // 
+            this.button56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button56.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.button56.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button56.Location = new System.Drawing.Point(194, 62);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(136, 42);
+            this.button56.TabIndex = 2;
+            this.button56.Text = "TÌM KIẾM";
+            this.button56.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button56.UseVisualStyleBackColor = true;
+            // 
             // metroTextBox43
             // 
             // 
@@ -2965,6 +3043,81 @@ namespace QuanLyKiTucXa
             this.metroTextBox61.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox61.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // button46
+            // 
+            this.button46.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button46.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
+            this.button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button46.Location = new System.Drawing.Point(998, 239);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(114, 44);
+            this.button46.TabIndex = 50;
+            this.button46.Text = "LƯU";
+            this.button46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button46.UseVisualStyleBackColor = false;
+            // 
+            // button47
+            // 
+            this.button47.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button47.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
+            this.button47.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button47.Location = new System.Drawing.Point(780, 239);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(154, 44);
+            this.button47.TabIndex = 49;
+            this.button47.Text = "CẬP NHẬT";
+            this.button47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button47.UseVisualStyleBackColor = false;
+            // 
+            // button48
+            // 
+            this.button48.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button48.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.button48.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button48.Location = new System.Drawing.Point(576, 239);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(121, 44);
+            this.button48.TabIndex = 48;
+            this.button48.Text = "XÓA";
+            this.button48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button48.UseVisualStyleBackColor = false;
+            // 
+            // button49
+            // 
+            this.button49.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button49.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.button49.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button49.Location = new System.Drawing.Point(394, 239);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(121, 44);
+            this.button49.TabIndex = 47;
+            this.button49.Text = "SỬA";
+            this.button49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button49.UseVisualStyleBackColor = false;
+            // 
+            // button50
+            // 
+            this.button50.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button50.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.button50.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button50.Location = new System.Drawing.Point(233, 239);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(121, 44);
+            this.button50.TabIndex = 46;
+            this.button50.Text = "THÊM";
+            this.button50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button50.UseVisualStyleBackColor = false;
+            // 
             // dataGridView8
             // 
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -3008,6 +3161,19 @@ namespace QuanLyKiTucXa
             this.groupBox17.TabIndex = 52;
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Tìm kiếm chi tiết hóa đơn";
+            // 
+            // button57
+            // 
+            this.button57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button57.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.button57.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button57.Location = new System.Drawing.Point(239, 41);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(136, 42);
+            this.button57.TabIndex = 2;
+            this.button57.Text = "TÌM KIẾM";
+            this.button57.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button57.UseVisualStyleBackColor = true;
             // 
             // metroTextBox46
             // 
@@ -3280,737 +3446,6 @@ namespace QuanLyKiTucXa
             this.metroTextBox52.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox52.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // dataGridView9
-            // 
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(3, 258);
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.Size = new System.Drawing.Size(1294, 340);
-            this.dataGridView9.TabIndex = 42;
-            // 
-            // metroTabPage6
-            // 
-            this.metroTabPage6.HorizontalScrollbarBarColor = true;
-            this.metroTabPage6.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage6.HorizontalScrollbarSize = 10;
-            this.metroTabPage6.Location = new System.Drawing.Point(4, 44);
-            this.metroTabPage6.Name = "metroTabPage6";
-            this.metroTabPage6.Size = new System.Drawing.Size(1340, 655);
-            this.metroTabPage6.TabIndex = 5;
-            this.metroTabPage6.Text = "Báo cáo thống kê";
-            this.metroTabPage6.VerticalScrollbarBarColor = true;
-            this.metroTabPage6.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage6.VerticalScrollbarSize = 10;
-            // 
-            // lbAccountName
-            // 
-            this.lbAccountName.AutoSize = true;
-            this.lbAccountName.Location = new System.Drawing.Point(1228, 24);
-            this.lbAccountName.Name = "lbAccountName";
-            this.lbAccountName.Size = new System.Drawing.Size(81, 19);
-            this.lbAccountName.TabIndex = 13;
-            this.lbAccountName.Text = "metroLabel1";
-            // 
-            // btnDetail
-            // 
-            this.btnDetail.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDetail.Image = global::QuanLyKiTucXa.Properties.Resources.file;
-            this.btnDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDetail.Location = new System.Drawing.Point(983, 155);
-            this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(137, 44);
-            this.btnDetail.TabIndex = 43;
-            this.btnDetail.Text = "CHI TIẾT";
-            this.btnDetail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDetail.UseVisualStyleBackColor = false;
-            // 
-            // btnStaff_Delete
-            // 
-            this.btnStaff_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnStaff_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnStaff_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.btnStaff_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaff_Delete.Location = new System.Drawing.Point(725, 155);
-            this.btnStaff_Delete.Name = "btnStaff_Delete";
-            this.btnStaff_Delete.Size = new System.Drawing.Size(121, 44);
-            this.btnStaff_Delete.TabIndex = 42;
-            this.btnStaff_Delete.Text = "XÓA";
-            this.btnStaff_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStaff_Delete.UseVisualStyleBackColor = false;
-            // 
-            // btnSstaff_Edit
-            // 
-            this.btnSstaff_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSstaff_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnSstaff_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.btnSstaff_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSstaff_Edit.Location = new System.Drawing.Point(447, 155);
-            this.btnSstaff_Edit.Name = "btnSstaff_Edit";
-            this.btnSstaff_Edit.Size = new System.Drawing.Size(121, 44);
-            this.btnSstaff_Edit.TabIndex = 41;
-            this.btnSstaff_Edit.Text = "SỬA";
-            this.btnSstaff_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSstaff_Edit.UseVisualStyleBackColor = false;
-            // 
-            // btnStaff_Add
-            // 
-            this.btnStaff_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnStaff_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnStaff_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.btnStaff_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaff_Add.Location = new System.Drawing.Point(200, 155);
-            this.btnStaff_Add.Name = "btnStaff_Add";
-            this.btnStaff_Add.Size = new System.Drawing.Size(121, 44);
-            this.btnStaff_Add.TabIndex = 40;
-            this.btnStaff_Add.Text = "THÊM";
-            this.btnStaff_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStaff_Add.UseVisualStyleBackColor = false;
-            // 
-            // btnStaff_Search
-            // 
-            this.btnStaff_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnStaff_Search.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.btnStaff_Search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaff_Search.Location = new System.Drawing.Point(1046, 48);
-            this.btnStaff_Search.Name = "btnStaff_Search";
-            this.btnStaff_Search.Size = new System.Drawing.Size(136, 34);
-            this.btnStaff_Search.TabIndex = 2;
-            this.btnStaff_Search.Text = "TÌM KIẾM";
-            this.btnStaff_Search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStaff_Search.UseVisualStyleBackColor = true;
-            this.btnStaff_Search.Click += new System.EventHandler(this.btnStaff_Search_Click);
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button14.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(972, 219);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(114, 44);
-            this.button14.TabIndex = 40;
-            this.button14.Text = "LƯU";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button15.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(754, 219);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(154, 44);
-            this.button15.TabIndex = 39;
-            this.button15.Text = "CẬP NHẬT";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button16.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(550, 219);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(121, 44);
-            this.button16.TabIndex = 38;
-            this.button16.Text = "XÓA";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button17.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(368, 219);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(121, 44);
-            this.button17.TabIndex = 37;
-            this.button17.Text = "SỬA";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button18.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(207, 219);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(121, 44);
-            this.button18.TabIndex = 36;
-            this.button18.Text = "THÊM";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button7.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(209, 52);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 36);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "TÌM KIẾM";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button20.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(942, 168);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(114, 44);
-            this.button20.TabIndex = 45;
-            this.button20.Text = "LƯU";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button21.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(724, 168);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(154, 44);
-            this.button21.TabIndex = 44;
-            this.button21.Text = "CẬP NHẬT";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button22.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(520, 168);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(121, 44);
-            this.button22.TabIndex = 43;
-            this.button22.Text = "XÓA";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button23.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(338, 168);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(121, 44);
-            this.button23.TabIndex = 42;
-            this.button23.Text = "SỬA";
-            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button24.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(177, 168);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(121, 44);
-            this.button24.TabIndex = 41;
-            this.button24.Text = "THÊM";
-            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button19.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(244, 33);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(136, 42);
-            this.button19.TabIndex = 2;
-            this.button19.Text = "TÌM KIẾM";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button26.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
-            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.Location = new System.Drawing.Point(959, 174);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(114, 44);
-            this.button26.TabIndex = 50;
-            this.button26.Text = "LƯU";
-            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button27.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
-            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.Location = new System.Drawing.Point(741, 174);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(154, 44);
-            this.button27.TabIndex = 49;
-            this.button27.Text = "CẬP NHẬT";
-            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button27.UseVisualStyleBackColor = false;
-            // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button28.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button28.Location = new System.Drawing.Point(537, 174);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(121, 44);
-            this.button28.TabIndex = 48;
-            this.button28.Text = "XÓA";
-            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // button29
-            // 
-            this.button29.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button29.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button29.Location = new System.Drawing.Point(355, 174);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(121, 44);
-            this.button29.TabIndex = 47;
-            this.button29.Text = "SỬA";
-            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button29.UseVisualStyleBackColor = false;
-            // 
-            // button30
-            // 
-            this.button30.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button30.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(194, 174);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(121, 44);
-            this.button30.TabIndex = 46;
-            this.button30.Text = "THÊM";
-            this.button30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button30.UseVisualStyleBackColor = false;
-            // 
-            // button25
-            // 
-            this.button25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button25.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(258, 32);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(136, 42);
-            this.button25.TabIndex = 2;
-            this.button25.Text = "TÌM KIẾM";
-            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button58
-            // 
-            this.button58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button58.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button58.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button58.Location = new System.Drawing.Point(222, 39);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(136, 42);
-            this.button58.TabIndex = 2;
-            this.button58.Text = "TÌM KIẾM";
-            this.button58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button58.UseVisualStyleBackColor = true;
-            // 
-            // button31
-            // 
-            this.button31.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button31.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
-            this.button31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button31.Location = new System.Drawing.Point(983, 218);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(114, 44);
-            this.button31.TabIndex = 50;
-            this.button31.Text = "LƯU";
-            this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button31.UseVisualStyleBackColor = false;
-            // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button32.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
-            this.button32.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button32.Location = new System.Drawing.Point(765, 218);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(154, 44);
-            this.button32.TabIndex = 49;
-            this.button32.Text = "CẬP NHẬT";
-            this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button32.UseVisualStyleBackColor = false;
-            // 
-            // button33
-            // 
-            this.button33.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button33.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.button33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button33.Location = new System.Drawing.Point(561, 218);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(121, 44);
-            this.button33.TabIndex = 48;
-            this.button33.Text = "XÓA";
-            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button33.UseVisualStyleBackColor = false;
-            // 
-            // button34
-            // 
-            this.button34.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button34.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button34.Location = new System.Drawing.Point(379, 218);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(121, 44);
-            this.button34.TabIndex = 47;
-            this.button34.Text = "SỬA";
-            this.button34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button34.UseVisualStyleBackColor = false;
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button35.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.Location = new System.Drawing.Point(218, 218);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(121, 44);
-            this.button35.TabIndex = 46;
-            this.button35.Text = "THÊM";
-            this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // button59
-            // 
-            this.button59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button59.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button59.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button59.Location = new System.Drawing.Point(223, 34);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(136, 42);
-            this.button59.TabIndex = 2;
-            this.button59.Text = "TÌM KIẾM";
-            this.button59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button59.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button36.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
-            this.button36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button36.Location = new System.Drawing.Point(972, 180);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(114, 44);
-            this.button36.TabIndex = 50;
-            this.button36.Text = "LƯU";
-            this.button36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button36.UseVisualStyleBackColor = false;
-            // 
-            // button37
-            // 
-            this.button37.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button37.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
-            this.button37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.Location = new System.Drawing.Point(754, 180);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(154, 44);
-            this.button37.TabIndex = 49;
-            this.button37.Text = "CẬP NHẬT";
-            this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button37.UseVisualStyleBackColor = false;
-            // 
-            // button38
-            // 
-            this.button38.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button38.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.Location = new System.Drawing.Point(550, 180);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(121, 44);
-            this.button38.TabIndex = 48;
-            this.button38.Text = "XÓA";
-            this.button38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button38.UseVisualStyleBackColor = false;
-            // 
-            // button39
-            // 
-            this.button39.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button39.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.button39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.Location = new System.Drawing.Point(368, 180);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(121, 44);
-            this.button39.TabIndex = 47;
-            this.button39.Text = "SỬA";
-            this.button39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button39.UseVisualStyleBackColor = false;
-            // 
-            // button40
-            // 
-            this.button40.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button40.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button40.Location = new System.Drawing.Point(207, 180);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(121, 44);
-            this.button40.TabIndex = 46;
-            this.button40.Text = "THÊM";
-            this.button40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button40.UseVisualStyleBackColor = false;
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button41.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
-            this.button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button41.Location = new System.Drawing.Point(964, 227);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(114, 44);
-            this.button41.TabIndex = 50;
-            this.button41.Text = "LƯU";
-            this.button41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button41.UseVisualStyleBackColor = false;
-            // 
-            // button42
-            // 
-            this.button42.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button42.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
-            this.button42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button42.Location = new System.Drawing.Point(746, 227);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(154, 44);
-            this.button42.TabIndex = 49;
-            this.button42.Text = "CẬP NHẬT";
-            this.button42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button42.UseVisualStyleBackColor = false;
-            // 
-            // button43
-            // 
-            this.button43.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button43.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button43.Location = new System.Drawing.Point(542, 227);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(121, 44);
-            this.button43.TabIndex = 48;
-            this.button43.Text = "XÓA";
-            this.button43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button43.UseVisualStyleBackColor = false;
-            // 
-            // button44
-            // 
-            this.button44.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button44.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.button44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button44.Location = new System.Drawing.Point(360, 227);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(121, 44);
-            this.button44.TabIndex = 47;
-            this.button44.Text = "SỬA";
-            this.button44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button44.UseVisualStyleBackColor = false;
-            // 
-            // button45
-            // 
-            this.button45.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button45.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.button45.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button45.Location = new System.Drawing.Point(199, 227);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(121, 44);
-            this.button45.TabIndex = 46;
-            this.button45.Text = "THÊM";
-            this.button45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button45.UseVisualStyleBackColor = false;
-            // 
-            // button60
-            // 
-            this.button60.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button60.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button60.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button60.Location = new System.Drawing.Point(174, 45);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(136, 42);
-            this.button60.TabIndex = 3;
-            this.button60.Text = "TÌM KIẾM";
-            this.button60.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button60.UseVisualStyleBackColor = true;
-            // 
-            // button56
-            // 
-            this.button56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button56.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button56.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button56.Location = new System.Drawing.Point(194, 62);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(136, 42);
-            this.button56.TabIndex = 2;
-            this.button56.Text = "TÌM KIẾM";
-            this.button56.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button56.UseVisualStyleBackColor = true;
-            // 
-            // button46
-            // 
-            this.button46.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button46.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
-            this.button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button46.Location = new System.Drawing.Point(998, 239);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(114, 44);
-            this.button46.TabIndex = 50;
-            this.button46.Text = "LƯU";
-            this.button46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button46.UseVisualStyleBackColor = false;
-            // 
-            // button47
-            // 
-            this.button47.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button47.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
-            this.button47.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button47.Location = new System.Drawing.Point(780, 239);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(154, 44);
-            this.button47.TabIndex = 49;
-            this.button47.Text = "CẬP NHẬT";
-            this.button47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button47.UseVisualStyleBackColor = false;
-            // 
-            // button48
-            // 
-            this.button48.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button48.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
-            this.button48.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button48.Location = new System.Drawing.Point(576, 239);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(121, 44);
-            this.button48.TabIndex = 48;
-            this.button48.Text = "XÓA";
-            this.button48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button48.UseVisualStyleBackColor = false;
-            // 
-            // button49
-            // 
-            this.button49.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button49.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
-            this.button49.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button49.Location = new System.Drawing.Point(394, 239);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(121, 44);
-            this.button49.TabIndex = 47;
-            this.button49.Text = "SỬA";
-            this.button49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button49.UseVisualStyleBackColor = false;
-            // 
-            // button50
-            // 
-            this.button50.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button50.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
-            this.button50.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button50.Location = new System.Drawing.Point(233, 239);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(121, 44);
-            this.button50.TabIndex = 46;
-            this.button50.Text = "THÊM";
-            this.button50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button50.UseVisualStyleBackColor = false;
-            // 
-            // button57
-            // 
-            this.button57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button57.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
-            this.button57.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button57.Location = new System.Drawing.Point(239, 41);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(136, 42);
-            this.button57.TabIndex = 2;
-            this.button57.Text = "TÌM KIẾM";
-            this.button57.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button57.UseVisualStyleBackColor = true;
-            // 
             // button51
             // 
             this.button51.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -4086,6 +3521,37 @@ namespace QuanLyKiTucXa
             this.button55.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button55.UseVisualStyleBackColor = false;
             // 
+            // dataGridView9
+            // 
+            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView9.Location = new System.Drawing.Point(3, 258);
+            this.dataGridView9.Name = "dataGridView9";
+            this.dataGridView9.Size = new System.Drawing.Size(1294, 340);
+            this.dataGridView9.TabIndex = 42;
+            // 
+            // metroTabPage6
+            // 
+            this.metroTabPage6.HorizontalScrollbarBarColor = true;
+            this.metroTabPage6.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage6.HorizontalScrollbarSize = 10;
+            this.metroTabPage6.Location = new System.Drawing.Point(4, 44);
+            this.metroTabPage6.Name = "metroTabPage6";
+            this.metroTabPage6.Size = new System.Drawing.Size(1340, 655);
+            this.metroTabPage6.TabIndex = 5;
+            this.metroTabPage6.Text = "Báo cáo thống kê";
+            this.metroTabPage6.VerticalScrollbarBarColor = true;
+            this.metroTabPage6.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage6.VerticalScrollbarSize = 10;
+            // 
+            // lbAccountName
+            // 
+            this.lbAccountName.AutoSize = true;
+            this.lbAccountName.Location = new System.Drawing.Point(1228, 24);
+            this.lbAccountName.Name = "lbAccountName";
+            this.lbAccountName.Size = new System.Drawing.Size(81, 19);
+            this.lbAccountName.TabIndex = 13;
+            this.lbAccountName.Text = "metroLabel1";
+            // 
             // metroPanel2
             // 
             this.metroPanel2.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources._8541895_house_user_icon;
@@ -4100,6 +3566,152 @@ namespace QuanLyKiTucXa
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // btnStudent_Detail
+            // 
+            this.btnStudent_Detail.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStudent_Detail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStudent_Detail.Image = global::QuanLyKiTucXa.Properties.Resources.file;
+            this.btnStudent_Detail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudent_Detail.Location = new System.Drawing.Point(979, 156);
+            this.btnStudent_Detail.Name = "btnStudent_Detail";
+            this.btnStudent_Detail.Size = new System.Drawing.Size(137, 44);
+            this.btnStudent_Detail.TabIndex = 49;
+            this.btnStudent_Detail.Text = "CHI TIẾT";
+            this.btnStudent_Detail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStudent_Detail.UseVisualStyleBackColor = false;
+            this.btnStudent_Detail.Click += new System.EventHandler(this.btnStudent_Detail_Click);
+            // 
+            // btnStudent_Delete
+            // 
+            this.btnStudent_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStudent_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStudent_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.btnStudent_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudent_Delete.Location = new System.Drawing.Point(721, 156);
+            this.btnStudent_Delete.Name = "btnStudent_Delete";
+            this.btnStudent_Delete.Size = new System.Drawing.Size(121, 44);
+            this.btnStudent_Delete.TabIndex = 48;
+            this.btnStudent_Delete.Text = "XÓA";
+            this.btnStudent_Delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStudent_Delete.UseVisualStyleBackColor = false;
+            this.btnStudent_Delete.Click += new System.EventHandler(this.btnStudent_Delete_Click);
+            // 
+            // btnStudent_Edit
+            // 
+            this.btnStudent_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStudent_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStudent_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.btnStudent_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudent_Edit.Location = new System.Drawing.Point(443, 156);
+            this.btnStudent_Edit.Name = "btnStudent_Edit";
+            this.btnStudent_Edit.Size = new System.Drawing.Size(121, 44);
+            this.btnStudent_Edit.TabIndex = 47;
+            this.btnStudent_Edit.Text = "SỬA";
+            this.btnStudent_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStudent_Edit.UseVisualStyleBackColor = false;
+            this.btnStudent_Edit.Click += new System.EventHandler(this.btnStudent_Edit_Click);
+            // 
+            // btnStudent_Add
+            // 
+            this.btnStudent_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStudent_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStudent_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
+            this.btnStudent_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudent_Add.Location = new System.Drawing.Point(196, 156);
+            this.btnStudent_Add.Name = "btnStudent_Add";
+            this.btnStudent_Add.Size = new System.Drawing.Size(121, 44);
+            this.btnStudent_Add.TabIndex = 46;
+            this.btnStudent_Add.Text = "THÊM";
+            this.btnStudent_Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStudent_Add.UseVisualStyleBackColor = false;
+            this.btnStudent_Add.Click += new System.EventHandler(this.btnStudent_Add_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox3.Controls.Add(this.btnStudent_Search);
+            this.groupBox3.Controls.Add(this.txtStudent_SearchInput);
+            this.groupBox3.Controls.Add(this.cbbStudent_SearchType);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(19, 19);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1288, 119);
+            this.groupBox3.TabIndex = 44;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tìm kiếm nhân viên";
+            // 
+            // btnStudent_Search
+            // 
+            this.btnStudent_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStudent_Search.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
+            this.btnStudent_Search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudent_Search.Location = new System.Drawing.Point(1046, 48);
+            this.btnStudent_Search.Name = "btnStudent_Search";
+            this.btnStudent_Search.Size = new System.Drawing.Size(136, 34);
+            this.btnStudent_Search.TabIndex = 2;
+            this.btnStudent_Search.Text = "TÌM KIẾM";
+            this.btnStudent_Search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStudent_Search.UseVisualStyleBackColor = true;
+            this.btnStudent_Search.Click += new System.EventHandler(this.btnStudent_Search_Click);
+            // 
+            // txtStudent_SearchInput
+            // 
+            // 
+            // 
+            // 
+            this.txtStudent_SearchInput.CustomButton.Image = null;
+            this.txtStudent_SearchInput.CustomButton.Location = new System.Drawing.Point(674, 1);
+            this.txtStudent_SearchInput.CustomButton.Name = "";
+            this.txtStudent_SearchInput.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStudent_SearchInput.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtStudent_SearchInput.CustomButton.TabIndex = 1;
+            this.txtStudent_SearchInput.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtStudent_SearchInput.CustomButton.UseSelectable = true;
+            this.txtStudent_SearchInput.CustomButton.Visible = false;
+            this.txtStudent_SearchInput.Lines = new string[0];
+            this.txtStudent_SearchInput.Location = new System.Drawing.Point(310, 53);
+            this.txtStudent_SearchInput.MaxLength = 32767;
+            this.txtStudent_SearchInput.Name = "txtStudent_SearchInput";
+            this.txtStudent_SearchInput.PasswordChar = '\0';
+            this.txtStudent_SearchInput.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtStudent_SearchInput.SelectedText = "";
+            this.txtStudent_SearchInput.SelectionLength = 0;
+            this.txtStudent_SearchInput.SelectionStart = 0;
+            this.txtStudent_SearchInput.ShortcutsEnabled = true;
+            this.txtStudent_SearchInput.Size = new System.Drawing.Size(702, 29);
+            this.txtStudent_SearchInput.TabIndex = 1;
+            this.txtStudent_SearchInput.UseSelectable = true;
+            this.txtStudent_SearchInput.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtStudent_SearchInput.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cbbStudent_SearchType
+            // 
+            this.cbbStudent_SearchType.AutoCompleteCustomSource.AddRange(new string[] {
+            "Mã sinh viên",
+            "Tên sinh viên"});
+            this.cbbStudent_SearchType.FormattingEnabled = true;
+            this.cbbStudent_SearchType.ItemHeight = 23;
+            this.cbbStudent_SearchType.Items.AddRange(new object[] {
+            "Mã sinh viên",
+            "Tên sinh viên"});
+            this.cbbStudent_SearchType.Location = new System.Drawing.Point(42, 53);
+            this.cbbStudent_SearchType.Name = "cbbStudent_SearchType";
+            this.cbbStudent_SearchType.Size = new System.Drawing.Size(222, 29);
+            this.cbbStudent_SearchType.TabIndex = 0;
+            this.cbbStudent_SearchType.UseSelectable = true;
+            // 
+            // dgvStudent_Show
+            // 
+            this.dgvStudent_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvStudent_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudent_Show.Location = new System.Drawing.Point(19, 220);
+            this.dgvStudent_Show.MultiSelect = false;
+            this.dgvStudent_Show.Name = "dgvStudent_Show";
+            this.dgvStudent_Show.ReadOnly = true;
+            this.dgvStudent_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStudent_Show.Size = new System.Drawing.Size(1288, 394);
+            this.dgvStudent_Show.TabIndex = 45;
             // 
             // nhanvien
             // 
@@ -4118,10 +3730,6 @@ namespace QuanLyKiTucXa
             this.groupBox20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff_Show)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabControl2.ResumeLayout(false);
             this.metroTabPage7.ResumeLayout(false);
@@ -4161,6 +3769,8 @@ namespace QuanLyKiTucXa
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent_Show)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4178,7 +3788,6 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroTabPage metroTabPage4;
         private MetroFramework.Controls.MetroTabPage metroTabPage5;
         private MetroFramework.Controls.MetroTabPage metroTabPage6;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private MetroFramework.Controls.MetroTabControl metroTabControl2;
         private MetroFramework.Controls.MetroTabPage metroTabPage7;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -4207,34 +3816,6 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroTabPage metroTabPage12;
         private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.DataGridView dataGridView9;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Button button7;
-        private MetroFramework.Controls.MetroTextBox metroTextBox32;
-        private MetroFramework.Controls.MetroComboBox metroComboBox6;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private MetroFramework.Controls.MetroComboBox metroComboBox3;
-        private MetroFramework.Controls.MetroTextBox metroTextBox4;
-        private MetroFramework.Controls.MetroDateTime metroDateTime2;
-        private MetroFramework.Controls.MetroTextBox metroTextBox10;
-        private MetroFramework.Controls.MetroTextBox metroTextBox11;
-        private MetroFramework.Controls.MetroTextBox metroTextBox12;
-        private MetroFramework.Controls.MetroTextBox metroTextBox13;
-        private MetroFramework.Controls.MetroTextBox metroTextBox14;
-        private MetroFramework.Controls.MetroTextBox metroTextBox15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
@@ -4386,5 +3967,14 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroComboBox cbbStaff_SearchType;
         private System.Windows.Forms.DataGridView dgvStaff_Show;
         private MetroFramework.Controls.MetroLabel lbAccountName;
+        private System.Windows.Forms.Button btnStudent_Detail;
+        private System.Windows.Forms.Button btnStudent_Delete;
+        private System.Windows.Forms.Button btnStudent_Edit;
+        private System.Windows.Forms.Button btnStudent_Add;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnStudent_Search;
+        private MetroFramework.Controls.MetroTextBox txtStudent_SearchInput;
+        private MetroFramework.Controls.MetroComboBox cbbStudent_SearchType;
+        private System.Windows.Forms.DataGridView dgvStudent_Show;
     }
 }
