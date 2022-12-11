@@ -74,6 +74,7 @@
     <Compile Include="CSDL\PHONG.cs" />
     <Compile Include="CSDL\SINHVIEN.cs" />
     <Compile Include="CSDL\TAIKHOAN.cs" />
+    <Compile Include="CSDL\THIETBI.cs" />
     <Compile Include="CSDL\TOANHA.cs" />
     <Compile Include="dangky.cs">
       <SubType>Form</SubType>

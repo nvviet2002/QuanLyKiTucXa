@@ -313,7 +313,6 @@ namespace QuanLyKiTucXa.CSDL
             }
         }
 
-
         public bool DeleteStudent(string _maSV)
         {
             using (SqlConnection connect = new SqlConnection(connectionStr))
@@ -336,7 +335,300 @@ namespace QuanLyKiTucXa.CSDL
             }
         }
 
-        
+        public bool AddArea(KHU _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into KHU values(@ma, @ten, @vitri, @ghichu)", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaKhu;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenKhu;
+                    command.Parameters.Add("@vitri", SqlDbType.NVarChar).Value = _value.Vitri;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
 
+        public bool UpdateArea(KHU _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update KHU set TenKhu = @ten,ViTri = @vitri, Ghichu = @ghichu
+                    where MaKhu = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaKhu;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenKhu;
+                    command.Parameters.Add("@vitri", SqlDbType.NVarChar).Value = _value.Vitri;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteArea(string _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from KHU where MaKhu = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+
+        public bool AddBuilding(TOANHA _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into TOANHA values(@ma, @ten, @khu, @ghichu)", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaTN;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenTN;
+                    command.Parameters.Add("@khu", SqlDbType.Char).Value = _value.MaKhu;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool UpdateBuilding(TOANHA _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update TOANHA set TenTN = @ten,MaKhu = @makhu, Ghichu = @ghichu
+                    where MaTN = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaTN;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenTN;
+                    command.Parameters.Add("@makhu", SqlDbType.NVarChar).Value = _value.MaKhu;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteBuilding(string _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from TOANHA where MaTN = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool AddRoomType(LOAIPHONG _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into LOAIPHONG values(@ma, @ten, @sn,@dientich,@gia, @ghichu)", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaLoaiPhong;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenLoaiPhong;
+                    command.Parameters.Add("@sn", SqlDbType.Int).Value = _value.SoNguoi;
+                    command.Parameters.Add("@dientich", SqlDbType.Decimal).Value = _value.DienTich;
+                    command.Parameters.Add("@gia", SqlDbType.Decimal).Value = _value.GiaPhong;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool UpdateRoomType(LOAIPHONG _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update LOAIPHONG set TenLoaiPhong = @ten,SoNguoi = @sn
+                    ,DienTich = @dientich , GiaPhong = @gia,Ghichu = @ghichu where MaLoaiPhong = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaLoaiPhong;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenLoaiPhong;
+                    command.Parameters.Add("@sn", SqlDbType.Int).Value = _value.SoNguoi;
+                    command.Parameters.Add("@dientich", SqlDbType.Decimal).Value = _value.DienTich;
+                    command.Parameters.Add("@gia", SqlDbType.Decimal).Value = _value.GiaPhong;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteRoomType(string _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from LOAIPHONG where MaLoaiPhong = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool AddDevice(THIETBI _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into THIETBI values(@ma, @ten, @ghichu)", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaTB;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenTB;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool UpdateDevice(THIETBI _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update THIETBI set TenTB = @ten,Ghichu = @ghichu
+                    where MaTB = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaTB;
+                    command.Parameters.Add("@ten", SqlDbType.NVarChar).Value = _value.TenTB;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteDevice(string _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from THIETBI where MaTB = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
     }
 }
+
