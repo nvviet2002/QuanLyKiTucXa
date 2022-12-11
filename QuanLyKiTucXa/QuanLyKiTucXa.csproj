@@ -89,6 +89,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Giamdoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giamdoc.Designer.cs">
+      <DependentUpon>Giamdoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="nhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giamdoc.resx">
+      <DependentUpon>Giamdoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nhanvien.resx">
       <DependentUpon>nhanvien.cs</DependentUpon>

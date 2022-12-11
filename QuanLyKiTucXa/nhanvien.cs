@@ -42,5 +42,10 @@ namespace QuanLyKiTucXa
         {
 
         }
+
+        private void nhanvien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
