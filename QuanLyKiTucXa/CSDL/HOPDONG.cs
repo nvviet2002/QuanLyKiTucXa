@@ -11,8 +11,7 @@ namespace QuanLyKiTucXa.CSDL
     {
 
         [Key]
-        [StringLength(5)]
-        public string MaHD { get; set; }
+        public int MaHD { get; set; }
 
         public DateTime NgayLap { get; set; }
 
@@ -20,7 +19,7 @@ namespace QuanLyKiTucXa.CSDL
 
         public DateTime NgayHetHan { get; set; }
 
-        public int TrangThai { get; set; }
+        public string TrangThai { get; set; }
 
         [Required]
         [StringLength(5)]

@@ -97,9 +97,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_ID.CustomButton.Image = null;
-            this.txtStaff_ID.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txtStaff_ID.CustomButton.Location = new System.Drawing.Point(126, 1);
             this.txtStaff_ID.CustomButton.Name = "";
-            this.txtStaff_ID.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStaff_ID.CustomButton.Size = new System.Drawing.Size(24, 22);
             this.txtStaff_ID.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_ID.CustomButton.TabIndex = 1;
             this.txtStaff_ID.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -127,9 +127,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_Name.CustomButton.Image = null;
-            this.txtStaff_Name.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txtStaff_Name.CustomButton.Location = new System.Drawing.Point(126, 1);
             this.txtStaff_Name.CustomButton.Name = "";
-            this.txtStaff_Name.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStaff_Name.CustomButton.Size = new System.Drawing.Size(24, 22);
             this.txtStaff_Name.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_Name.CustomButton.TabIndex = 1;
             this.txtStaff_Name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -157,9 +157,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_Note.CustomButton.Image = null;
-            this.txtStaff_Note.CustomButton.Location = new System.Drawing.Point(739, 2);
+            this.txtStaff_Note.CustomButton.Location = new System.Drawing.Point(657, 2);
             this.txtStaff_Note.CustomButton.Name = "";
-            this.txtStaff_Note.CustomButton.Size = new System.Drawing.Size(47, 47);
+            this.txtStaff_Note.CustomButton.Size = new System.Drawing.Size(42, 38);
             this.txtStaff_Note.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_Note.CustomButton.TabIndex = 1;
             this.txtStaff_Note.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -197,9 +197,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_Phone.CustomButton.Image = null;
-            this.txtStaff_Phone.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txtStaff_Phone.CustomButton.Location = new System.Drawing.Point(126, 1);
             this.txtStaff_Phone.CustomButton.Name = "";
-            this.txtStaff_Phone.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStaff_Phone.CustomButton.Size = new System.Drawing.Size(24, 22);
             this.txtStaff_Phone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_Phone.CustomButton.TabIndex = 1;
             this.txtStaff_Phone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -356,9 +356,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_AccountName.CustomButton.Image = null;
-            this.txtStaff_AccountName.CustomButton.Location = new System.Drawing.Point(177, 1);
+            this.txtStaff_AccountName.CustomButton.Location = new System.Drawing.Point(157, 1);
             this.txtStaff_AccountName.CustomButton.Name = "";
-            this.txtStaff_AccountName.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStaff_AccountName.CustomButton.Size = new System.Drawing.Size(24, 22);
             this.txtStaff_AccountName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_AccountName.CustomButton.TabIndex = 1;
             this.txtStaff_AccountName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -386,9 +386,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_Password.CustomButton.Image = null;
-            this.txtStaff_Password.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txtStaff_Password.CustomButton.Location = new System.Drawing.Point(126, 1);
             this.txtStaff_Password.CustomButton.Name = "";
-            this.txtStaff_Password.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStaff_Password.CustomButton.Size = new System.Drawing.Size(24, 22);
             this.txtStaff_Password.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_Password.CustomButton.TabIndex = 1;
             this.txtStaff_Password.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -416,9 +416,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_AccountNote.CustomButton.Image = null;
-            this.txtStaff_AccountNote.CustomButton.Location = new System.Drawing.Point(400, 1);
+            this.txtStaff_AccountNote.CustomButton.Location = new System.Drawing.Point(356, 1);
             this.txtStaff_AccountNote.CustomButton.Name = "";
-            this.txtStaff_AccountNote.CustomButton.Size = new System.Drawing.Size(47, 47);
+            this.txtStaff_AccountNote.CustomButton.Size = new System.Drawing.Size(42, 38);
             this.txtStaff_AccountNote.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_AccountNote.CustomButton.TabIndex = 1;
             this.txtStaff_AccountNote.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -505,9 +505,9 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaff_Email.CustomButton.Image = null;
-            this.txtStaff_Email.CustomButton.Location = new System.Drawing.Point(177, 1);
+            this.txtStaff_Email.CustomButton.Location = new System.Drawing.Point(157, 1);
             this.txtStaff_Email.CustomButton.Name = "";
-            this.txtStaff_Email.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStaff_Email.CustomButton.Size = new System.Drawing.Size(24, 22);
             this.txtStaff_Email.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStaff_Email.CustomButton.TabIndex = 1;
             this.txtStaff_Email.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -571,7 +571,7 @@ namespace QuanLyKiTucXa
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox19);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ThongTinNhanVien";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Orange;

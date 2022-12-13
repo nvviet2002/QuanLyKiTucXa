@@ -20,6 +20,8 @@ namespace QuanLyKiTucXa
         public DataTable buildingList;
         public DataTable roomTypeList;
         public DataTable deviceList;
+        public DataTable roomList;
+        public DataTable contractList;
 
         public nhanvien()
         {
@@ -52,6 +54,8 @@ namespace QuanLyKiTucXa
             LoadBuildingList();
             LoadRoomTypeList();
             LoadDeviceList();
+            LoadRoomList();
+            LoadContractList();
             LoadComboBox();
         }
 
@@ -515,17 +519,10 @@ namespace QuanLyKiTucXa
             LoadBuildingList();
             SetBuildingControls(false);
             SetBuildingData(null);
+            LoadComboBox();
         }
 
-        private void LoadComboBox()
-        {
-            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select MaKhu from KHU");
-            cbbBuilding_Area.Items.Clear();
-            foreach (DataRow row in temp.Rows)
-            {
-                cbbBuilding_Area.Items.Add(row["MaKhu"].ToString());
-            }
-        }
+        
 
         #endregion
 
@@ -658,6 +655,7 @@ namespace QuanLyKiTucXa
             LoadRoomTypeList();
             SetRoomTypeControls(false);
             SetRoomTypeData(null);
+            LoadComboBox();
         }
 
         #endregion
@@ -783,6 +781,346 @@ namespace QuanLyKiTucXa
 
         #endregion
 
+        #region Room
+
+        DataTable NormalizeRoomList(DataTable _table)
+        {
+            DataTable temp = _table;
+            temp.Columns["MaPhong"].ColumnName = "Phòng";
+            temp.Columns["TenLoaiPhong"].ColumnName = "Loại phòng";
+            temp.Columns["MaTN"].ColumnName = "Tòa nhà";
+            temp.Columns["TongSoHD"].ColumnName = "Số người";
+            temp.Columns["SoNguoi"].ColumnName = "Số người tối đa";
+            return temp;
+        }
+
+        public void LoadRoomList()
+        {
+            roomList = CSDL.CSDL.Instance.ExecuteQuery($@"select MaPhong,MaTN,TenLoaiPhong,PHONG.TongSoHD
+            ,SoNguoi from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong");
+
+            dgvRoom_Show.DataSource = NormalizeRoomList(roomList);
+
+            SetRoomControls(false);
+        }
+
+        private void SetRoomControls(bool _enable)
+        {
+            txtRoom_ID.Enabled = cbbRoom_Building.Enabled =
+            cbbRoom_Type.Enabled = btnRoom_Save.Enabled = _enable;
+        }
+
+        private void SetRoomData(DataGridViewCellCollection _cells)
+        {
+            if (_cells == null)
+            {
+                txtRoom_ID.Text = txtRoom_PeopleCount.Text = txtRoom_MaxPeopleCount.Text = "";
+                cbbRoom_Type.SelectedItem = cbbRoom_Building.SelectedItem = null;
+                return;
+            }
+            txtRoom_ID.Text = _cells["Phòng"].Value.ToString();
+            txtRoom_PeopleCount.Text = _cells["Số người"].Value.ToString();
+            txtRoom_MaxPeopleCount.Text = _cells["Số người tối đa"].Value.ToString();
+            cbbRoom_Building.SelectedItem = _cells["Tòa nhà"].Value.ToString();
+            cbbRoom_Type.SelectedItem = _cells["Loại phòng"].Value.ToString();
+        }
+
+        private void btnRoom_Add_Click(object sender, EventArgs e)
+        {
+            SetRoomControls(true);
+            SetRoomData(null);
+            SetRoomDeviceData(null);
+            txtRoom_ID.Focus();
+        }
+
+        private void dgvRoom_Show_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvRoom_Show.SelectedRows.Count <= 0)
+            {
+                SetRoomDeviceData(null);
+                return;
+            }
+            SetRoomControls(false);
+            SetRoomData(dgvRoom_Show.SelectedRows[0].Cells);
+            SetRoomDeviceData(dgvRoom_Show.SelectedRows[0].Cells);
+
+        }
+
+        private void SetRoomDeviceData(DataGridViewCellCollection _cell)
+        {
+            if(_cell == null)
+            {
+                dgvRoom_ShowDevice.DataSource = null;
+                return;
+            }
+            string _roomID = _cell["Phòng"].Value.ToString();
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select TenTB,SoLuong,TrangThai 
+            from PHONG inner join THIETBIPHONG on PHONG.MaPhong= THIETBIPHONG.MaPhong inner join
+            THIETBI on THIETBI.MaTB = THIETBIPHONG.MaTB where THIETBIPHONG.MaPhong = '{_roomID}'");
+            temp.Columns["TenTB"].ColumnName = "Tên thiết bị";
+            temp.Columns["SoLuong"].ColumnName = "Số lượng";
+            temp.Columns["TrangThai"].ColumnName = "Trạng thái";
+            
+            dgvRoom_ShowDevice.DataSource = temp;
+        }
+
+        private void btnRoom_Edit_Click(object sender, EventArgs e)
+        {
+            if (dgvRoom_Show.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Bạn hãy chọn phòng cần sửa", "Thông báo", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+            SetRoomData(dgvRoom_Show.SelectedRows[0].Cells);
+            SetRoomControls(true);
+            txtRoom_ID.Enabled = false;
+        }
+
+        private void btnRoom_Delete_Click(object sender, EventArgs e)
+        {
+            if (dgvRoom_Show.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Bạn hãy chọn phòng cần xóa", "Thông báo", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+            string temp = dgvRoom_Show.SelectedRows[0].Cells["Phòng"].Value.ToString();
+            if (CSDL.CSDL.Instance.DeleteRoomDevice(temp) && CSDL.CSDL.Instance.DeleteRoom(temp))
+            {
+                MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                LoadRoomList();
+            }
+        }
+
+        private void btnRoom_Save_Click(object sender, EventArgs e)
+        {
+            if (txtRoom_ID.Text.Trim() == "" || cbbRoom_Type.SelectedItem == null ||
+                cbbRoom_Building.SelectedItem == null)
+            {
+                MessageBox.Show("Bạn chưa nhập đủ dữ liệu", "Thông báo", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            CSDL.PHONG tempRoom = new CSDL.PHONG();
+            tempRoom.MaPhong = txtRoom_ID.Text;
+            string tempMaLoaiPphong = CSDL.CSDL.Instance.ExecuteQuery($@"select MaLoaiPhong from LOAIPHONG
+            where TenLoaiPhong like N'{cbbRoom_Type.SelectedItem.ToString()}'").Rows[0]["MaLoaiPhong"].ToString();
+            MessageBox.Show(tempMaLoaiPphong);
+            tempRoom.MaLoaiPhong = tempMaLoaiPphong;
+            tempRoom.MaTN = cbbRoom_Building.SelectedItem.ToString();
+            tempRoom.Ghichu = "";
+            DataTable tempTable = CSDL.CSDL.Instance.ExecuteQuery($@"select * from PHONG where MaPhong=
+                '{tempRoom.MaPhong}'");
+
+            if (tempTable == null || tempTable.Rows.Count <= 0)
+            {
+                if (CSDL.CSDL.Instance.AddRoom(tempRoom))
+                {
+                    MessageBox.Show("Thêm thành công thông tin phòng", "Thông báo", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                if (CSDL.CSDL.Instance.UpdateRoom(tempRoom))
+                {
+                    MessageBox.Show("Cập nhật thành công thông tin phòng", "Thông báo", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+            }
+            LoadRoomList();
+            SetRoomControls(false);
+            SetRoomData(null);
+        }
+
+        private void cbbRoom_Type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbbRoom_Type.SelectedItem == null)
+            {
+                txtRoom_MaxPeopleCount.Text = "";
+            }
+            else
+            {
+                txtRoom_MaxPeopleCount.Text = CSDL.CSDL.Instance.ExecuteQuery($@"select SoNguoi from 
+                LOAIPHONG where TenLoaiPhong like N'{cbbRoom_Type.SelectedItem.ToString()}'")
+                .Rows[0]["SoNguoi"].ToString();
+            }
+        }
+
+        private void btnRoom_Search_Click(object sender, EventArgs e)
+        {
+            if (cbbRoom_SearchType.SelectedItem == null)
+            {
+                dgvRoom_Show.DataSource = NormalizeRoomList(roomList);
+                return;
+            }
+            if (cbbRoom_SearchType.SelectedItem == "Phòng")
+            {
+                roomList = CSDL.CSDL.Instance.ExecuteQuery($@"select MaPhong,MaTN,TenLoaiPhong,PHONG.TongSoHD
+                ,SoNguoi from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+                where MaPhong like '%{txtRoom_SearchInput.Text}%'");
+                dgvRoom_Show.DataSource = NormalizeRoomList(roomList);
+                return;
+            }
+            if (cbbRoom_SearchType.SelectedItem == "Tòa nhà")
+            {
+                roomList = CSDL.CSDL.Instance.ExecuteQuery($@"select MaPhong,MaTN,TenLoaiPhong,PHONG.TongSoHD
+                ,SoNguoi from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+                where MaTN like '%{txtRoom_SearchInput.Text}%'");
+                dgvRoom_Show.DataSource = NormalizeRoomList(roomList);
+                return;
+            }
+            if (cbbRoom_SearchType.SelectedItem == "Loại phòng")
+            {
+
+                roomList = CSDL.CSDL.Instance.ExecuteQuery($@"select MaPhong,MaTN,TenLoaiPhong,PHONG.TongSoHD
+                ,SoNguoi from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+                where TenLoaiPhong like '%{txtRoom_SearchInput.Text}%'");
+                dgvRoom_Show.DataSource = NormalizeRoomList(roomList);
+                return;
+            }
+        }
+
+        #endregion
+
+        #region Contract
+        DataTable NormalizeContractList(DataTable _table)
+        {
+            DataTable temp = _table;
+            temp.Columns["MaHD"].ColumnName = "Mã";
+            temp.Columns["NgayLap"].ColumnName = "Ngày lập";
+            temp.Columns["NgayBatDau"].ColumnName = "Ngày bắt đầu";
+            temp.Columns["NgayHetHan"].ColumnName = "Ngày hết hạn";
+            temp.Columns["TrangThai"].ColumnName = "Trạng thái";
+            temp.Columns["MaSV"].ColumnName = "Mã sinh viên";
+            temp.Columns["MaNV"].ColumnName = "Mã nhân viên";
+            temp.Columns["MaPhong"].ColumnName = "Phòng";
+            temp.Columns["GhiChu"].ColumnName = "Ghi chú";
+            return temp;
+        }
+
+        public void LoadContractList()
+        {
+            contractList = CSDL.CSDL.Instance.ExecuteQuery($@"select * from HOPDONG");
+
+            dgvContract_Show.DataSource = NormalizeContractList(contractList);
+        }
+
+        private void btnContract_Add_Click(object sender, EventArgs e)
+        {
+            ThongTinHopDong form = new ThongTinHopDong();
+            form.stage = Stages.Add;
+            form.ShowDialog();
+
+        }
+
+        private void btnContract_AddTime_Click(object sender, EventArgs e)
+        {
+            if (dgvContract_Show.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Bạn hãy chọn hợp đồng cần gia hạn", "Thông báo", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+            DataGridViewCellCollection cell = dgvContract_Show.SelectedRows[0].Cells;
+            ThongTinHopDong form = new ThongTinHopDong();
+            form.stage = Stages.Update;
+            CSDL.HOPDONG tempContract = new CSDL.HOPDONG();
+            tempContract.MaHD = (int)cell["Mã"].Value;
+            tempContract.NgayLap = (DateTime)cell["Ngày lập"].Value;
+            tempContract.NgayBatDau = (DateTime)cell["Ngày bắt đầu"].Value;
+            tempContract.NgayHetHan = (DateTime)cell["Ngày hết hạn"].Value;
+            tempContract.TrangThai = cell["Trạng thái"].Value.ToString();
+            tempContract.MaNV = cell["Mã nhân viên"].Value.ToString();
+            tempContract.MaPhong = cell["Phòng"].Value.ToString();
+            tempContract.GhiChu = cell["Ghi chú"].Value.ToString();
+
+            form.contract = tempContract;
+            form.ShowDialog();
+        }
+
+        private void btnContract_Refresh_Click(object sender, EventArgs e)
+        {
+            LoadContractList();
+        }
+
+        #endregion
+        private void LoadComboBox()
+        {
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select MaKhu from KHU");
+            cbbBuilding_Area.Items.Clear();
+            foreach (DataRow row in temp.Rows)
+            {
+                cbbBuilding_Area.Items.Add(row["MaKhu"].ToString());
+            }
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select TenLoaiPhong from LOAIPHONG ");
+            cbbRoom_Type.Items.Clear();
+            foreach (DataRow row in temp.Rows)
+            {
+                cbbRoom_Type.Items.Add(row["TenLoaiPhong"].ToString());
+            }
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select MaTN from TOANHA ");
+            cbbRoom_Building.Items.Clear();
+            foreach (DataRow row in temp.Rows)
+            {
+                cbbRoom_Building.Items.Add(row["MaTN"].ToString());
+            }
+        }
+
+        private void btnContract_Cancel_Click(object sender, EventArgs e)
+        {
+            if (dgvContract_Show.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Bạn hãy chọn hợp đồng cần hủy", "Thông báo", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+            int temp = (int)dgvContract_Show.SelectedRows[0].Cells["Mã"].Value;
+            if (CSDL.CSDL.Instance.DeleteContract(temp))
+            {
+                MessageBox.Show("Hủy thành công","Thông báo", MessageBoxButtons.OK,
+                   MessageBoxIcon.Information);
+                return;
+            }
+            LoadContractList();
+        }
+
+        private void btnContract_Search_Click(object sender, EventArgs e)
+        {
+
+            if (cbbContract_SearchType.SelectedItem == null)
+            {
+                dgvContract_Show.DataSource = NormalizeContractList(contractList);
+                return;
+            }
+            if (cbbContract_SearchType.SelectedItem == "Mã sinh viên")
+            {
+                contractList = CSDL.CSDL.Instance.Search("MaSV", txtContract_SearchInput.Text,
+                    "HOPDONG", false);
+                dgvContract_Show.DataSource = NormalizeContractList(contractList);
+                return;
+            }
+            if (cbbContract_SearchType.SelectedItem == "Mã nhân viên")
+            {
+                contractList = CSDL.CSDL.Instance.Search("TenSV", txtContract_SearchInput.Text,
+                    "HOPDONG", false);
+                dgvContract_Show.DataSource = NormalizeContractList(contractList);
+                return;
+            }
+            if (cbbContract_SearchType.SelectedItem == "Phòng")
+            {
+                contractList = CSDL.CSDL.Instance.Search("MaPhong", txtContract_SearchInput.Text,
+                    "HOPDONG", false);
+                dgvContract_Show.DataSource = NormalizeContractList(contractList);
+                return;
+            }
+        }
     }
 }
 

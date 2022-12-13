@@ -629,6 +629,154 @@ namespace QuanLyKiTucXa.CSDL
                 }
             }
         }
+
+        public bool AddRoom(PHONG _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into PHONG values(@ma,0, @ghichu,@matn,@maloaiphong)", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaPhong;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.Parameters.Add("@matn", SqlDbType.Char).Value = _value.MaTN;
+                    command.Parameters.Add("@maloaiphong", SqlDbType.Char).Value = _value.MaLoaiPhong;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool UpdateRoom(PHONG _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update PHONG set MaTN = @matn,Ghichu = @ghichu,
+                    MaLoaiPhong = @maloaiphong where MaPhong = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaPhong;
+                    command.Parameters.Add("@matn", SqlDbType.Char).Value = _value.MaTN;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.Ghichu;
+                    command.Parameters.Add("@maloaiphong", SqlDbType.Char).Value = _value.MaLoaiPhong;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteRoom(string _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from PHONG where MaPhong = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteRoomDevice(string _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from THIETBIPHONG where MaPhong = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+
+        public bool AddContract(HOPDONG _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into HOPDONG values(@ngaylap,@ngaybd,@ngayhh,@trangthai
+                    ,@manv,@masv,@maphong, @ghichu)", connect);
+                    command.Parameters.Add("@ngaylap", SqlDbType.Date).Value = _value.NgayLap.ToShortDateString();
+                    command.Parameters.Add("@ngaybd", SqlDbType.Date).Value = _value.NgayBatDau.ToShortDateString();
+                    command.Parameters.Add("@ngayhh", SqlDbType.Date).Value = _value.NgayHetHan.ToShortDateString();
+                    command.Parameters.Add("@trangthai", SqlDbType.NVarChar).Value = _value.TrangThai;
+                    command.Parameters.Add("@manv", SqlDbType.Char).Value = _value.MaNV;
+                    command.Parameters.Add("@masv", SqlDbType.Char).Value = _value.MaSV;
+                    command.Parameters.Add("@maphong", SqlDbType.Char).Value = _value.MaPhong;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.GhiChu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteContract(int _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update HOPDONG set TrangThai = N'Ngừng' where MaHD = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Int).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
     }
 }
 
