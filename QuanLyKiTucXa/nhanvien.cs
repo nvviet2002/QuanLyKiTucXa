@@ -52,5 +52,10 @@ namespace QuanLyKiTucXa
         {
 
         }
+
+        private void chart3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
