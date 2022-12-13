@@ -47,5 +47,10 @@ namespace QuanLyKiTucXa
         {
 
         }
+
+        private void label78_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
