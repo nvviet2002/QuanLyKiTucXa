@@ -152,6 +152,7 @@ namespace QuanLyKiTucXa
             this.btnRoom_Edit = new System.Windows.Forms.Button();
             this.btnRoom_Add = new System.Windows.Forms.Button();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.dgvContract_Show = new System.Windows.Forms.DataGridView();
             this.btnContract_Refresh = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnContract_Search = new System.Windows.Forms.Button();
@@ -219,7 +220,6 @@ namespace QuanLyKiTucXa
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
             this.lbAccountName = new MetroFramework.Controls.MetroLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.dgvContract_Show = new System.Windows.Forms.DataGridView();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.groupBox20.SuspendLayout();
@@ -250,6 +250,7 @@ namespace QuanLyKiTucXa
             this.groupBox2.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContract_Show)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
             this.metroTabControl3.SuspendLayout();
@@ -261,7 +262,6 @@ namespace QuanLyKiTucXa
             this.groupBox17.SuspendLayout();
             this.groupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContract_Show)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -2428,6 +2428,18 @@ namespace QuanLyKiTucXa
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage4.VerticalScrollbarSize = 10;
             // 
+            // dgvContract_Show
+            // 
+            this.dgvContract_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvContract_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvContract_Show.Location = new System.Drawing.Point(3, 234);
+            this.dgvContract_Show.MultiSelect = false;
+            this.dgvContract_Show.Name = "dgvContract_Show";
+            this.dgvContract_Show.ReadOnly = true;
+            this.dgvContract_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvContract_Show.Size = new System.Drawing.Size(1305, 435);
+            this.dgvContract_Show.TabIndex = 53;
+            // 
             // btnContract_Refresh
             // 
             this.btnContract_Refresh.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -2543,9 +2555,9 @@ namespace QuanLyKiTucXa
             this.btnContract_AddTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnContract_AddTime.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnContract_AddTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContract_AddTime.Location = new System.Drawing.Point(385, 161);
+            this.btnContract_AddTime.Location = new System.Drawing.Point(388, 161);
             this.btnContract_AddTime.Name = "btnContract_AddTime";
-            this.btnContract_AddTime.Size = new System.Drawing.Size(121, 44);
+            this.btnContract_AddTime.Size = new System.Drawing.Size(133, 44);
             this.btnContract_AddTime.TabIndex = 47;
             this.btnContract_AddTime.Text = "GIA HẠN";
             this.btnContract_AddTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2725,7 +2737,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime4.Location = new System.Drawing.Point(139, 170);
-            this.metroDateTime4.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime4.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime4.Name = "metroDateTime4";
             this.metroDateTime4.Size = new System.Drawing.Size(218, 29);
             this.metroDateTime4.TabIndex = 30;
@@ -2734,7 +2746,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime7.Location = new System.Drawing.Point(509, 31);
-            this.metroDateTime7.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime7.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime7.Name = "metroDateTime7";
             this.metroDateTime7.Size = new System.Drawing.Size(172, 29);
             this.metroDateTime7.TabIndex = 29;
@@ -2743,7 +2755,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime8.Location = new System.Drawing.Point(139, 123);
-            this.metroDateTime8.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime8.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime8.Name = "metroDateTime8";
             this.metroDateTime8.Size = new System.Drawing.Size(218, 29);
             this.metroDateTime8.TabIndex = 28;
@@ -2752,7 +2764,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime9.Location = new System.Drawing.Point(139, 74);
-            this.metroDateTime9.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime9.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime9.Name = "metroDateTime9";
             this.metroDateTime9.Size = new System.Drawing.Size(218, 29);
             this.metroDateTime9.TabIndex = 27;
@@ -3571,18 +3583,6 @@ namespace QuanLyKiTucXa
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
             // 
-            // dgvContract_Show
-            // 
-            this.dgvContract_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvContract_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvContract_Show.Location = new System.Drawing.Point(3, 234);
-            this.dgvContract_Show.MultiSelect = false;
-            this.dgvContract_Show.Name = "dgvContract_Show";
-            this.dgvContract_Show.ReadOnly = true;
-            this.dgvContract_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvContract_Show.Size = new System.Drawing.Size(1305, 435);
-            this.dgvContract_Show.TabIndex = 53;
-            // 
             // nhanvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3631,6 +3631,7 @@ namespace QuanLyKiTucXa
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.metroTabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContract_Show)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.metroTabPage5.ResumeLayout(false);
             this.metroTabControl3.ResumeLayout(false);
@@ -3644,7 +3645,6 @@ namespace QuanLyKiTucXa
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvContract_Show)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
