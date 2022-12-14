@@ -44,6 +44,38 @@ namespace QuanLyKiTucXa
         private void ThongTinHopDong_Load(object sender, EventArgs e)
         {
             LoadRoomShow();
+            LoadComboBox();
         }
+
+        private void btnStaff_Return_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void LoadComboBox()
+        {
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select MaNV from NHANVIEN");
+            cbbStaffID.Items.Clear();
+            foreach(DataRow row in temp.Rows)
+            {
+                cbbStaffID.Items.Add(row["MaNV"].ToString());
+            }
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select MaSV from SINHVIEN");
+            cbbStudentID.Items.Clear();
+            foreach (DataRow row in temp.Rows)
+            {
+                cbbStudentID.Items.Add(row["MaSV"].ToString());
+            }
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select MaPhong from PHONG");
+            cbbRoomID.Items.Clear();
+            foreach (DataRow row in temp.Rows)
+            {
+                cbbRoomID.Items.Add(row["MaPhong"].ToString());
+            }
+        }
+
+        
     }
 }

@@ -302,6 +302,7 @@ namespace QuanLyKiTucXa
             this.btnStaff_Return.Text = "QUAY LẠI";
             this.btnStaff_Return.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStaff_Return.UseVisualStyleBackColor = false;
+            this.btnStaff_Return.Click += new System.EventHandler(this.btnStaff_Return_Click);
             // 
             // ThongTinHopDong
             // 

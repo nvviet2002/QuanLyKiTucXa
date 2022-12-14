@@ -2499,7 +2499,7 @@ namespace QuanLyKiTucXa
             this.txtContract_SearchInput.CustomButton.UseSelectable = true;
             this.txtContract_SearchInput.CustomButton.Visible = false;
             this.txtContract_SearchInput.Lines = new string[0];
-            this.txtContract_SearchInput.Location = new System.Drawing.Point(310, 53);
+            this.txtContract_SearchInput.Location = new System.Drawing.Point(315, 53);
             this.txtContract_SearchInput.MaxLength = 32767;
             this.txtContract_SearchInput.Name = "txtContract_SearchInput";
             this.txtContract_SearchInput.PasswordChar = '\0';
@@ -2737,7 +2737,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime4.Location = new System.Drawing.Point(139, 170);
-            this.metroDateTime4.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime4.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime4.Name = "metroDateTime4";
             this.metroDateTime4.Size = new System.Drawing.Size(218, 29);
             this.metroDateTime4.TabIndex = 30;
@@ -2746,7 +2746,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime7.Location = new System.Drawing.Point(509, 31);
-            this.metroDateTime7.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime7.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime7.Name = "metroDateTime7";
             this.metroDateTime7.Size = new System.Drawing.Size(172, 29);
             this.metroDateTime7.TabIndex = 29;
@@ -2755,7 +2755,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime8.Location = new System.Drawing.Point(139, 123);
-            this.metroDateTime8.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime8.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime8.Name = "metroDateTime8";
             this.metroDateTime8.Size = new System.Drawing.Size(218, 29);
             this.metroDateTime8.TabIndex = 28;
@@ -2764,7 +2764,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroDateTime9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.metroDateTime9.Location = new System.Drawing.Point(139, 74);
-            this.metroDateTime9.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime9.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime9.Name = "metroDateTime9";
             this.metroDateTime9.Size = new System.Drawing.Size(218, 29);
             this.metroDateTime9.TabIndex = 27;
