@@ -725,7 +725,6 @@ namespace QuanLyKiTucXa.CSDL
             }
         }
 
-
         public bool AddContract(HOPDONG _value)
         {
             using (SqlConnection connect = new SqlConnection(connectionStr))
@@ -763,7 +762,16 @@ namespace QuanLyKiTucXa.CSDL
                 try
                 {
                     connect.Open();
-                    SqlCommand command = new SqlCommand(@"update HOPDONG set TrangThai = N'Ngừng' where MaHD = @ma", connect);
+                    SqlCommand command;
+                    if (_value < 0)
+                    {
+                        command = new SqlCommand(@"update HOPDONG set TrangThai = N'Hết hiệu lực' where TrangThai
+                        like N'Còn hiệu lực'", connect);
+                        command.ExecuteNonQuery();
+                        connect.Close();
+                        return true;
+                    }
+                    command = new SqlCommand(@"update HOPDONG set TrangThai = N'Hết hiệu lực' where MaHD = @ma", connect);
                     command.Parameters.Add("@ma", SqlDbType.Int).Value = _value;
                     command.ExecuteNonQuery();
                     connect.Close();
@@ -777,6 +785,41 @@ namespace QuanLyKiTucXa.CSDL
                 }
             }
         }
+
+        public bool AddBill(HOADON _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into HOADON values(@ngaylap,@hanthu,@ngaybd,@ngayhh
+                    ,@tongtien,@danop,@trangthai,@mahd,@ghichu)", connect);
+                    command.Parameters.Add("@ngaylap", SqlDbType.Date).Value = _value.NgayLap.ToShortDateString();
+                    command.Parameters.Add("@hanthu", SqlDbType.Date).Value = _value.HanThu.ToShortDateString();
+                    command.Parameters.Add("@ngaybd", SqlDbType.Date).Value = _value.TuNgay.ToShortDateString();
+                    command.Parameters.Add("@ngayhh", SqlDbType.Date).Value = _value.DenNgay.ToShortDateString();
+                    command.Parameters.Add("@tongtien", SqlDbType.Decimal).Value = _value.TongTien;
+                    command.Parameters.Add("@danop", SqlDbType.Decimal).Value = _value.TienDaNop;
+                    command.Parameters.Add("@trangthai", SqlDbType.NVarChar).Value = _value.TrangThai;
+                    command.Parameters.Add("@mahd", SqlDbType.Int).Value = _value.MaHD;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.GhiChu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        
+
+
     }
 }
 

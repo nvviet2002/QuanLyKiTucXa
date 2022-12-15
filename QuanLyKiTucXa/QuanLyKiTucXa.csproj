@@ -103,6 +103,18 @@
       <DependentUpon>sinhvien.cs</DependentUpon>
     </Compile>
     <Compile Include="Stages.cs" />
+    <Compile Include="ThemChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemChiTietHoaDon.Designer.cs">
+      <DependentUpon>ThemChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinHoaDon.Designer.cs">
+      <DependentUpon>ThongTinHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +154,12 @@
     </Compile>
     <EmbeddedResource Include="sinhvien.resx">
       <DependentUpon>sinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemChiTietHoaDon.resx">
+      <DependentUpon>ThemChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinHoaDon.resx">
+      <DependentUpon>ThongTinHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinHopDong.resx">
       <DependentUpon>ThongTinHopDong.cs</DependentUpon>

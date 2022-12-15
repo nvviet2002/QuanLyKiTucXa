@@ -29,9 +29,7 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(30)]
         public string TrangThai { get; set; }
 
-        [Required]
-        [StringLength(5)]
-        public string MaHD { get; set; }
+        public int MaHD { get; set; }
 
         [StringLength(200)]
         public string GhiChu { get; set; }

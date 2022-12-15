@@ -15,6 +15,14 @@ namespace QuanLyKiTucXa.CSDL
         [StringLength(30)]
         public string LoaiTien { get; set; }
 
+        public int SoCu { get; set; }
+
+        public int SoMoi { get; set; }
+
+        public decimal DonGia { get; set; }
+
+        public string DonViTinh { get; set; }
+
         public decimal SoTien { get; set; }
 
         public int MaHoaDon { get; set; }

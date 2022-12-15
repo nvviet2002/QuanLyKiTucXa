@@ -168,11 +168,11 @@ begin
 declare @MaPhong char(5)
 set @MaPhong = ''
 select @MaPhong = MaPhong from Inserted
-update PHONG set TongSoHD=Coalesce((Select count(*) from HOPDONG where @MaPhong=MaPhong and TrangThai = 1),0)
+update PHONG set TongSoHD=Coalesce((Select count(*) from HOPDONG where @MaPhong=MaPhong and TrangThai like N'Còn hiệu lực'),0)
 where MaPhong = @MaPhong
 
 select @MaPhong = MaPhong from Deleted
-update PHONG set TongSoHD=Coalesce((Select count(*) from HOPDONG where @MaPhong=MaPhong and TrangThai = 1),0)
+update PHONG set TongSoHD=Coalesce((Select count(*) from HOPDONG where @MaPhong=MaPhong and TrangThai like N'Còn hiệu lực'),0)
 where MaPhong = @MaPhong
 end
 -------------------------------------------------
@@ -418,7 +418,8 @@ insert into NHANVIEN values('NV002',N'Nguyễn Thi Ngân','4-20-2002',N'Nữ','0
 ----------------------------------------------Sinh viên
 insert into SINHVIEN values('SV001',N'Nguyễn Văn Việt','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'viet86710')
 ---------------------------------------------- Hợp đồng
-insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2022',N'Đang','NV002','SV001','C3101',null)
+insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2022',N'Còn hiệu lực','NV002','SV001','C3101',null)
+insert into HOPDONG values(-1,'1-1-1','1-1-1','1-1-1',N'Còn hiệu lực','NV002','SV001','C3101',null)
 
 
 select * from TAIKHOAN where TaiKhoan = '' and MatKhau = ''
@@ -468,6 +469,9 @@ on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
   as SoNguoiO, MaTN,PHONG.Ghichu
   from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
 
+select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,TongTien,TienDaNop,
+HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu
+from HOADON inner join HOPDONG on HOADON.MaHD = HOPDONG.MaHD
 use master
 go
 drop database QuanLyKiTucXa
