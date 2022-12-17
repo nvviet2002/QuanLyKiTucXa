@@ -173,6 +173,15 @@ namespace QuanLyKiTucXa
             this.btnBill_Edit = new System.Windows.Forms.Button();
             this.btnBill_Create = new System.Windows.Forms.Button();
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabControl3 = new MetroFramework.Controls.MetroTabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.dgvStatistic_StudentList = new System.Windows.Forms.DataGridView();
+            this.dgvStatistic_RoomList = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.lbAccountName = new MetroFramework.Controls.MetroLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroTabControl1.SuspendLayout();
@@ -210,6 +219,11 @@ namespace QuanLyKiTucXa
             this.metroTabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill_Show)).BeginInit();
             this.groupBox11.SuspendLayout();
+            this.metroTabPage6.SuspendLayout();
+            this.metroTabControl3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_StudentList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_RoomList)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -246,7 +260,7 @@ namespace QuanLyKiTucXa
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.metroTabControl1.Location = new System.Drawing.Point(30, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 4;
+            this.metroTabControl1.SelectedIndex = 5;
             this.metroTabControl1.Size = new System.Drawing.Size(1348, 703);
             this.metroTabControl1.TabIndex = 12;
             this.metroTabControl1.UseSelectable = true;
@@ -608,7 +622,7 @@ namespace QuanLyKiTucXa
             this.metroTabControl2.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.metroTabControl2.Location = new System.Drawing.Point(-1, 3);
             this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 3;
+            this.metroTabControl2.SelectedIndex = 4;
             this.metroTabControl2.Size = new System.Drawing.Size(1338, 646);
             this.metroTabControl2.TabIndex = 4;
             this.metroTabControl2.UseSelectable = true;
@@ -2579,6 +2593,7 @@ namespace QuanLyKiTucXa
             this.btnBill_Refresh.Text = "LÀM MỚI";
             this.btnBill_Refresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBill_Refresh.UseVisualStyleBackColor = false;
+            this.btnBill_Refresh.Click += new System.EventHandler(this.btnBill_Refresh_Click);
             // 
             // groupBox11
             // 
@@ -2689,6 +2704,7 @@ namespace QuanLyKiTucXa
             this.btnBill_Detail.Text = "CHI TIẾT";
             this.btnBill_Detail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBill_Detail.UseVisualStyleBackColor = false;
+            this.btnBill_Detail.Click += new System.EventHandler(this.btnBill_Detail_Click);
             // 
             // btnBill_Edit
             // 
@@ -2704,6 +2720,7 @@ namespace QuanLyKiTucXa
             this.btnBill_Edit.Text = "THANH TOÁN";
             this.btnBill_Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBill_Edit.UseVisualStyleBackColor = false;
+            this.btnBill_Edit.Click += new System.EventHandler(this.btnBill_Edit_Click);
             // 
             // btnBill_Create
             // 
@@ -2723,6 +2740,7 @@ namespace QuanLyKiTucXa
             // 
             // metroTabPage6
             // 
+            this.metroTabPage6.Controls.Add(this.metroTabControl3);
             this.metroTabPage6.HorizontalScrollbarBarColor = true;
             this.metroTabPage6.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage6.HorizontalScrollbarSize = 10;
@@ -2734,6 +2752,109 @@ namespace QuanLyKiTucXa
             this.metroTabPage6.VerticalScrollbarBarColor = true;
             this.metroTabPage6.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage6.VerticalScrollbarSize = 10;
+            // 
+            // metroTabControl3
+            // 
+            this.metroTabControl3.Controls.Add(this.tabPage2);
+            this.metroTabControl3.Controls.Add(this.tabPage3);
+            this.metroTabControl3.Controls.Add(this.tabPage4);
+            this.metroTabControl3.FontSize = MetroFramework.MetroTabControlSize.Tall;
+            this.metroTabControl3.Location = new System.Drawing.Point(13, 3);
+            this.metroTabControl3.Name = "metroTabControl3";
+            this.metroTabControl3.SelectedIndex = 0;
+            this.metroTabControl3.Size = new System.Drawing.Size(1316, 632);
+            this.metroTabControl3.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
+            this.metroTabControl3.TabIndex = 2;
+            this.metroTabControl3.UseSelectable = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.metroLabel5);
+            this.tabPage2.Controls.Add(this.metroLabel3);
+            this.tabPage2.Controls.Add(this.metroLabel4);
+            this.tabPage2.Controls.Add(this.dgvStatistic_StudentList);
+            this.tabPage2.Controls.Add(this.dgvStatistic_RoomList);
+            this.tabPage2.Location = new System.Drawing.Point(4, 44);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(1308, 584);
+            this.tabPage2.TabIndex = 0;
+            this.tabPage2.Text = "Sinh viên";
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel5.Location = new System.Drawing.Point(461, 26);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(402, 25);
+            this.metroLabel5.TabIndex = 63;
+            this.metroLabel5.Text = "Thống kê số lượng sinh viên theo từng phòng";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.Location = new System.Drawing.Point(927, 90);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(164, 25);
+            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel3.TabIndex = 61;
+            this.metroLabel3.Text = "Danh sách sinh viên";
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel4.Location = new System.Drawing.Point(235, 90);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(147, 25);
+            this.metroLabel4.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel4.TabIndex = 60;
+            this.metroLabel4.Text = "Danh sách phòng";
+            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // dgvStatistic_StudentList
+            // 
+            this.dgvStatistic_StudentList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvStatistic_StudentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStatistic_StudentList.Location = new System.Drawing.Point(670, 128);
+            this.dgvStatistic_StudentList.MultiSelect = false;
+            this.dgvStatistic_StudentList.Name = "dgvStatistic_StudentList";
+            this.dgvStatistic_StudentList.ReadOnly = true;
+            this.dgvStatistic_StudentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStatistic_StudentList.Size = new System.Drawing.Size(611, 439);
+            this.dgvStatistic_StudentList.TabIndex = 59;
+            // 
+            // dgvStatistic_RoomList
+            // 
+            this.dgvStatistic_RoomList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvStatistic_RoomList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStatistic_RoomList.Location = new System.Drawing.Point(15, 128);
+            this.dgvStatistic_RoomList.MultiSelect = false;
+            this.dgvStatistic_RoomList.Name = "dgvStatistic_RoomList";
+            this.dgvStatistic_RoomList.ReadOnly = true;
+            this.dgvStatistic_RoomList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStatistic_RoomList.Size = new System.Drawing.Size(616, 439);
+            this.dgvStatistic_RoomList.TabIndex = 58;
+            this.dgvStatistic_RoomList.SelectionChanged += new System.EventHandler(this.dgvStatistic_RoomList_SelectionChanged);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1308, 584);
+            this.tabPage3.TabIndex = 1;
+            this.tabPage3.Text = "Phòng";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 44);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1308, 584);
+            this.tabPage4.TabIndex = 2;
+            this.tabPage4.Text = "Hóa đơn";
             // 
             // lbAccountName
             // 
@@ -2812,6 +2933,12 @@ namespace QuanLyKiTucXa
             this.metroTabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill_Show)).EndInit();
             this.groupBox11.ResumeLayout(false);
+            this.metroTabPage6.ResumeLayout(false);
+            this.metroTabControl3.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_StudentList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_RoomList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2965,5 +3092,14 @@ namespace QuanLyKiTucXa
         private System.Windows.Forms.Button btnBill_Edit;
         private System.Windows.Forms.Button btnBill_Create;
         private MetroFramework.Controls.MetroComboBox cbbBill_SearchStatus;
+        private MetroFramework.Controls.MetroTabControl metroTabControl3;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private System.Windows.Forms.DataGridView dgvStatistic_StudentList;
+        private System.Windows.Forms.DataGridView dgvStatistic_RoomList;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
     }
 }

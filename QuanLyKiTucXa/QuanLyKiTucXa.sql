@@ -136,7 +136,7 @@ create table HOADON
 	TrangThai nvarchar(30) not null,
   	MaHD int not null,
 	GhiChu nvarchar(200),
-	CONSTRAINT FK_hoadon1 FOREIGN KEY (MaHD ) REFERENCES  HOPDONG(MaHD ),
+	CONSTRAINT FK_hoadon1 FOREIGN KEY (MaHD) REFERENCES  HOPDONG(MaHD ),
 	
 )
 
@@ -422,6 +422,7 @@ insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2022',N'Còn hiệu lực
 insert into HOPDONG values(-1,'1-1-1','1-1-1','1-1-1',N'Còn hiệu lực','NV002','SV001','C3101',null)
 
 
+
 select * from TAIKHOAN where TaiKhoan = '' and MatKhau = ''
 select * from SINHVIEN where MaTK = 3
 update SINHVIEN
@@ -472,6 +473,10 @@ on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
 select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,TongTien,TienDaNop,
 HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu
 from HOADON inner join HOPDONG on HOADON.MaHD = HOPDONG.MaHD
+
+insert into HOADON values('1-1-2022','1-1-2022','1-2-2022','1-5-2022'
+                    ,1000000,500001,N'Thiếu',6,N'ok')
+
 use master
 go
 drop database QuanLyKiTucXa

@@ -802,7 +802,7 @@ namespace QuanLyKiTucXa
             roomList = CSDL.CSDL.Instance.ExecuteQuery($@"select MaPhong,MaTN,TenLoaiPhong,PHONG.TongSoHD
             ,SoNguoi from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong");
 
-            dgvRoom_Show.DataSource = NormalizeRoomList(roomList);
+            dgvRoom_Show.DataSource = dgvStatistic_RoomList.DataSource =  NormalizeRoomList(roomList);
 
             SetRoomControls(false);
         }
@@ -1114,6 +1114,12 @@ namespace QuanLyKiTucXa
 
         #endregion
 
+       
+
+       
+
+        #region Bill
+
         DataTable NormalizeBillList(DataTable _table)
         {
             DataTable temp = _table;
@@ -1147,90 +1153,14 @@ namespace QuanLyKiTucXa
             form.staffName = staff.TenNV;
             form.loadBillList += LoadBillList;
             form.ShowDialog();
-            //CSDL.HOADON tempBill = new CSDL.HOADON();
-            //tempBill.NgayLap = DateTime.Now;
-            //tempBill.HanThu = DateTime.Now;
-            //tempBill.TuNgay = DateTime.Now;
-            //tempBill.DenNgay = DateTime.Now;
-            //tempBill.TrangThai = "Thiếu";
-            //tempBill.MaHD = ;
-            //tempBill.TienDaNop = 0;
-            //tempBill.TongTien = 0;
-            //tempBill.GhiChu = "";
-            //if (CSDL.CSDL.Instance.AddBill(tempBill))
-            //{
-            //    DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select MaHoaDon from HOADON where MaHD = 'none'");
-            //    if (temp.Rows.Count <= 0) return;
-            //    tempBill.MaHoaDon = (int)temp.Rows[0]["MaHoaDon"];
-            //    form.bill = tempBill;
-            //    form.loadBillList += LoadBillList;
-            //    form.ShowDialog();
-            //}
-
         }
-
-        //private void btnBill_AddTime_Click(object sender, EventArgs e)
-        //{
-        //    if (dgvBill_Show.SelectedRows.Count <= 0)
-        //    {
-        //        MessageBox.Show("Bạn hãy chọn hợp đồng cần gia hạn", "Thông báo", MessageBoxButtons.OK,
-        //            MessageBoxIcon.Warning);
-        //        return;
-        //    }
-        //    DataGridViewCellCollection cell = dgvBill_Show.SelectedRows[0].Cells;
-        //    ThongTinHopDong form = new ThongTinHopDong();
-        //    form.stage = Stages.Update;
-        //    CSDL.HOPDONG tempBill = new CSDL.HOPDONG();
-        //    tempBill.MaHD = (int)cell["Mã"].Value;
-        //    tempBill.NgayLap = (DateTime)cell["Ngày lập"].Value;
-        //    tempBill.NgayBatDau = (DateTime)cell["Ngày bắt đầu"].Value;
-        //    tempBill.NgayHetHan = (DateTime)cell["Ngày hết hạn"].Value;
-        //    tempBill.TrangThai = cell["Trạng thái"].Value.ToString();
-        //    //tempBill.MaNV = cell["Mã nhân viên"].Value.ToString();
-        //    tempBill.MaNV = this.staff.MaNV;
-        //    tempBill.MaSV = cell["Mã sinh viên"].Value.ToString();
-        //    tempBill.MaPhong = cell["Phòng"].Value.ToString();
-        //    tempBill.GhiChu = cell["Ghi chú"].Value.ToString();
-
-        //    form.Bill = tempBill;
-        //    form.loadBillList += LoadBillList;
-        //    form.ShowDialog();
-        //}
-
-        //private void btnBill_Refresh_Click(object sender, EventArgs e)
-        //{
-        //    LoadBillList();
-        //}
-
-
-
-
-
-        //private void btnBill_Cancel_Click(object sender, EventArgs e)
-        //{
-        //    if (dgvBill_Show.SelectedRows.Count <= 0)
-        //    {
-        //        MessageBox.Show("Bạn hãy chọn hợp đồng cần hủy", "Thông báo", MessageBoxButtons.OK,
-        //            MessageBoxIcon.Warning);
-        //        return;
-        //    }
-        //    int temp = (int)dgvBill_Show.SelectedRows[0].Cells["Mã"].Value;
-        //    if (CSDL.CSDL.Instance.DeleteBill(temp))
-        //    {
-        //        MessageBox.Show("Hủy thành công", "Thông báo", MessageBoxButtons.OK,
-        //           MessageBoxIcon.Information);
-        //        LoadBillList();
-        //        return;
-        //    }
-
-        //}
 
         private void btnBill_Search_Click(object sender, EventArgs e)
         {
 
-            if (cbbBill_SearchType.SelectedItem == null)
+            if (cbbBill_SearchType.SelectedItem == null || cbbBill_SearchStatus.SelectedItem == null)
             {
-                dgvBill_Show.DataSource = NormalizeBillList(billList);
+                LoadBillList();
                 return;
             }
             if (cbbBill_SearchType.SelectedItem == "Mã sinh viên")
@@ -1238,7 +1168,7 @@ namespace QuanLyKiTucXa
                 string tempQuery = $@"select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,
                 TongTien,TienDaNop,HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu from HOADON inner join HOPDONG 
                 on HOADON.MaHD = HOPDONG.MaHD where MaSV like '%{txtBill_SearchInput.Text}%'";
-                if(cbbBill_SearchStatus.SelectedItem != null && cbbBill_SearchStatus.SelectedItem.ToString() != "Tất cả")
+                if (cbbBill_SearchStatus.SelectedItem != null && cbbBill_SearchStatus.SelectedItem.ToString() != "Tất cả")
                 {
                     tempQuery += $@" and HOADON.TrangThai like N'%{cbbBill_SearchStatus.SelectedItem.ToString()}%'";
                 }
@@ -1248,21 +1178,170 @@ namespace QuanLyKiTucXa
             }
             if (cbbBill_SearchType.SelectedItem == "Mã hóa đơn")
             {
-                billList = CSDL.CSDL.Instance.ExecuteQuery($@"select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,
+                string tempQuery = $@"select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,
                 TongTien,TienDaNop,HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu from HOADON inner join HOPDONG 
-                on HOADON.MaHD = HOPDONG.MaHD where MaHoaDon like '%{txtBill_SearchInput.Text}%'");
+                on HOADON.MaHD = HOPDONG.MaHD where MaHoaDon like '%{txtBill_SearchInput.Text}%'";
+                if (cbbBill_SearchStatus.SelectedItem != null && cbbBill_SearchStatus.SelectedItem.ToString() != "Tất cả")
+                {
+                    tempQuery += $@" and HOADON.TrangThai like N'%{cbbBill_SearchStatus.SelectedItem.ToString()}%'";
+                }
+                billList = CSDL.CSDL.Instance.ExecuteQuery(tempQuery);
                 dgvBill_Show.DataSource = NormalizeBillList(billList);
                 return;
             }
             if (cbbBill_SearchType.SelectedItem == "Mã hợp đồng")
             {
-                billList = CSDL.CSDL.Instance.ExecuteQuery($@"select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,
+                string tempQuery = $@"select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,
                 TongTien,TienDaNop,HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu from HOADON inner join HOPDONG 
-                on HOADON.MaHD = HOPDONG.MaHD where MaHD like '%{txtBill_SearchInput.Text}%'");
+                on HOADON.MaHD = HOPDONG.MaHD where HOADON.MaHD like '%{txtBill_SearchInput.Text}%'";
+                if (cbbBill_SearchStatus.SelectedItem != null && cbbBill_SearchStatus.SelectedItem.ToString() != "Tất cả")
+                {
+                    tempQuery += $@" and HOADON.TrangThai like N'%{cbbBill_SearchStatus.SelectedItem.ToString()}%'";
+                }
+                billList = CSDL.CSDL.Instance.ExecuteQuery(tempQuery);
                 dgvBill_Show.DataSource = NormalizeBillList(billList);
                 return;
             }
         }
+
+        private void btnBill_Detail_Click(object sender, EventArgs e)
+        {
+            if(dgvBill_Show.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Hãy chọn hóa đơn cần xem chi tiết", "Thông báo", MessageBoxButtons.OK,
+                           MessageBoxIcon.Warning);
+                return;
+            }
+            DataGridViewCellCollection cell = dgvBill_Show.SelectedRows[0].Cells;
+            CSDL.HOADON tempBill = new CSDL.HOADON();
+            tempBill.MaHoaDon = (int)cell["Mã"].Value;
+            tempBill.NgayLap = (DateTime)cell["Ngày lập"].Value;
+            tempBill.HanThu = (DateTime)cell["Hạn thu"].Value;
+            tempBill.TuNgay = (DateTime)cell["Từ ngày"].Value;
+            tempBill.DenNgay = (DateTime)cell["Đến ngày"].Value;
+            tempBill.TongTien = decimal.Parse(cell["Tổng tiền"].Value.ToString());
+            tempBill.TienDaNop = decimal.Parse(cell["Đã nộp"].Value.ToString());
+            tempBill.TrangThai = cell["Trạng thái"].Value.ToString();
+            tempBill.MaHD = (int)cell["Mã hợp đồng"].Value;
+            tempBill.GhiChu = cell["Ghi chú"].Value.ToString();
+
+            
+
+            ThongTinHoaDon form = new ThongTinHoaDon();
+            form.stage = Stages.View;
+            form.bill = tempBill;
+            form.staffName = staff.TenNV;
+
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select * from CHITIETHOADON where MaHoaDon = {tempBill.MaHoaDon}");
+            foreach (DataRow item in temp.Rows)
+            {
+                CSDL.CHITIETHOADON tempDetailBill = new CSDL.CHITIETHOADON();
+                tempDetailBill.LoaiTien = item["LoaiTien"].ToString();
+                tempDetailBill.SoCu = (int)item["SoCu"];
+                tempDetailBill.SoCu = (int)item["SoMoi"];
+                tempDetailBill.DonGia = (decimal)item["DonGia"];
+                tempDetailBill.SoTien = (decimal)item["SoTien"];
+                tempDetailBill.DonViTinh = item["DonViTinh"].ToString();
+                tempDetailBill.MaHoaDon = (int)item["MaHoaDon"];
+                tempDetailBill.GhiChu = item["GhiChu"].ToString();
+                form.detailBillList.Add(tempDetailBill);
+            }
+            
+
+            form.ShowDialog();
+        }
+
+        private void btnBill_Refresh_Click(object sender, EventArgs e)
+        {
+            LoadBillList();
+        }
+
+        private void btnBill_Edit_Click(object sender, EventArgs e)
+        {
+            if (dgvBill_Show.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Hãy chọn hóa đơn cần thanh toán", "Thông báo", MessageBoxButtons.OK,
+                           MessageBoxIcon.Warning);
+                return;
+            }
+
+            DataGridViewCellCollection cell = dgvBill_Show.SelectedRows[0].Cells;
+            CSDL.HOADON tempBill = new CSDL.HOADON();
+            tempBill.MaHoaDon = (int)cell["Mã"].Value;
+            tempBill.NgayLap = (DateTime)cell["Ngày lập"].Value;
+            tempBill.HanThu = (DateTime)cell["Hạn thu"].Value;
+            tempBill.TuNgay = (DateTime)cell["Từ ngày"].Value;
+            tempBill.DenNgay = (DateTime)cell["Đến ngày"].Value;
+            tempBill.TongTien = decimal.Parse(cell["Tổng tiền"].Value.ToString());
+            tempBill.TienDaNop = decimal.Parse(cell["Đã nộp"].Value.ToString());
+            tempBill.TrangThai = cell["Trạng thái"].Value.ToString();
+            tempBill.MaHD = (int)cell["Mã hợp đồng"].Value;
+            tempBill.GhiChu = cell["Ghi chú"].Value.ToString();
+
+            if(tempBill.TrangThai == "Đủ")
+            {
+                MessageBox.Show("Hóa đơn này đã được thanh toán", "Thông báo", MessageBoxButtons.OK,
+                           MessageBoxIcon.Information);
+                return;
+            }
+
+            ThongTinHoaDon form = new ThongTinHoaDon();
+            form.stage = Stages.Update;
+            form.bill = tempBill;
+            form.staffName = staff.TenNV;
+            form.loadBillList += LoadBillList;
+
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select * from CHITIETHOADON where MaHoaDon = {tempBill.MaHoaDon}");
+            foreach (DataRow item in temp.Rows)
+            {
+                CSDL.CHITIETHOADON tempDetailBill = new CSDL.CHITIETHOADON();
+                tempDetailBill.LoaiTien = item["LoaiTien"].ToString();
+                tempDetailBill.SoCu = (int)item["SoCu"];
+                tempDetailBill.SoCu = (int)item["SoMoi"];
+                tempDetailBill.DonGia = (decimal)item["DonGia"];
+                tempDetailBill.SoTien = (decimal)item["SoTien"];
+                tempDetailBill.DonViTinh = item["DonViTinh"].ToString();
+                tempDetailBill.MaHoaDon = (int)item["MaHoaDon"];
+                tempDetailBill.GhiChu = item["GhiChu"].ToString();
+                form.detailBillList.Add(tempDetailBill);
+            }
+
+
+            form.ShowDialog();
+        }
+
+        #endregion
+
+        private void dgvStatistic_RoomList_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvStatistic_RoomList.SelectedRows.Count <= 0)
+            {
+                SetRoomStudentListData(null);
+                return;
+            }
+            SetRoomStudentListData(dgvStatistic_RoomList.SelectedRows[0].Cells);
+        }
+
+        private void SetRoomStudentListData(DataGridViewCellCollection _cell)
+        {
+            if (_cell == null)
+            {
+                dgvStatistic_StudentList.DataSource = null;
+                return;
+            }
+            string _roomID = _cell["Phòng"].Value.ToString();
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select SINHVIEN.MaSV,TenSV,GioiTinh,NgaySinh,SDT from SINHVIEN 
+            inner join HOPDONG on SINHVIEN.MaSV = HOPDONG.MaSV where HOPDONG.TrangThai = N'Còn hiệu lực' and MaPhong = 
+            '{_roomID}'");
+            temp.Columns["MaSV"].ColumnName = "Mã sinh viên";
+            temp.Columns["TenSV"].ColumnName = "Tên sinh viên";
+            temp.Columns["GioiTinh"].ColumnName = "Giới tính";
+            temp.Columns["NgaySinh"].ColumnName = "Ngày sinh";
+            temp.Columns["SDT"].ColumnName = "Số điện thoại";
+
+            dgvStatistic_StudentList.DataSource = temp;
+        }
+
 
         private void LoadComboBox()
         {
@@ -1287,8 +1366,6 @@ namespace QuanLyKiTucXa
                 cbbRoom_Building.Items.Add(row["MaTN"].ToString());
             }
         }
-
-        
     }
 }
 

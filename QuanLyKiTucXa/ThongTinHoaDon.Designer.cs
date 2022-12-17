@@ -56,9 +56,12 @@ namespace QuanLyKiTucXa
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.lbID = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +71,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStaffName.CustomButton.Image = null;
-            this.txtStaffName.CustomButton.Location = new System.Drawing.Point(192, 1);
+            this.txtStaffName.CustomButton.Location = new System.Drawing.Point(204, 1);
             this.txtStaffName.CustomButton.Name = "";
             this.txtStaffName.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txtStaffName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -79,7 +82,7 @@ namespace QuanLyKiTucXa
             this.txtStaffName.Enabled = false;
             this.txtStaffName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtStaffName.Lines = new string[0];
-            this.txtStaffName.Location = new System.Drawing.Point(472, 514);
+            this.txtStaffName.Location = new System.Drawing.Point(464, 514);
             this.txtStaffName.MaxLength = 32767;
             this.txtStaffName.Name = "txtStaffName";
             this.txtStaffName.PasswordChar = '\0';
@@ -88,7 +91,7 @@ namespace QuanLyKiTucXa
             this.txtStaffName.SelectionLength = 0;
             this.txtStaffName.SelectionStart = 0;
             this.txtStaffName.ShortcutsEnabled = true;
-            this.txtStaffName.Size = new System.Drawing.Size(220, 29);
+            this.txtStaffName.Size = new System.Drawing.Size(232, 29);
             this.txtStaffName.TabIndex = 81;
             this.txtStaffName.UseSelectable = true;
             this.txtStaffName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -128,6 +131,7 @@ namespace QuanLyKiTucXa
             // dgvShow
             // 
             this.dgvShow.AllowUserToResizeRows = false;
+            this.dgvShow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvShow.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvShow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvShow.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -195,8 +199,8 @@ namespace QuanLyKiTucXa
             this.cbbStatus.FormattingEnabled = true;
             this.cbbStatus.ItemHeight = 23;
             this.cbbStatus.Items.AddRange(new object[] {
-            "Còn hiệu lực",
-            "Hết hiệu lực"});
+            "Đủ",
+            "Thiếu"});
             this.cbbStatus.Location = new System.Drawing.Point(180, 343);
             this.cbbStatus.Name = "cbbStatus";
             this.cbbStatus.Size = new System.Drawing.Size(220, 29);
@@ -215,7 +219,7 @@ namespace QuanLyKiTucXa
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(371, 514);
+            this.metroLabel4.Location = new System.Drawing.Point(363, 514);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(68, 19);
             this.metroLabel4.TabIndex = 66;
@@ -316,7 +320,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtSum.CustomButton.Image = null;
-            this.txtSum.CustomButton.Location = new System.Drawing.Point(192, 1);
+            this.txtSum.CustomButton.Location = new System.Drawing.Point(150, 1);
             this.txtSum.CustomButton.Name = "";
             this.txtSum.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txtSum.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -324,6 +328,7 @@ namespace QuanLyKiTucXa
             this.txtSum.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSum.CustomButton.UseSelectable = true;
             this.txtSum.CustomButton.Visible = false;
+            this.txtSum.Enabled = false;
             this.txtSum.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtSum.Lines = new string[0];
             this.txtSum.Location = new System.Drawing.Point(872, 463);
@@ -335,7 +340,7 @@ namespace QuanLyKiTucXa
             this.txtSum.SelectionLength = 0;
             this.txtSum.SelectionStart = 0;
             this.txtSum.ShortcutsEnabled = true;
-            this.txtSum.Size = new System.Drawing.Size(220, 29);
+            this.txtSum.Size = new System.Drawing.Size(178, 29);
             this.txtSum.TabIndex = 83;
             this.txtSum.UseSelectable = true;
             this.txtSum.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -356,7 +361,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtSubmit.CustomButton.Image = null;
-            this.txtSubmit.CustomButton.Location = new System.Drawing.Point(153, 1);
+            this.txtSubmit.CustomButton.Location = new System.Drawing.Point(143, 1);
             this.txtSubmit.CustomButton.Name = "";
             this.txtSubmit.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txtSubmit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -366,7 +371,7 @@ namespace QuanLyKiTucXa
             this.txtSubmit.CustomButton.Visible = false;
             this.txtSubmit.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtSubmit.Lines = new string[0];
-            this.txtSubmit.Location = new System.Drawing.Point(567, 463);
+            this.txtSubmit.Location = new System.Drawing.Point(533, 463);
             this.txtSubmit.MaxLength = 32767;
             this.txtSubmit.Name = "txtSubmit";
             this.txtSubmit.PasswordChar = '\0';
@@ -375,11 +380,12 @@ namespace QuanLyKiTucXa
             this.txtSubmit.SelectionLength = 0;
             this.txtSubmit.SelectionStart = 0;
             this.txtSubmit.ShortcutsEnabled = true;
-            this.txtSubmit.Size = new System.Drawing.Size(181, 29);
+            this.txtSubmit.Size = new System.Drawing.Size(171, 29);
             this.txtSubmit.TabIndex = 85;
             this.txtSubmit.UseSelectable = true;
             this.txtSubmit.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSubmit.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSubmit.TextChanged += new System.EventHandler(this.txtSubmit_TextChanged);
             // 
             // metroLabel11
             // 
@@ -423,6 +429,7 @@ namespace QuanLyKiTucXa
             this.btnDelete.Text = "XÓA MỤC";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -446,13 +453,49 @@ namespace QuanLyKiTucXa
             this.btnReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnReturn.Image = global::QuanLyKiTucXa.Properties.Resources.undo__1_;
             this.btnReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReturn.Location = new System.Drawing.Point(819, 514);
+            this.btnReturn.Location = new System.Drawing.Point(854, 516);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(114, 44);
             this.btnReturn.TabIndex = 75;
             this.btnReturn.Text = "QUAY LẠI";
             this.btnReturn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // lbID
+            // 
+            this.lbID.AutoSize = true;
+            this.lbID.Location = new System.Drawing.Point(909, 25);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(0, 0);
+            this.lbID.TabIndex = 91;
+            // 
+            // metroLabel12
+            // 
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.Location = new System.Drawing.Point(1056, 473);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(36, 19);
+            this.metroLabel12.TabIndex = 92;
+            this.metroLabel12.Text = "VNĐ";
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Location = new System.Drawing.Point(872, 25);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(31, 19);
+            this.metroLabel10.TabIndex = 90;
+            this.metroLabel10.Text = "Mã:";
+            // 
+            // metroLabel13
+            // 
+            this.metroLabel13.AutoSize = true;
+            this.metroLabel13.Location = new System.Drawing.Point(710, 473);
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.Size = new System.Drawing.Size(36, 19);
+            this.metroLabel13.TabIndex = 93;
+            this.metroLabel13.Text = "VNĐ";
             // 
             // btnCreate
             // 
@@ -465,32 +508,35 @@ namespace QuanLyKiTucXa
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(114, 44);
             this.btnCreate.TabIndex = 74;
-            this.btnCreate.Text = "LƯU";
+            this.btnCreate.Text = "TẠO";
             this.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // metroLabel10
+            // btnConfirm
             // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(872, 25);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(31, 19);
-            this.metroLabel10.TabIndex = 90;
-            this.metroLabel10.Text = "Mã:";
-            // 
-            // lbID
-            // 
-            this.lbID.AutoSize = true;
-            this.lbID.Location = new System.Drawing.Point(909, 25);
-            this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(0, 0);
-            this.lbID.TabIndex = 91;
+            this.btnConfirm.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnConfirm.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
+            this.btnConfirm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfirm.Location = new System.Drawing.Point(114, 514);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(161, 44);
+            this.btnConfirm.TabIndex = 94;
+            this.btnConfirm.Text = "XÁC NHẬN";
+            this.btnConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // ThongTinHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 599);
+            this.Controls.Add(this.btnConfirm);
+            this.Controls.Add(this.metroLabel13);
+            this.Controls.Add(this.metroLabel12);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.metroLabel10);
             this.Controls.Add(this.dtpLimitDay);
@@ -535,7 +581,6 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroTextBox txtStaffName;
         private MetroFramework.Controls.MetroTextBox txtStudentID;
         private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.Button btnCreate;
         private MetroFramework.Controls.MetroGrid dgvShow;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLabel metroLabel7;
@@ -557,7 +602,11 @@ namespace QuanLyKiTucXa
         private System.Windows.Forms.Button btnDelete;
         private MetroFramework.Controls.MetroDateTime dtpLimitDay;
         private MetroFramework.Controls.MetroLabel metroLabel9;
-        private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroLabel lbID;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private MetroFramework.Controls.MetroLabel metroLabel13;
+        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnConfirm;
     }
 }

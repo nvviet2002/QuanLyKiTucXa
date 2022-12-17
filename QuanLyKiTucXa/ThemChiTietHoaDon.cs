@@ -14,6 +14,7 @@ namespace QuanLyKiTucXa
     public partial class ThemChiTietHoaDon : MetroFramework.Forms.MetroForm
     {
         public int maHoaDon;
+        public ThongTinHoaDon billForm;
         public ThemChiTietHoaDon()
         {
             InitializeComponent();
@@ -70,13 +71,29 @@ namespace QuanLyKiTucXa
             if(cbbType.SelectedItem == null || cbbUnit.SelectedItem == null || txtNewNum.Text.Trim() == ""||
             txtOldNum.Text.Trim() == "" || txtPrice.Text.Trim() == "" || txtMoney.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn hãy nhận đủ dữ liệu", "Thông báo", MessageBoxButtons.OK,
+                MessageBox.Show("Bạn hãy nhập đủ dữ liệu", "Thông báo", MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return;
             }
-            if(maHoaDon != null)
+            CSDL.CHITIETHOADON tempDetailBill = new CSDL.CHITIETHOADON();
+            tempDetailBill.LoaiTien = cbbType.SelectedItem.ToString();
+            tempDetailBill.SoCu = int.Parse(txtOldNum.Text);
+            tempDetailBill.SoMoi = int.Parse(txtNewNum.Text);
+            tempDetailBill.DonGia = decimal.Parse(txtPrice.Text);
+            tempDetailBill.DonViTinh = cbbUnit.SelectedItem.ToString();
+            tempDetailBill.SoTien = decimal.Parse(txtMoney.Text);
+            tempDetailBill.GhiChu = txtNote.Text;
+            billForm.detailBillList.Add(tempDetailBill);
+            billForm.LoadDetailBillTable();
+            this.Close();
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+            decimal tempNum;
+            if (decimal.TryParse(txtPrice.Text,out tempNum) == true)
             {
-                
+                txtMoney.Text = (tempNum * (int.Parse(txtNewNum.Text) - int.Parse(txtOldNum.Text))).ToString();
             }
         }
     }

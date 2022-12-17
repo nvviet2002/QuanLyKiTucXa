@@ -817,9 +817,105 @@ namespace QuanLyKiTucXa.CSDL
             }
         }
 
-        
+        public bool UpdateBill(HOADON _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"update HOADON set TienDaNop = @tiendanop,TrangThai = @trangthai
+                    ,GhiChu = @ghichu where MaHoaDon = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Char).Value = _value.MaHoaDon;
+                    command.Parameters.Add("@tiendanop", SqlDbType.Decimal).Value = _value.TienDaNop;
+                    command.Parameters.Add("@trangthai", SqlDbType.NVarChar).Value = _value.TrangThai;
+                    command.Parameters.Add("@ghichu", SqlDbType.Char).Value = _value.GhiChu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
 
+        public bool AddDetailBill(CHITIETHOADON _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"insert into CHITIETHOADON values(@loaitien,@socu,@somoi,@dongia
+                    ,@donvitinh,@sotien,@mahoadon,@ghichu)", connect);
+                    command.Parameters.Add("@loaitien", SqlDbType.NVarChar).Value = _value.LoaiTien;
+                    command.Parameters.Add("@socu", SqlDbType.Int).Value = _value.SoCu;
+                    command.Parameters.Add("@somoi", SqlDbType.Int).Value = _value.SoMoi;
+                    command.Parameters.Add("@dongia", SqlDbType.Decimal).Value = _value.DonGia;
+                    command.Parameters.Add("@donvitinh", SqlDbType.NVarChar).Value = _value.DonViTinh;
+                    command.Parameters.Add("@sotien", SqlDbType.Decimal).Value = _value.SoTien;
+                    command.Parameters.Add("@mahoadon", SqlDbType.Int).Value = _value.MaHoaDon;
+                    command.Parameters.Add("@ghichu", SqlDbType.NVarChar).Value = _value.GhiChu;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
 
+        public bool DeleteBill(int _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from HOADON where MaHoaDon = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Int).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
+        public bool DeleteDetailBill(int _value)
+        {
+            using (SqlConnection connect = new SqlConnection(connectionStr))
+            {
+                try
+                {
+                    connect.Open();
+                    SqlCommand command = new SqlCommand(@"delete from CHITIETHOADON where MaHoaDon = @ma", connect);
+                    command.Parameters.Add("@ma", SqlDbType.Int).Value = _value;
+                    command.ExecuteNonQuery();
+                    connect.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    connect.Close();
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
     }
 }
 

@@ -82,7 +82,7 @@ namespace QuanLyKiTucXa
         private void btnRoom_Save_Click(object sender, EventArgs e)
         {
             if (txtStaffName.Text == "" || txtStudentID.Text.Trim() == "" || cbbRoomID.SelectedItem == null
-            || cbbStatus.SelectedItem == null || txtNote.Text.Trim() == "" ){
+            || cbbStatus.SelectedItem == null ){
                 MessageBox.Show("Bạn chưa nhập đủ dữ liệu", "Thông báo", MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return;
