@@ -423,8 +423,9 @@ insert into HOPDONG values(-1,'1-1-1','1-1-1','1-1-1',N'Còn hiệu lực','NV00
 
 
 
+select * from SINHVIEN where TaiKhoan = 'viet86710'
+
 select * from TAIKHOAN where TaiKhoan = '' and MatKhau = ''
-select * from SINHVIEN where MaTK = 3
 update SINHVIEN
 set TenSV = {}, cot2 = gia_tri2...., cotN = gia_triN
 where [DIEU_KIEN];
@@ -473,6 +474,23 @@ on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
 select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,TongTien,TienDaNop,
 HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu
 from HOADON inner join HOPDONG on HOADON.MaHD = HOPDONG.MaHD
+
+select HOPDONG.MaSV,TenSV,GioiTinh,NgaySinh,SDT from SINHVIEN inner join HOPDONG on SINHVIEN.MaSV = HOPDONG.MaSV
+where HOPDONG.TrangThai = N'Còn hiệu lực' and MaPhong = 'C4201'
+
+select COUNT(*) as SL,TenLoaiPhong from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+group by TenLoaiPhong
+
+select COUNT(*) as SL,CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi)) as SoNguoiO 
+from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+group by CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi))
+
+select COUNT(*) as SL,(CONVERT(int,SoNguoi) - CONVERT(int,TongSoHD)) as TrangThai 
+from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+group by CONVERT(int,SoNguoi) - CONVERT(int,TongSoHD)
+
+select sum(TongTien) as TongTien,SUM(TienDaNop) as TienDaNop,YEAR(HanThu) as Nam from HOADON group by YEAR(HanThu)
+select sum(TienDaNop),YEAR(HanThu) as Nam from HOADON group by YEAR(HanThu)
 
 insert into HOADON values('1-1-2022','1-1-2022','1-2-2022','1-5-2022'
                     ,1000000,500001,N'Thiếu',6,N'ok')

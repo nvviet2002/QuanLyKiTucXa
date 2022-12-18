@@ -43,6 +43,11 @@ namespace QuanLyKiTucXa
             this.txtStudent_Password = new MetroFramework.Controls.MetroTextBox();
             this.txtStudent_AccountName = new MetroFramework.Controls.MetroTextBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtStudent_Address = new MetroFramework.Controls.MetroTextBox();
+            this.txtStudent_Faculty = new MetroFramework.Controls.MetroTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtStudent_Class = new MetroFramework.Controls.MetroTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,11 +61,6 @@ namespace QuanLyKiTucXa
             this.txtStudent_Note = new MetroFramework.Controls.MetroTextBox();
             this.txtStudent_Name = new MetroFramework.Controls.MetroTextBox();
             this.txtStudent_ID = new MetroFramework.Controls.MetroTextBox();
-            this.txtStudent_Class = new MetroFramework.Controls.MetroTextBox();
-            this.txtStudent_Faculty = new MetroFramework.Controls.MetroTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtStudent_Address = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.SuspendLayout();
@@ -68,12 +68,13 @@ namespace QuanLyKiTucXa
             // txtStudent_Return
             // 
             this.txtStudent_Return.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtStudent_Return.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudent_Return.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.txtStudent_Return.Image = global::QuanLyKiTucXa.Properties.Resources.undo__1_;
             this.txtStudent_Return.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.txtStudent_Return.Location = new System.Drawing.Point(747, 494);
             this.txtStudent_Return.Name = "txtStudent_Return";
-            this.txtStudent_Return.Size = new System.Drawing.Size(114, 44);
+            this.txtStudent_Return.Size = new System.Drawing.Size(131, 44);
             this.txtStudent_Return.TabIndex = 50;
             this.txtStudent_Return.Text = "QUAY LẠI";
             this.txtStudent_Return.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -82,7 +83,8 @@ namespace QuanLyKiTucXa
             // 
             // btnStudent_Save
             // 
-            this.btnStudent_Save.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStudent_Save.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnStudent_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudent_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnStudent_Save.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
             this.btnStudent_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,6 +335,119 @@ namespace QuanLyKiTucXa
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Thông tin sinh viên:";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(326, 150);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Địa chỉ:";
+            // 
+            // txtStudent_Address
+            // 
+            // 
+            // 
+            // 
+            this.txtStudent_Address.CustomButton.Image = null;
+            this.txtStudent_Address.CustomButton.Location = new System.Drawing.Point(155, 2);
+            this.txtStudent_Address.CustomButton.Name = "";
+            this.txtStudent_Address.CustomButton.Size = new System.Drawing.Size(47, 47);
+            this.txtStudent_Address.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtStudent_Address.CustomButton.TabIndex = 1;
+            this.txtStudent_Address.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtStudent_Address.CustomButton.UseSelectable = true;
+            this.txtStudent_Address.CustomButton.Visible = false;
+            this.txtStudent_Address.Lines = new string[0];
+            this.txtStudent_Address.Location = new System.Drawing.Point(420, 142);
+            this.txtStudent_Address.MaxLength = 32767;
+            this.txtStudent_Address.Multiline = true;
+            this.txtStudent_Address.Name = "txtStudent_Address";
+            this.txtStudent_Address.PasswordChar = '\0';
+            this.txtStudent_Address.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtStudent_Address.SelectedText = "";
+            this.txtStudent_Address.SelectionLength = 0;
+            this.txtStudent_Address.SelectionStart = 0;
+            this.txtStudent_Address.ShortcutsEnabled = true;
+            this.txtStudent_Address.Size = new System.Drawing.Size(205, 52);
+            this.txtStudent_Address.TabIndex = 35;
+            this.txtStudent_Address.UseSelectable = true;
+            this.txtStudent_Address.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtStudent_Address.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txtStudent_Faculty
+            // 
+            // 
+            // 
+            // 
+            this.txtStudent_Faculty.CustomButton.Image = null;
+            this.txtStudent_Faculty.CustomButton.Location = new System.Drawing.Point(154, 1);
+            this.txtStudent_Faculty.CustomButton.Name = "";
+            this.txtStudent_Faculty.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStudent_Faculty.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtStudent_Faculty.CustomButton.TabIndex = 1;
+            this.txtStudent_Faculty.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtStudent_Faculty.CustomButton.UseSelectable = true;
+            this.txtStudent_Faculty.CustomButton.Visible = false;
+            this.txtStudent_Faculty.Lines = new string[0];
+            this.txtStudent_Faculty.Location = new System.Drawing.Point(776, 38);
+            this.txtStudent_Faculty.MaxLength = 3000;
+            this.txtStudent_Faculty.Name = "txtStudent_Faculty";
+            this.txtStudent_Faculty.PasswordChar = '\0';
+            this.txtStudent_Faculty.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtStudent_Faculty.SelectedText = "";
+            this.txtStudent_Faculty.SelectionLength = 0;
+            this.txtStudent_Faculty.SelectionStart = 0;
+            this.txtStudent_Faculty.ShortcutsEnabled = true;
+            this.txtStudent_Faculty.Size = new System.Drawing.Size(182, 29);
+            this.txtStudent_Faculty.TabIndex = 34;
+            this.txtStudent_Faculty.UseSelectable = true;
+            this.txtStudent_Faculty.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtStudent_Faculty.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(639, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 20);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Khoa:";
+            // 
+            // txtStudent_Class
+            // 
+            // 
+            // 
+            // 
+            this.txtStudent_Class.CustomButton.Image = null;
+            this.txtStudent_Class.CustomButton.Location = new System.Drawing.Point(154, 1);
+            this.txtStudent_Class.CustomButton.Name = "";
+            this.txtStudent_Class.CustomButton.Size = new System.Drawing.Size(27, 27);
+            this.txtStudent_Class.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtStudent_Class.CustomButton.TabIndex = 1;
+            this.txtStudent_Class.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtStudent_Class.CustomButton.UseSelectable = true;
+            this.txtStudent_Class.CustomButton.Visible = false;
+            this.txtStudent_Class.Lines = new string[0];
+            this.txtStudent_Class.Location = new System.Drawing.Point(776, 84);
+            this.txtStudent_Class.MaxLength = 3000;
+            this.txtStudent_Class.Name = "txtStudent_Class";
+            this.txtStudent_Class.PasswordChar = '\0';
+            this.txtStudent_Class.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtStudent_Class.SelectedText = "";
+            this.txtStudent_Class.SelectionLength = 0;
+            this.txtStudent_Class.SelectionStart = 0;
+            this.txtStudent_Class.ShortcutsEnabled = true;
+            this.txtStudent_Class.Size = new System.Drawing.Size(182, 29);
+            this.txtStudent_Class.TabIndex = 32;
+            this.txtStudent_Class.UseSelectable = true;
+            this.txtStudent_Class.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtStudent_Class.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -552,119 +667,6 @@ namespace QuanLyKiTucXa
             this.txtStudent_ID.UseSelectable = true;
             this.txtStudent_ID.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtStudent_ID.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtStudent_Class
-            // 
-            // 
-            // 
-            // 
-            this.txtStudent_Class.CustomButton.Image = null;
-            this.txtStudent_Class.CustomButton.Location = new System.Drawing.Point(154, 1);
-            this.txtStudent_Class.CustomButton.Name = "";
-            this.txtStudent_Class.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.txtStudent_Class.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtStudent_Class.CustomButton.TabIndex = 1;
-            this.txtStudent_Class.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtStudent_Class.CustomButton.UseSelectable = true;
-            this.txtStudent_Class.CustomButton.Visible = false;
-            this.txtStudent_Class.Lines = new string[0];
-            this.txtStudent_Class.Location = new System.Drawing.Point(776, 84);
-            this.txtStudent_Class.MaxLength = 3000;
-            this.txtStudent_Class.Name = "txtStudent_Class";
-            this.txtStudent_Class.PasswordChar = '\0';
-            this.txtStudent_Class.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtStudent_Class.SelectedText = "";
-            this.txtStudent_Class.SelectionLength = 0;
-            this.txtStudent_Class.SelectionStart = 0;
-            this.txtStudent_Class.ShortcutsEnabled = true;
-            this.txtStudent_Class.Size = new System.Drawing.Size(182, 29);
-            this.txtStudent_Class.TabIndex = 32;
-            this.txtStudent_Class.UseSelectable = true;
-            this.txtStudent_Class.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtStudent_Class.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtStudent_Faculty
-            // 
-            // 
-            // 
-            // 
-            this.txtStudent_Faculty.CustomButton.Image = null;
-            this.txtStudent_Faculty.CustomButton.Location = new System.Drawing.Point(154, 1);
-            this.txtStudent_Faculty.CustomButton.Name = "";
-            this.txtStudent_Faculty.CustomButton.Size = new System.Drawing.Size(27, 27);
-            this.txtStudent_Faculty.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtStudent_Faculty.CustomButton.TabIndex = 1;
-            this.txtStudent_Faculty.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtStudent_Faculty.CustomButton.UseSelectable = true;
-            this.txtStudent_Faculty.CustomButton.Visible = false;
-            this.txtStudent_Faculty.Lines = new string[0];
-            this.txtStudent_Faculty.Location = new System.Drawing.Point(776, 38);
-            this.txtStudent_Faculty.MaxLength = 3000;
-            this.txtStudent_Faculty.Name = "txtStudent_Faculty";
-            this.txtStudent_Faculty.PasswordChar = '\0';
-            this.txtStudent_Faculty.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtStudent_Faculty.SelectedText = "";
-            this.txtStudent_Faculty.SelectionLength = 0;
-            this.txtStudent_Faculty.SelectionStart = 0;
-            this.txtStudent_Faculty.ShortcutsEnabled = true;
-            this.txtStudent_Faculty.Size = new System.Drawing.Size(182, 29);
-            this.txtStudent_Faculty.TabIndex = 34;
-            this.txtStudent_Faculty.UseSelectable = true;
-            this.txtStudent_Faculty.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtStudent_Faculty.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(639, 47);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 20);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Khoa:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(326, 150);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 20);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Địa chỉ:";
-            // 
-            // txtStudent_Address
-            // 
-            // 
-            // 
-            // 
-            this.txtStudent_Address.CustomButton.Image = null;
-            this.txtStudent_Address.CustomButton.Location = new System.Drawing.Point(155, 2);
-            this.txtStudent_Address.CustomButton.Name = "";
-            this.txtStudent_Address.CustomButton.Size = new System.Drawing.Size(47, 47);
-            this.txtStudent_Address.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtStudent_Address.CustomButton.TabIndex = 1;
-            this.txtStudent_Address.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtStudent_Address.CustomButton.UseSelectable = true;
-            this.txtStudent_Address.CustomButton.Visible = false;
-            this.txtStudent_Address.Lines = new string[0];
-            this.txtStudent_Address.Location = new System.Drawing.Point(420, 142);
-            this.txtStudent_Address.MaxLength = 32767;
-            this.txtStudent_Address.Multiline = true;
-            this.txtStudent_Address.Name = "txtStudent_Address";
-            this.txtStudent_Address.PasswordChar = '\0';
-            this.txtStudent_Address.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtStudent_Address.SelectedText = "";
-            this.txtStudent_Address.SelectionLength = 0;
-            this.txtStudent_Address.SelectionStart = 0;
-            this.txtStudent_Address.ShortcutsEnabled = true;
-            this.txtStudent_Address.Size = new System.Drawing.Size(205, 52);
-            this.txtStudent_Address.TabIndex = 35;
-            this.txtStudent_Address.UseSelectable = true;
-            this.txtStudent_Address.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtStudent_Address.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // ThongTinSinhVien
             // 

@@ -254,5 +254,10 @@ namespace QuanLyKiTucXa
                 return;
             }
         }
+
+        public void ViewForStudent()
+        {
+            txtStaffName.Hide();
+        }
     }
 }

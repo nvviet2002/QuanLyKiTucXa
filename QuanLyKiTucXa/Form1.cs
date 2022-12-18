@@ -37,7 +37,6 @@ namespace QuanLyKiTucXa
             this.txtPassword = new MetroFramework.Controls.MetroTextBox();
             this.btnSignIn = new MetroFramework.Controls.MetroButton();
             this.btnExit = new MetroFramework.Controls.MetroButton();
-            this.llbSignUp = new System.Windows.Forms.LinkLabel();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
@@ -94,7 +93,7 @@ namespace QuanLyKiTucXa
             this.txtPassword.Location = new System.Drawing.Point(81, 267);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.PasswordChar = '\0';
             this.txtPassword.PromptText = "Nhập mật khẩu";
             this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPassword.SelectedText = "";
@@ -104,7 +103,6 @@ namespace QuanLyKiTucXa
             this.txtPassword.Size = new System.Drawing.Size(177, 30);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.UseSelectable = true;
-            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.WaterMark = "Nhập mật khẩu";
             this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -128,16 +126,6 @@ namespace QuanLyKiTucXa
             this.btnExit.Text = "Thoát";
             this.btnExit.UseSelectable = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // llbSignUp
-            // 
-            this.llbSignUp.AutoSize = true;
-            this.llbSignUp.Location = new System.Drawing.Point(109, 385);
-            this.llbSignUp.Name = "llbSignUp";
-            this.llbSignUp.Size = new System.Drawing.Size(73, 13);
-            this.llbSignUp.TabIndex = 7;
-            this.llbSignUp.TabStop = true;
-            this.llbSignUp.Text = "Đăng ký ngay";
             // 
             // metroPanel3
             // 
@@ -204,7 +192,6 @@ namespace QuanLyKiTucXa
             this.AcceptButton = this.btnSignIn;
             this.ClientSize = new System.Drawing.Size(307, 418);
             this.Controls.Add(this.ckbHidePassword);
-            this.Controls.Add(this.llbSignUp);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.txtPassword);
@@ -270,21 +257,27 @@ namespace QuanLyKiTucXa
                     this.Show();
                     return;
                 }
-                if (tempTK.LoaiTK.Equals("Nhân viên"))
+                if (tempTK.LoaiTK.Equals("Quản trị viên"))
                 {
-                    nhanvien form = new nhanvien();
+                    admin form = new admin();
                     form.Tag = tempTK;
                     this.Hide();
                     form.ShowDialog();
                     this.Show();
                     return;
                 }
+                nhanvien form1 = new nhanvien();
+                form1.Tag = tempTK;
+                this.Hide();
+                form1.ShowDialog();
+                this.Show();
+                return;
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SignInAutomaticly();
+            //SignInAutomaticly();
         }
     }
 }

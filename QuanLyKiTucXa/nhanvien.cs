@@ -58,6 +58,8 @@ namespace QuanLyKiTucXa
             LoadRoomList();
             LoadContractList();
             LoadBillList();
+            LoadStatistic();
+            LoadSumAll();
             LoadComboBox();
             
         }
@@ -72,8 +74,8 @@ namespace QuanLyKiTucXa
         public void LoadStaffList()
         {
             staffList = CSDL.CSDL.Instance.ExecuteQuery($@"select * from NHANVIEN");
-
             dgvStaff_Show.DataSource = NormalizeStaffList(staffList);
+            LoadSumAll();
         }
 
         DataTable NormalizeStaffList(DataTable _table)
@@ -175,6 +177,7 @@ namespace QuanLyKiTucXa
             studentList = CSDL.CSDL.Instance.ExecuteQuery($@"select * from SINHVIEN");
 
             dgvStudent_Show.DataSource = NormalizeStudentList(studentList);
+            LoadSumAll();
         }
 
         DataTable NormalizeStudentList(DataTable _table)
@@ -416,7 +419,7 @@ namespace QuanLyKiTucXa
             buildingList = CSDL.CSDL.Instance.ExecuteQuery($@"select * from TOANHA");
 
             dgvBuilding_Show.DataSource = NormalizeBuildingList(buildingList);
-
+            LoadSumAll();
             SetBuildingControls(false);
         }
 
@@ -803,7 +806,7 @@ namespace QuanLyKiTucXa
             ,SoNguoi from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong");
 
             dgvRoom_Show.DataSource = dgvStatistic_RoomList.DataSource =  NormalizeRoomList(roomList);
-
+            LoadSumAll();
             SetRoomControls(false);
         }
 
@@ -1011,6 +1014,7 @@ namespace QuanLyKiTucXa
             contractList = CSDL.CSDL.Instance.ExecuteQuery($@"select * from HOPDONG");
 
             dgvContract_Show.DataSource = NormalizeContractList(contractList);
+            LoadSumAll();
         }
 
         private void btnContract_Add_Click(object sender, EventArgs e)
@@ -1114,10 +1118,6 @@ namespace QuanLyKiTucXa
 
         #endregion
 
-       
-
-       
-
         #region Bill
 
         DataTable NormalizeBillList(DataTable _table)
@@ -1144,6 +1144,7 @@ namespace QuanLyKiTucXa
             on HOADON.MaHD = HOPDONG.MaHD");
 
             dgvBill_Show.DataSource = NormalizeBillList(billList);
+            LoadSumAll();
         }
 
         private void btnBill_Add_Click(object sender, EventArgs e)
@@ -1342,6 +1343,45 @@ namespace QuanLyKiTucXa
             dgvStatistic_StudentList.DataSource = temp;
         }
 
+        private void LoadRoomWithRoomType()
+        {
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select COUNT(*) as SL,TenLoaiPhong from PHONG inner join 
+            LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong group by TenLoaiPhong");
+            cStatistic_RoomWithRoomType.DataSource = temp;
+            cStatistic_RoomWithRoomType.Series[0].XValueMember = "TenLoaiPhong";
+            cStatistic_RoomWithRoomType.Series[0].YValueMembers = "SL";
+        }
+
+        private void LoadRoomWithStatus()
+        {
+           
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select COUNT(*) as SL,CONCAT(CONVERT(char(1),TongSoHD),'/',
+            CONVERT(char(1),SoNguoi)) as TrangThai from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+            group by CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi))");
+
+            cStatistic_RoomWithStatus.DataSource = temp;
+            cStatistic_RoomWithStatus.Series[0].XValueMember = "TrangThai";
+            cStatistic_RoomWithStatus.Series[0].YValueMembers = "SL";
+        }
+
+        private void LoadMoney()
+        {
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select sum(TongTien) as TongTien,SUM(TienDaNop) as TienDaNop,YEAR(HanThu) as
+            Nam from HOADON group by YEAR(HanThu)");
+
+            cStatistic_Money.DataSource = temp;
+            cStatistic_Money.Series[0].XValueMember = "Nam";
+            cStatistic_Money.Series[0].YValueMembers = "TongTien";
+            cStatistic_Money.Series[1].XValueMember = "Nam";
+            cStatistic_Money.Series[1].YValueMembers = "TienDaNop";
+        }
+
+        private void LoadStatistic()
+        {
+            LoadRoomWithRoomType();
+            LoadRoomWithStatus();
+            LoadMoney();
+        }
 
         private void LoadComboBox()
         {
@@ -1366,6 +1406,61 @@ namespace QuanLyKiTucXa
                 cbbRoom_Building.Items.Add(row["MaTN"].ToString());
             }
         }
+
+        private void metroTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(metroTabControl1.SelectedIndex == 5)
+            {
+                LoadStatistic();
+            }
+        }
+
+        public void RefreshAccount()
+        {
+            DataTable table = CSDL.CSDL.Instance.ExecuteQuery(
+                $@"select * from TAIKHOAN where TaiKhoan = '{staffAccount.TaiKhoan}' ");
+            if (table.Rows.Count == 1)
+            {
+
+                CSDL.TAIKHOAN tempTK = new CSDL.TAIKHOAN();
+                tempTK.TaiKhoan = table.Rows[0]["TaiKhoan"].ToString();
+                tempTK.MatKhau = table.Rows[0]["MatKhau"].ToString();
+                tempTK.LoaiTK = table.Rows[0]["LoaiTK"].ToString();
+                tempTK.Email = table.Rows[0]["Email"].ToString();
+                tempTK.Ghichu = table.Rows[0]["GhiChu"].ToString();
+                staffAccount = tempTK;
+            }
+        }
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            dangky form = new dangky();
+            form.account = staffAccount;
+            form.refreshAccountData += RefreshAccount;
+            form.ShowDialog();
+        }
+
+        private void LoadSumAll()
+        {
+            DataTable temp = CSDL.CSDL.Instance.ExecuteQuery($@"select count(*) as Tong from NHANVIEN");
+            lbStaff_Sum.Text = temp.Rows[0]["Tong"].ToString();
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select count(*) as Tong from SINHVIEN");
+            lbStudent_Sum.Text = temp.Rows[0]["Tong"].ToString();
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select count(*) as Tong from TOANHA");
+            lbBuilding_Sum.Text = temp.Rows[0]["Tong"].ToString();
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select count(*) as Tong from PHONG");
+            lbRoom_SumRoom.Text = temp.Rows[0]["Tong"].ToString();
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select count(*) as Tong from HOADON");
+            lbBill_Sum.Text = temp.Rows[0]["Tong"].ToString();
+
+            temp = CSDL.CSDL.Instance.ExecuteQuery($@"select count(*) as Tong from HOPDONG");
+            lbContract_Sum.Text = temp.Rows[0]["Tong"].ToString();
+        }
+
+  
     }
 }
 

@@ -29,10 +29,25 @@ namespace QuanLyKiTucXa
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.lbStaff_Sum = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.btnDetail = new System.Windows.Forms.Button();
             this.btnStaff_Delete = new System.Windows.Forms.Button();
             this.btnSstaff_Edit = new System.Windows.Forms.Button();
@@ -43,6 +58,8 @@ namespace QuanLyKiTucXa
             this.cbbStaff_SearchType = new MetroFramework.Controls.MetroComboBox();
             this.dgvStaff_Show = new System.Windows.Forms.DataGridView();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.lbStudent_Sum = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.btnStudent_Detail = new System.Windows.Forms.Button();
             this.btnStudent_Delete = new System.Windows.Forms.Button();
             this.btnStudent_Edit = new System.Windows.Forms.Button();
@@ -74,6 +91,8 @@ namespace QuanLyKiTucXa
             this.txtArea_Note = new MetroFramework.Controls.MetroTextBox();
             this.txtArea_ID = new MetroFramework.Controls.MetroTextBox();
             this.metroTabPage8 = new MetroFramework.Controls.MetroTabPage();
+            this.lbBuilding_Sum = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.dgvBuilding_Show = new System.Windows.Forms.DataGridView();
             this.btnBuilding_Save = new System.Windows.Forms.Button();
             this.btnBuilding_Delete = new System.Windows.Forms.Button();
@@ -129,6 +148,12 @@ namespace QuanLyKiTucXa
             this.txtDevice_Note = new MetroFramework.Controls.MetroTextBox();
             this.txtDevice_ID = new MetroFramework.Controls.MetroTextBox();
             this.metroTabPage10 = new MetroFramework.Controls.MetroTabPage();
+            this.lbRoom_SumDevice = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.lbRoom_SumRoom = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.dgvRoom_ShowDevice = new System.Windows.Forms.DataGridView();
@@ -152,6 +177,8 @@ namespace QuanLyKiTucXa
             this.btnRoom_Edit = new System.Windows.Forms.Button();
             this.btnRoom_Add = new System.Windows.Forms.Button();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.lbContract_Sum = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
             this.dgvContract_Show = new System.Windows.Forms.DataGridView();
             this.btnContract_Refresh = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -162,6 +189,8 @@ namespace QuanLyKiTucXa
             this.btnContract_AddTime = new System.Windows.Forms.Button();
             this.btnContract_Add = new System.Windows.Forms.Button();
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.lbBill_Sum = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
             this.dgvBill_Show = new System.Windows.Forms.DataGridView();
             this.btnBill_Refresh = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -181,9 +210,15 @@ namespace QuanLyKiTucXa
             this.dgvStatistic_StudentList = new System.Windows.Forms.DataGridView();
             this.dgvStatistic_RoomList = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.cStatistic_RoomWithStatus = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.cStatistic_RoomWithRoomType = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.cStatistic_Money = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lbAccountName = new MetroFramework.Controls.MetroLabel();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.btnAccount = new MetroFramework.Controls.MetroPanel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.groupBox20.SuspendLayout();
@@ -224,6 +259,11 @@ namespace QuanLyKiTucXa
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_StudentList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_RoomList)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cStatistic_RoomWithStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cStatistic_RoomWithRoomType)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cStatistic_Money)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -260,13 +300,16 @@ namespace QuanLyKiTucXa
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.metroTabControl1.Location = new System.Drawing.Point(30, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 5;
+            this.metroTabControl1.SelectedIndex = 3;
             this.metroTabControl1.Size = new System.Drawing.Size(1348, 703);
             this.metroTabControl1.TabIndex = 12;
             this.metroTabControl1.UseSelectable = true;
+            this.metroTabControl1.SelectedIndexChanged += new System.EventHandler(this.metroTabControl1_SelectedIndexChanged);
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.Controls.Add(this.lbStaff_Sum);
+            this.metroTabPage1.Controls.Add(this.metroLabel16);
             this.metroTabPage1.Controls.Add(this.btnDetail);
             this.metroTabPage1.Controls.Add(this.btnStaff_Delete);
             this.metroTabPage1.Controls.Add(this.btnSstaff_Edit);
@@ -285,6 +328,30 @@ namespace QuanLyKiTucXa
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // lbStaff_Sum
+            // 
+            this.lbStaff_Sum.AutoSize = true;
+            this.lbStaff_Sum.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbStaff_Sum.Location = new System.Drawing.Point(1261, 191);
+            this.lbStaff_Sum.Name = "lbStaff_Sum";
+            this.lbStaff_Sum.Size = new System.Drawing.Size(28, 25);
+            this.lbStaff_Sum.Style = MetroFramework.MetroColorStyle.Green;
+            this.lbStaff_Sum.TabIndex = 63;
+            this.lbStaff_Sum.Text = "....";
+            this.lbStaff_Sum.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel16
+            // 
+            this.metroLabel16.AutoSize = true;
+            this.metroLabel16.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel16.Location = new System.Drawing.Point(1206, 191);
+            this.metroLabel16.Name = "metroLabel16";
+            this.metroLabel16.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel16.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel16.TabIndex = 62;
+            this.metroLabel16.Text = "Tổng:";
+            this.metroLabel16.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // btnDetail
             // 
@@ -431,6 +498,8 @@ namespace QuanLyKiTucXa
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.lbStudent_Sum);
+            this.metroTabPage2.Controls.Add(this.metroLabel15);
             this.metroTabPage2.Controls.Add(this.btnStudent_Detail);
             this.metroTabPage2.Controls.Add(this.btnStudent_Delete);
             this.metroTabPage2.Controls.Add(this.btnStudent_Edit);
@@ -449,6 +518,30 @@ namespace QuanLyKiTucXa
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // lbStudent_Sum
+            // 
+            this.lbStudent_Sum.AutoSize = true;
+            this.lbStudent_Sum.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbStudent_Sum.Location = new System.Drawing.Point(1249, 200);
+            this.lbStudent_Sum.Name = "lbStudent_Sum";
+            this.lbStudent_Sum.Size = new System.Drawing.Size(28, 25);
+            this.lbStudent_Sum.Style = MetroFramework.MetroColorStyle.Green;
+            this.lbStudent_Sum.TabIndex = 61;
+            this.lbStudent_Sum.Text = "....";
+            this.lbStudent_Sum.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel15
+            // 
+            this.metroLabel15.AutoSize = true;
+            this.metroLabel15.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel15.Location = new System.Drawing.Point(1194, 200);
+            this.metroLabel15.Name = "metroLabel15";
+            this.metroLabel15.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel15.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel15.TabIndex = 60;
+            this.metroLabel15.Text = "Tổng:";
+            this.metroLabel15.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // btnStudent_Detail
             // 
@@ -588,12 +681,12 @@ namespace QuanLyKiTucXa
             // 
             this.dgvStudent_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStudent_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudent_Show.Location = new System.Drawing.Point(19, 220);
+            this.dgvStudent_Show.Location = new System.Drawing.Point(19, 228);
             this.dgvStudent_Show.MultiSelect = false;
             this.dgvStudent_Show.Name = "dgvStudent_Show";
             this.dgvStudent_Show.ReadOnly = true;
             this.dgvStudent_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudent_Show.Size = new System.Drawing.Size(1288, 394);
+            this.dgvStudent_Show.Size = new System.Drawing.Size(1288, 386);
             this.dgvStudent_Show.TabIndex = 45;
             // 
             // metroTabPage3
@@ -665,7 +758,7 @@ namespace QuanLyKiTucXa
             // btnArea_Save
             // 
             this.btnArea_Save.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnArea_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArea_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArea_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnArea_Save.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
             this.btnArea_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -681,7 +774,7 @@ namespace QuanLyKiTucXa
             // btnArea_Delete
             // 
             this.btnArea_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnArea_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArea_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArea_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnArea_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
             this.btnArea_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -697,7 +790,7 @@ namespace QuanLyKiTucXa
             // btnArea_Edit
             // 
             this.btnArea_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnArea_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArea_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArea_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnArea_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnArea_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -713,7 +806,7 @@ namespace QuanLyKiTucXa
             // btnArea_Add
             // 
             this.btnArea_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnArea_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArea_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArea_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnArea_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
             this.btnArea_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -982,6 +1075,8 @@ namespace QuanLyKiTucXa
             // 
             // metroTabPage8
             // 
+            this.metroTabPage8.Controls.Add(this.lbBuilding_Sum);
+            this.metroTabPage8.Controls.Add(this.metroLabel14);
             this.metroTabPage8.Controls.Add(this.dgvBuilding_Show);
             this.metroTabPage8.Controls.Add(this.btnBuilding_Save);
             this.metroTabPage8.Controls.Add(this.btnBuilding_Delete);
@@ -1002,23 +1097,47 @@ namespace QuanLyKiTucXa
             this.metroTabPage8.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage8.VerticalScrollbarSize = 10;
             // 
+            // lbBuilding_Sum
+            // 
+            this.lbBuilding_Sum.AutoSize = true;
+            this.lbBuilding_Sum.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbBuilding_Sum.Location = new System.Drawing.Point(1216, 225);
+            this.lbBuilding_Sum.Name = "lbBuilding_Sum";
+            this.lbBuilding_Sum.Size = new System.Drawing.Size(28, 25);
+            this.lbBuilding_Sum.Style = MetroFramework.MetroColorStyle.Green;
+            this.lbBuilding_Sum.TabIndex = 61;
+            this.lbBuilding_Sum.Text = "....";
+            this.lbBuilding_Sum.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel14
+            // 
+            this.metroLabel14.AutoSize = true;
+            this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel14.Location = new System.Drawing.Point(1161, 225);
+            this.metroLabel14.Name = "metroLabel14";
+            this.metroLabel14.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel14.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel14.TabIndex = 60;
+            this.metroLabel14.Text = "Tổng:";
+            this.metroLabel14.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
             // dgvBuilding_Show
             // 
             this.dgvBuilding_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBuilding_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBuilding_Show.Location = new System.Drawing.Point(3, 238);
+            this.dgvBuilding_Show.Location = new System.Drawing.Point(3, 253);
             this.dgvBuilding_Show.MultiSelect = false;
             this.dgvBuilding_Show.Name = "dgvBuilding_Show";
             this.dgvBuilding_Show.ReadOnly = true;
             this.dgvBuilding_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBuilding_Show.Size = new System.Drawing.Size(1272, 394);
+            this.dgvBuilding_Show.Size = new System.Drawing.Size(1272, 379);
             this.dgvBuilding_Show.TabIndex = 51;
             this.dgvBuilding_Show.SelectionChanged += new System.EventHandler(this.dgvBuilding_Show_SelectionChanged);
             // 
             // btnBuilding_Save
             // 
             this.btnBuilding_Save.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBuilding_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuilding_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuilding_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBuilding_Save.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
             this.btnBuilding_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1034,7 +1153,7 @@ namespace QuanLyKiTucXa
             // btnBuilding_Delete
             // 
             this.btnBuilding_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBuilding_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuilding_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuilding_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBuilding_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
             this.btnBuilding_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1050,7 +1169,7 @@ namespace QuanLyKiTucXa
             // btnBuilding_Edit
             // 
             this.btnBuilding_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBuilding_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuilding_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuilding_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBuilding_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnBuilding_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1066,7 +1185,7 @@ namespace QuanLyKiTucXa
             // btnBuilding_Add
             // 
             this.btnBuilding_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBuilding_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuilding_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuilding_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBuilding_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
             this.btnBuilding_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1693,7 +1812,7 @@ namespace QuanLyKiTucXa
             // btnRoomType_Save
             // 
             this.btnRoomType_Save.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoomType_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoomType_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoomType_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoomType_Save.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
             this.btnRoomType_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1709,7 +1828,7 @@ namespace QuanLyKiTucXa
             // btnRoomType_Delete
             // 
             this.btnRoomType_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoomType_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoomType_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoomType_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoomType_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
             this.btnRoomType_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1725,7 +1844,7 @@ namespace QuanLyKiTucXa
             // btnRoomType_Edit
             // 
             this.btnRoomType_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoomType_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoomType_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoomType_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoomType_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnRoomType_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1741,7 +1860,7 @@ namespace QuanLyKiTucXa
             // btnRoomType_Add
             // 
             this.btnRoomType_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoomType_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoomType_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoomType_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoomType_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
             this.btnRoomType_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1785,7 +1904,7 @@ namespace QuanLyKiTucXa
             // btnDevice_Save
             // 
             this.btnDevice_Save.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDevice_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevice_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevice_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDevice_Save.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
             this.btnDevice_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1801,7 +1920,7 @@ namespace QuanLyKiTucXa
             // btnDevice_Delete
             // 
             this.btnDevice_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDevice_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevice_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevice_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDevice_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
             this.btnDevice_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1817,7 +1936,7 @@ namespace QuanLyKiTucXa
             // btnDevice_Edit
             // 
             this.btnDevice_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDevice_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevice_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevice_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDevice_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnDevice_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1833,7 +1952,7 @@ namespace QuanLyKiTucXa
             // btnDevice_Add
             // 
             this.btnDevice_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDevice_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevice_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevice_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDevice_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
             this.btnDevice_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1988,6 +2107,12 @@ namespace QuanLyKiTucXa
             // 
             // metroTabPage10
             // 
+            this.metroTabPage10.Controls.Add(this.lbRoom_SumDevice);
+            this.metroTabPage10.Controls.Add(this.metroLabel11);
+            this.metroTabPage10.Controls.Add(this.metroLabel12);
+            this.metroTabPage10.Controls.Add(this.metroLabel10);
+            this.metroTabPage10.Controls.Add(this.lbRoom_SumRoom);
+            this.metroTabPage10.Controls.Add(this.metroLabel9);
             this.metroTabPage10.Controls.Add(this.metroLabel2);
             this.metroTabPage10.Controls.Add(this.metroLabel1);
             this.metroTabPage10.Controls.Add(this.dgvRoom_ShowDevice);
@@ -2011,11 +2136,83 @@ namespace QuanLyKiTucXa
             this.metroTabPage10.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage10.VerticalScrollbarSize = 10;
             // 
+            // lbRoom_SumDevice
+            // 
+            this.lbRoom_SumDevice.AutoSize = true;
+            this.lbRoom_SumDevice.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbRoom_SumDevice.Location = new System.Drawing.Point(1261, 200);
+            this.lbRoom_SumDevice.Name = "lbRoom_SumDevice";
+            this.lbRoom_SumDevice.Size = new System.Drawing.Size(28, 25);
+            this.lbRoom_SumDevice.Style = MetroFramework.MetroColorStyle.Green;
+            this.lbRoom_SumDevice.TabIndex = 61;
+            this.lbRoom_SumDevice.Text = "....";
+            this.lbRoom_SumDevice.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel11.Location = new System.Drawing.Point(1206, 200);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel11.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel11.TabIndex = 60;
+            this.metroLabel11.Text = "Tổng:";
+            this.metroLabel11.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel12
+            // 
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel12.Location = new System.Drawing.Point(656, 200);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(28, 25);
+            this.metroLabel12.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel12.TabIndex = 59;
+            this.metroLabel12.Text = "....";
+            this.metroLabel12.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel10.Location = new System.Drawing.Point(601, 200);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel10.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel10.TabIndex = 58;
+            this.metroLabel10.Text = "Tổng:";
+            this.metroLabel10.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // lbRoom_SumRoom
+            // 
+            this.lbRoom_SumRoom.AutoSize = true;
+            this.lbRoom_SumRoom.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbRoom_SumRoom.Location = new System.Drawing.Point(656, 200);
+            this.lbRoom_SumRoom.Name = "lbRoom_SumRoom";
+            this.lbRoom_SumRoom.Size = new System.Drawing.Size(28, 25);
+            this.lbRoom_SumRoom.Style = MetroFramework.MetroColorStyle.Green;
+            this.lbRoom_SumRoom.TabIndex = 59;
+            this.lbRoom_SumRoom.Text = "....";
+            this.lbRoom_SumRoom.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel9.Location = new System.Drawing.Point(601, 200);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel9.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel9.TabIndex = 58;
+            this.metroLabel9.Text = "Tổng:";
+            this.metroLabel9.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(951, 200);
+            this.metroLabel2.Location = new System.Drawing.Point(806, 200);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(250, 25);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Green;
@@ -2027,7 +2224,7 @@ namespace QuanLyKiTucXa
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(277, 200);
+            this.metroLabel1.Location = new System.Drawing.Point(3, 200);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(147, 25);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Green;
@@ -2314,7 +2511,7 @@ namespace QuanLyKiTucXa
             // btnRoom_Save
             // 
             this.btnRoom_Save.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoom_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoom_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoom_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoom_Save.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
             this.btnRoom_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2330,7 +2527,7 @@ namespace QuanLyKiTucXa
             // btnRoom_Delete
             // 
             this.btnRoom_Delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoom_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoom_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoom_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoom_Delete.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
             this.btnRoom_Delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2346,7 +2543,7 @@ namespace QuanLyKiTucXa
             // btnRoom_Edit
             // 
             this.btnRoom_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoom_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoom_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoom_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoom_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnRoom_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2362,7 +2559,7 @@ namespace QuanLyKiTucXa
             // btnRoom_Add
             // 
             this.btnRoom_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRoom_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoom_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoom_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRoom_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
             this.btnRoom_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2377,6 +2574,8 @@ namespace QuanLyKiTucXa
             // 
             // metroTabPage4
             // 
+            this.metroTabPage4.Controls.Add(this.lbContract_Sum);
+            this.metroTabPage4.Controls.Add(this.metroLabel18);
             this.metroTabPage4.Controls.Add(this.dgvContract_Show);
             this.metroTabPage4.Controls.Add(this.btnContract_Refresh);
             this.metroTabPage4.Controls.Add(this.groupBox4);
@@ -2395,6 +2594,30 @@ namespace QuanLyKiTucXa
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage4.VerticalScrollbarSize = 10;
             // 
+            // lbContract_Sum
+            // 
+            this.lbContract_Sum.AutoSize = true;
+            this.lbContract_Sum.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbContract_Sum.Location = new System.Drawing.Point(1232, 206);
+            this.lbContract_Sum.Name = "lbContract_Sum";
+            this.lbContract_Sum.Size = new System.Drawing.Size(28, 25);
+            this.lbContract_Sum.Style = MetroFramework.MetroColorStyle.Green;
+            this.lbContract_Sum.TabIndex = 63;
+            this.lbContract_Sum.Text = "....";
+            this.lbContract_Sum.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel18
+            // 
+            this.metroLabel18.AutoSize = true;
+            this.metroLabel18.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel18.Location = new System.Drawing.Point(1177, 206);
+            this.metroLabel18.Name = "metroLabel18";
+            this.metroLabel18.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel18.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel18.TabIndex = 62;
+            this.metroLabel18.Text = "Tổng:";
+            this.metroLabel18.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
             // dgvContract_Show
             // 
             this.dgvContract_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -2410,9 +2633,9 @@ namespace QuanLyKiTucXa
             // btnContract_Refresh
             // 
             this.btnContract_Refresh.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnContract_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContract_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContract_Refresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnContract_Refresh.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.btnContract_Refresh.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
             this.btnContract_Refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnContract_Refresh.Location = new System.Drawing.Point(655, 161);
             this.btnContract_Refresh.Name = "btnContract_Refresh";
@@ -2502,7 +2725,7 @@ namespace QuanLyKiTucXa
             // btnContract_Cancel
             // 
             this.btnContract_Cancel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnContract_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContract_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContract_Cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnContract_Cancel.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
             this.btnContract_Cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2518,7 +2741,7 @@ namespace QuanLyKiTucXa
             // btnContract_AddTime
             // 
             this.btnContract_AddTime.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnContract_AddTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContract_AddTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContract_AddTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnContract_AddTime.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnContract_AddTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2534,7 +2757,7 @@ namespace QuanLyKiTucXa
             // btnContract_Add
             // 
             this.btnContract_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnContract_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContract_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContract_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnContract_Add.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
             this.btnContract_Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2549,6 +2772,8 @@ namespace QuanLyKiTucXa
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.Controls.Add(this.lbBill_Sum);
+            this.metroTabPage5.Controls.Add(this.metroLabel17);
             this.metroTabPage5.Controls.Add(this.dgvBill_Show);
             this.metroTabPage5.Controls.Add(this.btnBill_Refresh);
             this.metroTabPage5.Controls.Add(this.groupBox11);
@@ -2567,6 +2792,30 @@ namespace QuanLyKiTucXa
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage5.VerticalScrollbarSize = 10;
             // 
+            // lbBill_Sum
+            // 
+            this.lbBill_Sum.AutoSize = true;
+            this.lbBill_Sum.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lbBill_Sum.Location = new System.Drawing.Point(1231, 209);
+            this.lbBill_Sum.Name = "lbBill_Sum";
+            this.lbBill_Sum.Size = new System.Drawing.Size(28, 25);
+            this.lbBill_Sum.Style = MetroFramework.MetroColorStyle.Green;
+            this.lbBill_Sum.TabIndex = 63;
+            this.lbBill_Sum.Text = "....";
+            this.lbBill_Sum.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel17
+            // 
+            this.metroLabel17.AutoSize = true;
+            this.metroLabel17.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel17.Location = new System.Drawing.Point(1176, 209);
+            this.metroLabel17.Name = "metroLabel17";
+            this.metroLabel17.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel17.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel17.TabIndex = 62;
+            this.metroLabel17.Text = "Tổng:";
+            this.metroLabel17.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
             // dgvBill_Show
             // 
             this.dgvBill_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -2582,9 +2831,9 @@ namespace QuanLyKiTucXa
             // btnBill_Refresh
             // 
             this.btnBill_Refresh.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBill_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill_Refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill_Refresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnBill_Refresh.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
+            this.btnBill_Refresh.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_available_updates_32;
             this.btnBill_Refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBill_Refresh.Location = new System.Drawing.Point(698, 164);
             this.btnBill_Refresh.Name = "btnBill_Refresh";
@@ -2693,9 +2942,9 @@ namespace QuanLyKiTucXa
             // btnBill_Detail
             // 
             this.btnBill_Detail.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBill_Detail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill_Detail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill_Detail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnBill_Detail.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_trash_32;
+            this.btnBill_Detail.Image = global::QuanLyKiTucXa.Properties.Resources.file;
             this.btnBill_Detail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBill_Detail.Location = new System.Drawing.Point(982, 164);
             this.btnBill_Detail.Name = "btnBill_Detail";
@@ -2709,7 +2958,7 @@ namespace QuanLyKiTucXa
             // btnBill_Edit
             // 
             this.btnBill_Edit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBill_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBill_Edit.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnBill_Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2725,7 +2974,7 @@ namespace QuanLyKiTucXa
             // btnBill_Create
             // 
             this.btnBill_Create.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnBill_Create.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill_Create.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill_Create.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBill_Create.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_plus_30;
             this.btnBill_Create.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2787,9 +3036,9 @@ namespace QuanLyKiTucXa
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel5.Location = new System.Drawing.Point(461, 26);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(402, 25);
+            this.metroLabel5.Size = new System.Drawing.Size(414, 25);
             this.metroLabel5.TabIndex = 63;
-            this.metroLabel5.Text = "Thống kê số lượng sinh viên theo từng phòng";
+            this.metroLabel5.Text = "Thống kê danh sách sinh viên theo từng phòng";
             // 
             // metroLabel3
             // 
@@ -2842,19 +3091,128 @@ namespace QuanLyKiTucXa
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.metroLabel7);
+            this.tabPage3.Controls.Add(this.cStatistic_RoomWithStatus);
+            this.tabPage3.Controls.Add(this.metroLabel6);
+            this.tabPage3.Controls.Add(this.cStatistic_RoomWithRoomType);
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1308, 584);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "Phòng";
             // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel7.Location = new System.Drawing.Point(791, 28);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(364, 25);
+            this.metroLabel7.TabIndex = 66;
+            this.metroLabel7.Text = "Thống kê số lượng phòng theo trạng thái";
+            // 
+            // cStatistic_RoomWithStatus
+            // 
+            this.cStatistic_RoomWithStatus.BorderlineColor = System.Drawing.Color.Red;
+            chartArea1.Name = "ChartArea1";
+            this.cStatistic_RoomWithStatus.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.cStatistic_RoomWithStatus.Legends.Add(legend1);
+            this.cStatistic_RoomWithStatus.Location = new System.Drawing.Point(659, 91);
+            this.cStatistic_RoomWithStatus.Name = "cStatistic_RoomWithStatus";
+            this.cStatistic_RoomWithStatus.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Legend = "Legend1";
+            series1.Name = "Số lượng phòng";
+            this.cStatistic_RoomWithStatus.Series.Add(series1);
+            this.cStatistic_RoomWithStatus.Size = new System.Drawing.Size(599, 470);
+            this.cStatistic_RoomWithStatus.TabIndex = 65;
+            this.cStatistic_RoomWithStatus.Text = "Thống kê";
+            title1.Name = "Thống kê số lượng phòng theo số người";
+            this.cStatistic_RoomWithStatus.Titles.Add(title1);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel6.Location = new System.Drawing.Point(121, 28);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(371, 25);
+            this.metroLabel6.TabIndex = 64;
+            this.metroLabel6.Text = "Thống kê số lượng phòng theo loại phòng";
+            // 
+            // cStatistic_RoomWithRoomType
+            // 
+            this.cStatistic_RoomWithRoomType.BorderlineColor = System.Drawing.Color.Red;
+            chartArea2.Name = "ChartArea1";
+            this.cStatistic_RoomWithRoomType.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.cStatistic_RoomWithRoomType.Legends.Add(legend2);
+            this.cStatistic_RoomWithRoomType.Location = new System.Drawing.Point(37, 91);
+            this.cStatistic_RoomWithRoomType.Name = "cStatistic_RoomWithRoomType";
+            this.cStatistic_RoomWithRoomType.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
+            series2.ChartArea = "ChartArea1";
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Legend = "Legend1";
+            series2.Name = "Số lượng phòng";
+            series2.YValuesPerPoint = 2;
+            this.cStatistic_RoomWithRoomType.Series.Add(series2);
+            this.cStatistic_RoomWithRoomType.Size = new System.Drawing.Size(584, 470);
+            this.cStatistic_RoomWithRoomType.TabIndex = 0;
+            this.cStatistic_RoomWithRoomType.Text = "Thống kê";
+            title2.Name = "Thống kê số lượng phòng theo loại";
+            this.cStatistic_RoomWithRoomType.Titles.Add(title2);
+            // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.metroLabel8);
+            this.tabPage4.Controls.Add(this.cStatistic_Money);
             this.tabPage4.Location = new System.Drawing.Point(4, 44);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1308, 584);
             this.tabPage4.TabIndex = 2;
-            this.tabPage4.Text = "Hóa đơn";
+            this.tabPage4.Text = "Thu";
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel8.Location = new System.Drawing.Point(534, 20);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(284, 25);
+            this.metroLabel8.TabIndex = 65;
+            this.metroLabel8.Text = "Thống kê báo cáo thu theo năm";
+            // 
+            // cStatistic_Money
+            // 
+            this.cStatistic_Money.BorderlineColor = System.Drawing.Color.Red;
+            chartArea3.Name = "ChartArea1";
+            this.cStatistic_Money.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.cStatistic_Money.Legends.Add(legend3);
+            this.cStatistic_Money.Location = new System.Drawing.Point(15, 56);
+            this.cStatistic_Money.Name = "cStatistic_Money";
+            this.cStatistic_Money.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
+            series3.ChartArea = "ChartArea1";
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.Legend = "Legend1";
+            series3.Name = "Tổng tiền hóa đơn";
+            series3.YValuesPerPoint = 2;
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Số tiền đã thu";
+            this.cStatistic_Money.Series.Add(series3);
+            this.cStatistic_Money.Series.Add(series4);
+            this.cStatistic_Money.Size = new System.Drawing.Size(1277, 512);
+            this.cStatistic_Money.TabIndex = 1;
+            this.cStatistic_Money.Text = "Thống kê";
+            title3.Name = "Thống kê số lượng phòng theo loại";
+            this.cStatistic_Money.Titles.Add(title3);
             // 
             // lbAccountName
             // 
@@ -2865,20 +3223,21 @@ namespace QuanLyKiTucXa
             this.lbAccountName.TabIndex = 13;
             this.lbAccountName.Text = "metroLabel1";
             // 
-            // metroPanel2
+            // btnAccount
             // 
-            this.metroPanel2.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources._8541895_house_user_icon;
-            this.metroPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(1177, 24);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(45, 36);
-            this.metroPanel2.TabIndex = 8;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
+            this.btnAccount.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources._8541895_house_user_icon;
+            this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAccount.HorizontalScrollbarBarColor = true;
+            this.btnAccount.HorizontalScrollbarHighlightOnWheel = false;
+            this.btnAccount.HorizontalScrollbarSize = 10;
+            this.btnAccount.Location = new System.Drawing.Point(1177, 24);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(45, 36);
+            this.btnAccount.TabIndex = 8;
+            this.btnAccount.VerticalScrollbarBarColor = true;
+            this.btnAccount.VerticalScrollbarHighlightOnWheel = false;
+            this.btnAccount.VerticalScrollbarSize = 10;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // nhanvien
             // 
@@ -2889,14 +3248,16 @@ namespace QuanLyKiTucXa
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.metroPanel2);
+            this.Controls.Add(this.btnAccount);
             this.Name = "nhanvien";
             this.Load += new System.EventHandler(this.nhanvien_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
+            this.metroTabPage1.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff_Show)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent_Show)).EndInit();
             this.metroTabPage3.ResumeLayout(false);
@@ -2907,6 +3268,7 @@ namespace QuanLyKiTucXa
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.metroTabPage8.ResumeLayout(false);
+            this.metroTabPage8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuilding_Show)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
@@ -2928,9 +3290,11 @@ namespace QuanLyKiTucXa
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.metroTabPage4.ResumeLayout(false);
+            this.metroTabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContract_Show)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.metroTabPage5.ResumeLayout(false);
+            this.metroTabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill_Show)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.metroTabPage6.ResumeLayout(false);
@@ -2939,6 +3303,13 @@ namespace QuanLyKiTucXa
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_StudentList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatistic_RoomList)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cStatistic_RoomWithStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cStatistic_RoomWithRoomType)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cStatistic_Money)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2948,7 +3319,7 @@ namespace QuanLyKiTucXa
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private MetroFramework.Controls.MetroPanel metroPanel2;
+        private MetroFramework.Controls.MetroPanel btnAccount;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
@@ -3094,12 +3465,34 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroComboBox cbbBill_SearchStatus;
         private MetroFramework.Controls.MetroTabControl metroTabControl3;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.DataGridView dgvStatistic_StudentList;
         private System.Windows.Forms.DataGridView dgvStatistic_RoomList;
         private MetroFramework.Controls.MetroLabel metroLabel5;
+        private System.Windows.Forms.TabPage tabPage3;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private System.Windows.Forms.DataVisualization.Charting.Chart cStatistic_RoomWithStatus;
+        private System.Windows.Forms.DataVisualization.Charting.Chart cStatistic_RoomWithRoomType;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private System.Windows.Forms.DataVisualization.Charting.Chart cStatistic_Money;
+        private MetroFramework.Controls.MetroLabel lbStaff_Sum;
+        private MetroFramework.Controls.MetroLabel metroLabel16;
+        private MetroFramework.Controls.MetroLabel lbStudent_Sum;
+        private MetroFramework.Controls.MetroLabel metroLabel15;
+        private MetroFramework.Controls.MetroLabel lbBuilding_Sum;
+        private MetroFramework.Controls.MetroLabel metroLabel14;
+        private MetroFramework.Controls.MetroLabel lbRoom_SumDevice;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private MetroFramework.Controls.MetroLabel lbRoom_SumRoom;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroLabel lbBill_Sum;
+        private MetroFramework.Controls.MetroLabel metroLabel17;
+        private MetroFramework.Controls.MetroLabel lbContract_Sum;
+        private MetroFramework.Controls.MetroLabel metroLabel18;
     }
 }

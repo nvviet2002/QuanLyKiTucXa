@@ -28,7 +28,6 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroPanel metroPanel3;
         private MetroFramework.Controls.MetroButton btnSignIn;
         private MetroFramework.Controls.MetroButton btnExit;
-        private System.Windows.Forms.LinkLabel llbSignUp;
         private MetroFramework.Controls.MetroCheckBox ckbHidePassword;
     }
 }
