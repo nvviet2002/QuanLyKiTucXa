@@ -412,89 +412,95 @@ insert into PHONG values('D2505',0,null,'D2','L4')
 insert into TAIKHOAN values('admin','admin',N'Quản trị viên',null,null)
 insert into TAIKHOAN values('nhanvien1','nhanvien1',N'Nhân viên',null,null)
 insert into TAIKHOAN values('viet86710','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('vu86310','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('van86210','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('vy86230','matkhaus2',N'Sinh viên',null,null)
 ---------------------------------------------- Nhân viên
 insert into NHANVIEN values('NV001',N'Nguyễn Văn Việt','10-15-2002',N'Nam','0766479036',N'Quản trị viên',null,'admin')
 insert into NHANVIEN values('NV002',N'Nguyễn Thi Ngân','4-20-2002',N'Nữ','0952737521',N'Nhân viên',null,'nhanvien1')
 ----------------------------------------------Sinh viên
-insert into SINHVIEN values('SV001',N'Nguyễn Văn Việt','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'viet86710')
+insert into SINHVIEN values('86710',N'Nguyễn Văn Việt','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'viet86710')
+insert into SINHVIEN values('86310',N'Nguyễn Văn Vũ','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'vu86310')
+insert into SINHVIEN values('86210',N'Nguyễn Văn Vân','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'van86210')
+insert into SINHVIEN values('86230',N'Nguyễn Văn Vy','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'vy86230')
 ---------------------------------------------- Hợp đồng
-insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2022',N'Còn hiệu lực','NV002','SV001','C3101',null)
-insert into HOPDONG values(-1,'1-1-1','1-1-1','1-1-1',N'Còn hiệu lực','NV002','SV001','C3101',null)
+insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2022',N'Còn hiệu lực','NV002','86710','C3101',null)
 
 
 
-select * from SINHVIEN where TaiKhoan = 'viet86710'
 
-select * from TAIKHOAN where TaiKhoan = '' and MatKhau = ''
-update SINHVIEN
-set TenSV = {}, cot2 = gia_tri2...., cotN = gia_triN
-where [DIEU_KIEN];
+--select * from SINHVIEN where TaiKhoan = 'viet86710'
 
-select NHANVIEN.TenNV,HOPDONG.*,SINHVIEN.TenSV,HOPDONG.MaPhong from NHANVIEN inner join HOPDONG on NHANVIEN.MaNV = HOPDONG.MaHD
-inner join SINHVIEN on HOPDONG.MaSV = SINHVIEN.MaSV 
+--select * from TAIKHOAN where TaiKhoan = '' and MatKhau = ''
+--update SINHVIEN
+--set TenSV = {}, cot2 = gia_tri2...., cotN = gia_triN
+--where [DIEU_KIEN];
 
-select NHANVIEN.TenNV,HOPDONG.*,SINHVIEN.TenSV,HOPDONG.MaPhong from 
-                NHANVIEN inner join HOPDONG on NHANVIEN.MaNV = HOPDONG.MaNV
-                inner join SINHVIEN on HOPDONG.MaSV = SINHVIEN.MaSV
-                where HOPDONG.MaSV = 'SV001' and TrangThai = 1
+--select NHANVIEN.TenNV,HOPDONG.*,SINHVIEN.TenSV,HOPDONG.MaPhong from NHANVIEN inner join HOPDONG on NHANVIEN.MaNV = HOPDONG.MaHD
+--inner join SINHVIEN on HOPDONG.MaSV = SINHVIEN.MaSV 
 
-select PHONG.*,LOAIPHONG.TenLoaiPhong,LOAIPHONG.SoNguoi,LOAIPHONG.GiaPhong,LOAIPHONG.DienTich
-			,TenKhu,TenTN from LOAIPHONG inner join
-            PHONG on LOAIPHONG.MaLoaiPhong = PHONG.MaLoaiPhong
-            inner join TOANHA on TOANHA.MaTN = PHONG.MaTN
-            inner join KHU on KHU.MaKhu = TOANHA.MaKhu
-            where PHONG.MaPhong  = 'C3101'
+--select NHANVIEN.TenNV,HOPDONG.*,SINHVIEN.TenSV,HOPDONG.MaPhong from 
+--                NHANVIEN inner join HOPDONG on NHANVIEN.MaNV = HOPDONG.MaNV
+--                inner join SINHVIEN on HOPDONG.MaSV = SINHVIEN.MaSV
+--                where HOPDONG.MaSV = 'SV001' and TrangThai = 1
 
-select * from NHANVIEN inner join TAIKHOAN on NHANVIEN.MaTK = TAIKHOAN.MaTK
-where MaNV = 'NV001'
+--select PHONG.*,LOAIPHONG.TenLoaiPhong,LOAIPHONG.SoNguoi,LOAIPHONG.GiaPhong,LOAIPHONG.DienTich
+--			,TenKhu,TenTN from LOAIPHONG inner join
+--            PHONG on LOAIPHONG.MaLoaiPhong = PHONG.MaLoaiPhong
+--            inner join TOANHA on TOANHA.MaTN = PHONG.MaTN
+--            inner join KHU on KHU.MaKhu = TOANHA.MaKhu
+--            where PHONG.MaPhong  = 'C3101'
 
-select * from NHANVIEN inner join TAIKHOAN on NHANVIEN.TaiKhoan = TAIKHOAN.TaiKhoan where MaNV = 'NV001'
+--select * from NHANVIEN inner join TAIKHOAN on NHANVIEN.MaTK = TAIKHOAN.MaTK
+--where MaNV = 'NV001'
 
-update NHANVIEN set TenNV = @ten,Ngaysinh = @ngaysinh,Gioitinh = @gioitinh,
-SDT = @sdt,ChucVu = @chucvu,Ghichu = @ghichu, TaiKhoan = @matk where MaNV = @ma
+--select * from NHANVIEN inner join TAIKHOAN on NHANVIEN.TaiKhoan = TAIKHOAN.TaiKhoan where MaNV = 'NV001'
+
+--update NHANVIEN set TenNV = @ten,Ngaysinh = @ngaysinh,Gioitinh = @gioitinh,
+--SDT = @sdt,ChucVu = @chucvu,Ghichu = @ghichu, TaiKhoan = @matk where MaNV = @ma
 
 
-values(@ma, @ten, @ngaysinh,@gioitinh,@sdt, @chucvu,@ghichu,@matk)
+--values(@ma, @ten, @ngaysinh,@gioitinh,@sdt, @chucvu,@ghichu,@matk)
 
-select TenTB,SoLuong,TrangThai from PHONG inner join THIETBIPHONG on PHONG.MaPhong
-= THIETBIPHONG.MaPhong inner join THIETBI on THIETBI.MaTB = THIETBIPHONG.MaTB
-where THIETBIPHONG.MaPhong = 'C3101'
+--select TenTB,SoLuong,TrangThai from PHONG inner join THIETBIPHONG on PHONG.MaPhong
+--= THIETBIPHONG.MaPhong inner join THIETBI on THIETBI.MaTB = THIETBIPHONG.MaTB
+--where THIETBIPHONG.MaPhong = 'C3101'
 
-select TenTB,SoLuong,TrangThai 
-from PHONG inner join THIETBIPHONG on PHONG.MaPhong= THIETBIPHONG.MaPhong inner join
-            THIETBI on THIETBI.MaTB = THIETBIPHONG.MaTB where THIETBIPHONG.MaPhong = 'C3102'
+--select TenTB,SoLuong,TrangThai 
+--from PHONG inner join THIETBIPHONG on PHONG.MaPhong= THIETBIPHONG.MaPhong inner join
+--            THIETBI on THIETBI.MaTB = THIETBIPHONG.MaTB where THIETBIPHONG.MaPhong = 'C3102'
 
-select MaPhong,MaTN,TenLoaiPhong,PHONG.TongSoHD,SoNguoi from PHONG inner join LOAIPHONG
-on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+--select MaPhong,MaTN,TenLoaiPhong,PHONG.TongSoHD,SoNguoi from PHONG inner join LOAIPHONG
+--on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
 
- select MaPhong,TenLoaiPhong, CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi))
-  as SoNguoiO, MaTN,PHONG.Ghichu
-  from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+-- select MaPhong,TenLoaiPhong, CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi))
+--  as SoNguoiO, MaTN,PHONG.Ghichu
+--  from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
 
-select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,TongTien,TienDaNop,
-HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu
-from HOADON inner join HOPDONG on HOADON.MaHD = HOPDONG.MaHD
+--select MaHoaDon,HOADON.NgayLap,HanThu,TuNgay,DenNgay,TongTien,TienDaNop,
+--HOADON.TrangThai,HOADON.MaHD,MaSV,HOADON.GhiChu
+--from HOADON inner join HOPDONG on HOADON.MaHD = HOPDONG.MaHD
 
-select HOPDONG.MaSV,TenSV,GioiTinh,NgaySinh,SDT from SINHVIEN inner join HOPDONG on SINHVIEN.MaSV = HOPDONG.MaSV
-where HOPDONG.TrangThai = N'Còn hiệu lực' and MaPhong = 'C4201'
+--select HOPDONG.MaSV,TenSV,GioiTinh,NgaySinh,SDT from SINHVIEN inner join HOPDONG on SINHVIEN.MaSV = HOPDONG.MaSV
+--where HOPDONG.TrangThai = N'Còn hiệu lực' and MaPhong = 'C4201'
 
-select COUNT(*) as SL,TenLoaiPhong from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
-group by TenLoaiPhong
+--select COUNT(*) as SL,TenLoaiPhong from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+--group by TenLoaiPhong
 
-select COUNT(*) as SL,CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi)) as SoNguoiO 
-from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
-group by CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi))
+--select COUNT(*) as SL,CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi)) as SoNguoiO 
+--from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+--group by CONCAT(CONVERT(char(1),TongSoHD),'/',CONVERT(char(1),SoNguoi))
 
-select COUNT(*) as SL,(CONVERT(int,SoNguoi) - CONVERT(int,TongSoHD)) as TrangThai 
-from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
-group by CONVERT(int,SoNguoi) - CONVERT(int,TongSoHD)
+--select COUNT(*) as SL,(CONVERT(int,SoNguoi) - CONVERT(int,TongSoHD)) as TrangThai 
+--from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong
+--group by CONVERT(int,SoNguoi) - CONVERT(int,TongSoHD)
 
-select sum(TongTien) as TongTien,SUM(TienDaNop) as TienDaNop,YEAR(HanThu) as Nam from HOADON group by YEAR(HanThu)
-select sum(TienDaNop),YEAR(HanThu) as Nam from HOADON group by YEAR(HanThu)
+--select sum(TongTien) as TongTien,SUM(TienDaNop) as TienDaNop,YEAR(HanThu) as Nam from HOADON group by YEAR(HanThu)
+--select sum(TienDaNop),YEAR(HanThu) as Nam from HOADON group by YEAR(HanThu)
 
-insert into HOADON values('1-1-2022','1-1-2022','1-2-2022','1-5-2022'
-                    ,1000000,500001,N'Thiếu',6,N'ok')
+--insert into HOADON values('1-1-2022','1-1-2022','1-2-2022','1-5-2022'
+--                    ,1000000,500001,N'Thiếu',6,N'ok')
 
-use master
-go
-drop database QuanLyKiTucXa
+--use master
+--go
+--drop database QuanLyKiTucXa
