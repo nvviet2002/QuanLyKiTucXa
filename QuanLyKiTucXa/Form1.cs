@@ -109,6 +109,7 @@ namespace QuanLyKiTucXa
             // 
             // btnSignIn
             // 
+            this.btnSignIn.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnSignIn.Location = new System.Drawing.Point(36, 339);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(83, 34);
@@ -119,6 +120,7 @@ namespace QuanLyKiTucXa
             // 
             // btnExit
             // 
+            this.btnExit.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnExit.Location = new System.Drawing.Point(175, 339);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(83, 34);
