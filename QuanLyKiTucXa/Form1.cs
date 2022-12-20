@@ -57,8 +57,9 @@ namespace QuanLyKiTucXa
             this.txtAccountName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtAccountName.CustomButton.UseSelectable = true;
             this.txtAccountName.CustomButton.Visible = false;
+            this.txtAccountName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtAccountName.Lines = new string[0];
-            this.txtAccountName.Location = new System.Drawing.Point(81, 209);
+            this.txtAccountName.Location = new System.Drawing.Point(105, 202);
             this.txtAccountName.MaxLength = 32767;
             this.txtAccountName.Name = "txtAccountName";
             this.txtAccountName.PasswordChar = '\0';
@@ -89,8 +90,9 @@ namespace QuanLyKiTucXa
             this.txtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPassword.CustomButton.UseSelectable = true;
             this.txtPassword.CustomButton.Visible = false;
+            this.txtPassword.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(81, 267);
+            this.txtPassword.Location = new System.Drawing.Point(105, 260);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
@@ -110,7 +112,7 @@ namespace QuanLyKiTucXa
             // btnSignIn
             // 
             this.btnSignIn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnSignIn.Location = new System.Drawing.Point(36, 339);
+            this.btnSignIn.Location = new System.Drawing.Point(60, 366);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(83, 34);
             this.btnSignIn.TabIndex = 5;
@@ -121,7 +123,7 @@ namespace QuanLyKiTucXa
             // btnExit
             // 
             this.btnExit.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnExit.Location = new System.Drawing.Point(175, 339);
+            this.btnExit.Location = new System.Drawing.Point(199, 366);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(83, 34);
             this.btnExit.TabIndex = 6;
@@ -137,7 +139,7 @@ namespace QuanLyKiTucXa
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(36, 263);
+            this.metroPanel3.Location = new System.Drawing.Point(60, 256);
             this.metroPanel3.Name = "metroPanel3";
             this.metroPanel3.Size = new System.Drawing.Size(34, 34);
             this.metroPanel3.TabIndex = 3;
@@ -152,7 +154,7 @@ namespace QuanLyKiTucXa
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(36, 205);
+            this.metroPanel2.Location = new System.Drawing.Point(60, 198);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(34, 34);
             this.metroPanel2.TabIndex = 1;
@@ -168,7 +170,7 @@ namespace QuanLyKiTucXa
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(36, 39);
+            this.metroPanel1.Location = new System.Drawing.Point(60, 32);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(222, 131);
             this.metroPanel1.TabIndex = 0;
@@ -181,7 +183,7 @@ namespace QuanLyKiTucXa
             this.ckbHidePassword.AutoSize = true;
             this.ckbHidePassword.Checked = true;
             this.ckbHidePassword.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbHidePassword.Location = new System.Drawing.Point(81, 303);
+            this.ckbHidePassword.Location = new System.Drawing.Point(105, 308);
             this.ckbHidePassword.Name = "ckbHidePassword";
             this.ckbHidePassword.Size = new System.Drawing.Size(101, 15);
             this.ckbHidePassword.TabIndex = 8;
@@ -192,7 +194,7 @@ namespace QuanLyKiTucXa
             // Form1
             // 
             this.AcceptButton = this.btnSignIn;
-            this.ClientSize = new System.Drawing.Size(307, 418);
+            this.ClientSize = new System.Drawing.Size(329, 433);
             this.Controls.Add(this.ckbHidePassword);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSignIn);

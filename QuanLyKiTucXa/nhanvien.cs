@@ -131,7 +131,7 @@ namespace QuanLyKiTucXa
                 return;
             }
             string ma = (string)dgvStaff_Show.SelectedRows[0].Cells[0].Value;
-            string matk = (string)dgvStudent_Show.SelectedRows[0].Cells["Tài khoản"].Value;
+            string matk = (string)dgvStaff_Show.SelectedRows[0].Cells["Tài khoản"].Value;
             if (CSDL.CSDL.Instance.DeleteStaff(ma) && CSDL.CSDL.Instance.DeleteAccount(matk))
             {
                 MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK,
@@ -1015,6 +1015,7 @@ namespace QuanLyKiTucXa
 
             dgvContract_Show.DataSource = NormalizeContractList(contractList);
             LoadSumAll();
+            LoadRoomList();
         }
 
         private void btnContract_Add_Click(object sender, EventArgs e)
@@ -1102,7 +1103,7 @@ namespace QuanLyKiTucXa
             }
             if (cbbContract_SearchType.SelectedItem == "Mã nhân viên")
             {
-                contractList = CSDL.CSDL.Instance.Search("TenSV", txtContract_SearchInput.Text,
+                contractList = CSDL.CSDL.Instance.Search("MaNV", txtContract_SearchInput.Text,
                     "HOPDONG", false);
                 dgvContract_Show.DataSource = NormalizeContractList(contractList);
                 return;
@@ -1145,6 +1146,7 @@ namespace QuanLyKiTucXa
 
             dgvBill_Show.DataSource = NormalizeBillList(billList);
             LoadSumAll();
+            LoadStatistic();
         }
 
         private void btnBill_Add_Click(object sender, EventArgs e)

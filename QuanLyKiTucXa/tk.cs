@@ -66,6 +66,7 @@ namespace QuanLyKiTucXa
         {
             if(stage == Stages.Update)
             {
+                txtAccountName.Enabled = false;
                 txtAccountName.Text = account.TaiKhoan;
                 txtPassWord.Text = account.MatKhau;
                 txtEmail.Text = account.Email;

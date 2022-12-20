@@ -27,7 +27,7 @@ namespace QuanLyKiTucXa
         void LoadRoomShow()
         {
             roomShow = CSDL.CSDL.Instance.ExecuteQuery($@"select MaPhong,TenLoaiPhong, CONCAT(CONVERT(char(1),
-            TongSoHD),'/',CONVERT(char(1),TongSoHD)) as SoNguoiO, MaTN,PHONG.Ghichu
+            TongSoHD),'/',CONVERT(char(1),SoNguoi)) as SoNguoiO, MaTN,PHONG.Ghichu
             from PHONG inner join LOAIPHONG on PHONG.MaLoaiPhong = LOAIPHONG.MaLoaiPhong");
             dgvRoomShow.DataSource = NormalizeRoomShow(roomShow);
         }
@@ -116,7 +116,7 @@ namespace QuanLyKiTucXa
             if (stage == Stages.Update)
             {
                 
-                if (CSDL.CSDL.Instance.DeleteContract(-1) && CSDL.CSDL.Instance.AddContract(tempContract))
+                if (CSDL.CSDL.Instance.DeleteContract(contract.MaHD) && CSDL.CSDL.Instance.AddContract(tempContract))
                 {
                     this.Close();
                     MessageBox.Show("Gia hạn hợp đồng thành công", "Thông báo", MessageBoxButtons.OK,

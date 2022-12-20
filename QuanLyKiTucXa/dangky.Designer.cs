@@ -77,8 +77,9 @@ namespace QuanLyKiTucXa
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnSave.Location = new System.Drawing.Point(31, 475);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(133, 39);
             this.btnSave.TabIndex = 5;
@@ -92,10 +93,10 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtAccountName.CustomButton.Image = null;
-            this.txtAccountName.CustomButton.Location = new System.Drawing.Point(281, 1);
-            this.txtAccountName.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAccountName.CustomButton.Location = new System.Drawing.Point(211, 1);
+            this.txtAccountName.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtAccountName.CustomButton.Name = "";
-            this.txtAccountName.CustomButton.Size = new System.Drawing.Size(39, 36);
+            this.txtAccountName.CustomButton.Size = new System.Drawing.Size(29, 29);
             this.txtAccountName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtAccountName.CustomButton.TabIndex = 1;
             this.txtAccountName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -104,7 +105,7 @@ namespace QuanLyKiTucXa
             this.txtAccountName.Enabled = false;
             this.txtAccountName.Lines = new string[0];
             this.txtAccountName.Location = new System.Drawing.Point(182, 201);
-            this.txtAccountName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAccountName.Margin = new System.Windows.Forms.Padding(4);
             this.txtAccountName.MaxLength = 32767;
             this.txtAccountName.Name = "txtAccountName";
             this.txtAccountName.PasswordChar = '\0';
@@ -125,10 +126,10 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtPassWord.CustomButton.Image = null;
-            this.txtPassWord.CustomButton.Location = new System.Drawing.Point(281, 1);
-            this.txtPassWord.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassWord.CustomButton.Location = new System.Drawing.Point(211, 1);
+            this.txtPassWord.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassWord.CustomButton.Name = "";
-            this.txtPassWord.CustomButton.Size = new System.Drawing.Size(39, 36);
+            this.txtPassWord.CustomButton.Size = new System.Drawing.Size(29, 29);
             this.txtPassWord.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPassWord.CustomButton.TabIndex = 1;
             this.txtPassWord.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -137,7 +138,7 @@ namespace QuanLyKiTucXa
             this.txtPassWord.Enabled = false;
             this.txtPassWord.Lines = new string[0];
             this.txtPassWord.Location = new System.Drawing.Point(182, 251);
-            this.txtPassWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassWord.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassWord.MaxLength = 32767;
             this.txtPassWord.Name = "txtPassWord";
             this.txtPassWord.PasswordChar = '●';
@@ -159,10 +160,10 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtEmail.CustomButton.Image = null;
-            this.txtEmail.CustomButton.Location = new System.Drawing.Point(281, 1);
-            this.txtEmail.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.CustomButton.Location = new System.Drawing.Point(211, 1);
+            this.txtEmail.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.CustomButton.Name = "";
-            this.txtEmail.CustomButton.Size = new System.Drawing.Size(39, 36);
+            this.txtEmail.CustomButton.Size = new System.Drawing.Size(29, 29);
             this.txtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtEmail.CustomButton.TabIndex = 1;
             this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -170,7 +171,7 @@ namespace QuanLyKiTucXa
             this.txtEmail.CustomButton.Visible = false;
             this.txtEmail.Lines = new string[0];
             this.txtEmail.Location = new System.Drawing.Point(182, 398);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -194,7 +195,7 @@ namespace QuanLyKiTucXa
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 12;
             this.metroPanel1.Location = new System.Drawing.Point(85, 21);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(316, 159);
             this.metroPanel1.TabIndex = 11;
@@ -205,6 +206,7 @@ namespace QuanLyKiTucXa
             // btnReturn
             // 
             this.btnReturn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReturn.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnReturn.Location = new System.Drawing.Point(290, 475);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(4);
             this.btnReturn.Name = "btnReturn";
@@ -302,7 +304,7 @@ namespace QuanLyKiTucXa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 564);
+            this.ClientSize = new System.Drawing.Size(458, 564);
             this.Controls.Add(this.txtNewPasswordAgain);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.txtNewPassword);
@@ -318,7 +320,7 @@ namespace QuanLyKiTucXa
             this.Controls.Add(this.metroLabel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dangky";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Lime;

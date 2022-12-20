@@ -410,16 +410,118 @@ insert into PHONG values('D2505',0,null,'D2','L4')
 
 ---------------------------------------------- TaiKhoan
 insert into TAIKHOAN values('admin','admin',N'Quản trị viên',null,null)
+
 insert into TAIKHOAN values('nhanvien1','nhanvien1',N'Nhân viên',null,null)
+insert into TAIKHOAN values('nhanvien2','nhanvien2',N'Nhân viên',null,null)
+insert into TAIKHOAN values('nhanvien3','nhanvien3',N'Nhân viên',null,null)
+insert into TAIKHOAN values('nhanvien4','nhanvien4',N'Nhân viên',null,null)
+insert into TAIKHOAN values('nhanvien5','nhanvien5',N'Nhân viên',null,null)
+
 insert into TAIKHOAN values('viet86710','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('vu86310','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('van86210','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('vy86230','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('hoa86789','matkhaus2',N'Sinh viên',null,null)
+
+insert into TAIKHOAN values('huong76644','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('my78565','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('nam54676','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('son87866','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('linh67557','matkhaus2',N'Sinh viên',null,null)
+
+insert into TAIKHOAN values('hoang98678','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('anh87666','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('sang54578','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('minh78767','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('chinh75657','matkhaus2',N'Sinh viên',null,null)
+
+insert into TAIKHOAN values('an67590','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('linh97654','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('mi65479','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('sang54578','matkhaus2',N'Sinh viên',null,null)
+insert into TAIKHOAN values('dai96786','matkhaus2',N'Sinh viên',null,null)
+
+
+
+
 ---------------------------------------------- Nhân viên
 insert into NHANVIEN values('NV001',N'Nguyễn Văn Việt','10-15-2002',N'Nam','0766479036',N'Quản trị viên',null,'admin')
+
 insert into NHANVIEN values('NV002',N'Nguyễn Thi Ngân','4-20-2002',N'Nữ','0952737521',N'Nhân viên',null,'nhanvien1')
+insert into NHANVIEN values('NV003',N'Nguyễn Văn Kiên','2-11-1999',N'Nam','0973967364',N'Nhân viên',null,'nhanvien2')
+insert into NHANVIEN values('NV004',N'Hoàng Văn Nam','8-6-2000',N'Nam','0976573421',N'Nhân viên',null,'nhanvien3')
+insert into NHANVIEN values('NV005',N'Phan Thị Hòa','9-7-2001',N'Nữ','0954325733',N'Nhân viên',null,'nhanvien4')
+insert into NHANVIEN values('NV006',N'Phạm Thị Dung','8-9-1999',N'Nữ','0975643574',N'Nhân viên',null,'nhanvien5')
+
 ----------------------------------------------Sinh viên
-insert into SINHVIEN values('SV001',N'Nguyễn Văn Việt','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'viet86710')
+insert into SINHVIEN values('86710',N'Nguyễn Văn Việt','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'viet86710')
+insert into SINHVIEN values('86310',N'Nguyễn Văn Vũ','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Hùng Vương/Phường Sở Dầu/Quận Hồng Bàng/Hải Phòng',null,'vu86310')
+insert into SINHVIEN values('86210',N'Nguyễn Văn Vân','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Số 4A2/173 Hoàng Công Khanh/Lãm Hà/Kiến An/Hải Phòng',null,'van86210')
+insert into SINHVIEN values('86230',N'Nguyễn Văn Vy','10-15-2002',N'Nam',N'Khoa CNTT','CNT61DH','0766479036',N'Xã Đại Bản/Huyện An Dương/Hải Phòng',null,'vy86230')
+insert into SINHVIEN values('86789',N'Nguyễn Thị Hoa','11-20-2002',N'Nữ',N'Khoa CNTT','CNT61DH','0776457393',N'Số 41 đường A5/Khu dân cư An Trang/Xã An Đồng/Huyện An Dương/Hải Phòng',null,'hoa86789')
+
+insert into SINHVIEN values('76644',N'Hoàng Thị Hương','3-24-2002',N'Nữ',N'Khoa CNTT','KPM61DH','0789097780',N'Thị trấn Núi Đèo/Thủy Nguyên/Hải Phòng',null,'huong76644')
+insert into SINHVIEN values('78565',N'Phạm Thị My','10-13-2002',N'Nữ',N'Khoa CNTT','TTM61DH','085457765',N'Đường Lê Hồng Phong/Hải An/Hải Phòng',null,'my78565')
+insert into SINHVIEN values('54676',N'Phan Văn Nam','8-15-2001',N'Nam',N'Khoa CNTT','CNT60DH','079687643',N'Số 19 Đà Nẵng/Ngô Quyền/Hải Phòng',null,'nam54676')
+insert into SINHVIEN values('87866',N'Nguyễn Thị Hoa','11-20-2002',N'Nữ',N'Khoa CNTT','CNT61DH','0776457393',N'Thị trấn An Lão/Hải Phòng',null,'son87866')
+insert into SINHVIEN values('67557',N'Phan Thị Linh','3-11-2000',N'Nữ',N'Khoa CNTT','KPM59DH','0346556785',N'Huyện Bạch Long Vỹ/Hải Phòng',null,'linh67557')
+
+insert into SINHVIEN values('98678',N'Vũ Văn Hoàng','9-18-2000',N'Nam',N'Khoa CNTT','CNT59DH','0656326846',N'Thị trấn Đông Hưng/huyện Đông Hưng/Thái Bình',null,'hoang98678')
+insert into SINHVIEN values('87666',N'Nguyễn Tuấn Anh','5-22-2001',N'Nam',N'Khoa CNTT','CNT60DH','0876846656',N'Thị trấn Diêm Điền/huyện Thái Thụy/Thái Bình',null,'anh87666')
+insert into SINHVIEN values('54578',N'Phạm Văn Sang','1-30-2000',N'Nam',N'Khoa CNTT','TTM59DH','0785689765',N'Thị trấn Vũ Thư/huyện Vũ Thư/tỉnh Thái Bình',null,'sang54578')
+insert into SINHVIEN values('78767',N'Nguyễn Văn Minh','1-11-2001',N'Nam',N'Khoa CNTT','CNT60DH','0978674368',N'Số 10 Hồ Sen/Lê Chân/Hải Phòng',null,'minh78767')
+insert into SINHVIEN values('75657',N'Nguyễn Minh Chính','6-5-2002',N'Nam',N'Khoa CNTT','TPM61DH','0265467976',N'Phường Sở Dầu/Quận Hồng Bàng/Hải Phòng',null,'chinh75657')
+
+insert into SINHVIEN values('67590',N'Hoàng Văn An','6-13-2002',N'Nam',N'Khoa CNTT','CNT61DH','0649865478',N'Số 08 đường 20/8/Thị Trấn Vĩnh Bảo/huyện Vĩnh Bảo/Hải Phòng',null,'an67590')
+insert into SINHVIEN values('97654',N'Nguyễn Thị Linh','9-18-2002',N'Nữ',N'Khoa CNTT','TPM61DH','0787523469',N'Số 2 Cao Toàn/Kiến An/Hải Phòng',null,'linh97654')
+insert into SINHVIEN values('65479',N'Hoàng Thị Mi','3-22-2002',N'Nữ',N'Khoa CNTT','TTM61DH','0753295588',N'So 48 Lê Đại Hành/Hai Bà Trưng/Hà Nội ',null,'mi65479')
+insert into SINHVIEN values('54578',N'Nguyễn Văn Sang','7-11-2000',N'Nam',N'Khoa CNTT','CNT59DH','0658578999',N'65B Hai Bà Trưng/Hoàn Kiếm/Hà Nội',null,'sang54578')
+insert into SINHVIEN values('96786',N'Phạm Văn Đại','10-23-2001',N'Nam',N'Khoa CNTT','CNT60DH','0986876711',N'158 Thái Hà/Đống Đa/Hà Nội',null,'dai96786')
 ---------------------------------------------- Hợp đồng
-insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2022',N'Còn hiệu lực','NV002','SV001','C3101',null)
-insert into HOPDONG values(-1,'1-1-1','1-1-1','1-1-1',N'Còn hiệu lực','NV002','SV001','C3101',null)
+insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2022',N'Còn hiệu lực','NV002','86710','C3101',null)
+insert into HOPDONG values('9-10-2022','9-10-2022','10-10-2023',N'Còn hiệu lực','NV003','86789','C3103',null)
+insert into HOPDONG values('9-10-2022','9-10-2022','2-11-2023',N'Còn hiệu lực','NV003','86210','C3104',null)
+insert into HOPDONG values('8-30-2022','9-1-2022','2-1-2023',N'Còn hiệu lực','NV002','86230','C3105',null)
+insert into HOPDONG values('10-9-2022','10-10-2022','4-10-2023',N'Còn hiệu lực','NV002','86310','C3104',null)
+
+insert into HOPDONG values('8-17-2022','8-18-2022','7-30-2024',N'Còn hiệu lực','NV004','76644','C4101',null)
+insert into HOPDONG values('7-3-2022','7-4-2022','4-17-2023',N'Còn hiệu lực','NV004','78565','C4101',null)
+insert into HOPDONG values('8-8-2021','8-9-2021','4-10-2023',N'Còn hiệu lực','NV003','54676','C4102',null)
+insert into HOPDONG values('2-9-2022','2-10-2022','9-22-2023',N'Còn hiệu lực','NV003','87866','C4103',null)
+insert into HOPDONG values('6-17-2020','6-18-2020','10-18-2022',N'Hết hiệu lực','NV002','67557','C4102',null)
+
+insert into HOPDONG values('6-8-2020','6-9-2020','6-7-2022',N'Hết hiệu lực','NV005','98678','C3202',null)
+insert into HOPDONG values('6-9-2021','6-10-2021','6-11-2023',N'Còn hiệu lực','NV005','87666','C3203',null)
+insert into HOPDONG values('9-14-2022','9-15-2020','9-24-2022',N'Hết hiệu lực','NV006','54578','C3201',null)
+insert into HOPDONG values('8-8-2022','8-9-2021','8-23-2023',N'Còn hiệu lực','NV006','78767','C3204',null)
+insert into HOPDONG values('9-12-2022','9-13-2022','9-10-2024',N'Còn hiệu lực','NV006','75657','C3201',null)
+
+insert into HOPDONG values('11-7-2022','11-8-2022','5-23-2024',N'Còn hiệu lực','NV002','67590','C3301',null)
+insert into HOPDONG values('4-25-2022','4-26-2022','6-3-2024',N'Còn hiệu lực','NV003','97654','C3302',null)
+insert into HOPDONG values('6-21-2022','6-22-2022','10-12-2024',N'Còn hiệu lực','NV004','65479','C3303',null)
+insert into HOPDONG values('7-10-2022','7-11-2020','4-15-2022',N'Hết hiệu lực','NV005','54578','C3304',null)
+insert into HOPDONG values('4-24-2022','4-25-2021','10-19-2023',N'Còn hiệu lực','NV006','96786','C3305',null)
+
+
+
+
+
+---------------------------------------------- Hóa đơn
+--insert into HOADON values('10-20-2022','10-30-2022','10-21-2022','10-30-2022','5000000','5000000','Đủ','1','86710',null)
+--insert into HOADON values('10-20-2022','10-30-2022','10-21-2022','10-30-2022','4800000','3000000','Thiếu','2','86789',null)
+--insert into HOADON values('10-20-2022','10-30-2022','10-21-2022','10-30-2022','5100000','5100000','Đủ','3','86210',null)
+--insert into HOADON values('10-20-2022','10-30-2022','10-21-2022','10-30-2022','4500000','4500000','Đủ','4','86230',null)
+--insert into HOADON values('10-20-2022','10-30-2022','10-21-2022','10-30-2022','5000000','3800000','Thiếu','5','86310',null)
+----------------------------------------------Chi tiết hóa đơn
+--insert into CHITIETHOADON values(N'Tiền phòng','0','1',N'Kỳ','3000000','3000000','1',null)
+--insert into CHITIETHOADON values(N'Tiền nước','0','1',N'Kỳ','3000000','3000000','1',null)
+
+
+
+
+
+
+
 
 
 

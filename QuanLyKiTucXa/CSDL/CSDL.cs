@@ -763,14 +763,14 @@ namespace QuanLyKiTucXa.CSDL
                 {
                     connect.Open();
                     SqlCommand command;
-                    if (_value < 0)
-                    {
-                        command = new SqlCommand(@"update HOPDONG set TrangThai = N'Hết hiệu lực' where TrangThai
-                        like N'Còn hiệu lực'", connect);
-                        command.ExecuteNonQuery();
-                        connect.Close();
-                        return true;
-                    }
+                    //if (_value < 0)
+                    //{
+                    //    command = new SqlCommand(@"update HOPDONG set TrangThai = N'Hết hiệu lực' where TrangThai
+                    //    like N'Còn hiệu lực'", connect);
+                    //    command.ExecuteNonQuery();
+                    //    connect.Close();
+                    //    return true;
+                    //}
                     command = new SqlCommand(@"update HOPDONG set TrangThai = N'Hết hiệu lực' where MaHD = @ma", connect);
                     command.Parameters.Add("@ma", SqlDbType.Int).Value = _value;
                     command.ExecuteNonQuery();

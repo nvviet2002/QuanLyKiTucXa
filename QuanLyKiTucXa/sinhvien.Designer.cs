@@ -77,17 +77,11 @@ namespace QuanLyKiTucXa
             this.metroComboBox3 = new MetroFramework.Controls.MetroComboBox();
             this.metroTextBox10 = new MetroFramework.Controls.MetroTextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
             this.btnContract = new System.Windows.Forms.Button();
             this.btnBill = new System.Windows.Forms.Button();
             this.btnRoom = new System.Windows.Forms.Button();
             this.btnInfomation = new System.Windows.Forms.Button();
-            this.lbAccountName = new MetroFramework.Controls.MetroLabel();
-            this.btnAccount = new MetroFramework.Controls.MetroPanel();
-            this.llbLogOut = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pInfomation = new MetroFramework.Controls.MetroPanel();
             this.btnStudent_Save = new System.Windows.Forms.Button();
             this.btnStudent_Change = new System.Windows.Forms.Button();
@@ -156,15 +150,22 @@ namespace QuanLyKiTucXa
             this.btnBill_Search = new System.Windows.Forms.Button();
             this.cbbBill_SearchStatus = new MetroFramework.Controls.MetroComboBox();
             this.pBill = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel1.SuspendLayout();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.btnAccount = new MetroFramework.Controls.MetroPanel();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.llbLogOut = new System.Windows.Forms.LinkLabel();
+            this.lbAccountName = new System.Windows.Forms.Label();
             this.metroPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pInfomation.SuspendLayout();
             this.pRoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoom_ShowDevice)).BeginInit();
             this.pContract.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill_Show)).BeginInit();
             this.pBill.SuspendLayout();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTextBox20
@@ -1117,34 +1118,6 @@ namespace QuanLyKiTucXa
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // metroPanel1
-            // 
-            this.metroPanel1.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources.images__3_;
-            this.metroPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroPanel1.Controls.Add(this.label1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(-2, 34);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(1331, 103);
-            this.metroPanel1.TabIndex = 9;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(264, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(530, 55);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "KÝ TÚC XÁ SINH VIÊN";
-            // 
             // metroPanel3
             // 
             this.metroPanel3.BackColor = System.Drawing.Color.DarkCyan;
@@ -1154,10 +1127,6 @@ namespace QuanLyKiTucXa
             this.metroPanel3.Controls.Add(this.btnBill);
             this.metroPanel3.Controls.Add(this.btnRoom);
             this.metroPanel3.Controls.Add(this.btnInfomation);
-            this.metroPanel3.Controls.Add(this.lbAccountName);
-            this.metroPanel3.Controls.Add(this.btnAccount);
-            this.metroPanel3.Controls.Add(this.llbLogOut);
-            this.metroPanel3.Controls.Add(this.pictureBox1);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel3.HorizontalScrollbarSize = 10;
@@ -1217,55 +1186,6 @@ namespace QuanLyKiTucXa
             this.btnInfomation.UseVisualStyleBackColor = false;
             this.btnInfomation.Click += new System.EventHandler(this.btnInfomation_Click);
             // 
-            // lbAccountName
-            // 
-            this.lbAccountName.AutoSize = true;
-            this.lbAccountName.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lbAccountName.Location = new System.Drawing.Point(116, 3);
-            this.lbAccountName.Name = "lbAccountName";
-            this.lbAccountName.Size = new System.Drawing.Size(103, 25);
-            this.lbAccountName.TabIndex = 13;
-            this.lbAccountName.Text = "metroLabel1";
-            // 
-            // btnAccount
-            // 
-            this.btnAccount.BackColor = System.Drawing.Color.LightGray;
-            this.btnAccount.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources._8541895_house_user_icon;
-            this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAccount.HorizontalScrollbarBarColor = true;
-            this.btnAccount.HorizontalScrollbarHighlightOnWheel = false;
-            this.btnAccount.HorizontalScrollbarSize = 10;
-            this.btnAccount.Location = new System.Drawing.Point(6, 3);
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(104, 97);
-            this.btnAccount.TabIndex = 11;
-            this.btnAccount.VerticalScrollbarBarColor = true;
-            this.btnAccount.VerticalScrollbarHighlightOnWheel = false;
-            this.btnAccount.VerticalScrollbarSize = 10;
-            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
-            // 
-            // llbLogOut
-            // 
-            this.llbLogOut.AutoSize = true;
-            this.llbLogOut.BackColor = System.Drawing.Color.Transparent;
-            this.llbLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llbLogOut.Location = new System.Drawing.Point(116, 45);
-            this.llbLogOut.Name = "llbLogOut";
-            this.llbLogOut.Size = new System.Drawing.Size(67, 16);
-            this.llbLogOut.TabIndex = 12;
-            this.llbLogOut.TabStop = true;
-            this.llbLogOut.Text = "Đăng xuất";
-            this.llbLogOut.Click += new System.EventHandler(this.llbLogOut_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources.images__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 106);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // pInfomation
             // 
             this.pInfomation.Controls.Add(this.btnStudent_Save);
@@ -1303,39 +1223,43 @@ namespace QuanLyKiTucXa
             // btnStudent_Save
             // 
             this.btnStudent_Save.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStudent_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudent_Save.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnStudent_Save.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_save_32__1_;
             this.btnStudent_Save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudent_Save.Location = new System.Drawing.Point(755, 567);
+            this.btnStudent_Save.Location = new System.Drawing.Point(838, 546);
             this.btnStudent_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btnStudent_Save.Name = "btnStudent_Save";
-            this.btnStudent_Save.Size = new System.Drawing.Size(167, 54);
+            this.btnStudent_Save.Size = new System.Drawing.Size(140, 54);
             this.btnStudent_Save.TabIndex = 48;
             this.btnStudent_Save.Text = "LƯU";
             this.btnStudent_Save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStudent_Save.UseVisualStyleBackColor = false;
+            this.btnStudent_Save.Click += new System.EventHandler(this.btnStudent_Save_Click);
             // 
             // btnStudent_Change
             // 
             this.btnStudent_Change.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnStudent_Change.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudent_Change.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnStudent_Change.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_fix_30;
             this.btnStudent_Change.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudent_Change.Location = new System.Drawing.Point(46, 567);
+            this.btnStudent_Change.Location = new System.Drawing.Point(129, 546);
             this.btnStudent_Change.Margin = new System.Windows.Forms.Padding(4);
             this.btnStudent_Change.Name = "btnStudent_Change";
-            this.btnStudent_Change.Size = new System.Drawing.Size(161, 54);
+            this.btnStudent_Change.Size = new System.Drawing.Size(134, 54);
             this.btnStudent_Change.TabIndex = 45;
             this.btnStudent_Change.Text = "SỬA";
             this.btnStudent_Change.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStudent_Change.UseVisualStyleBackColor = false;
+            this.btnStudent_Change.Click += new System.EventHandler(this.btnStudent_Change_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(822, 169);
+            this.label10.Location = new System.Drawing.Point(742, 171);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(68, 20);
@@ -1347,7 +1271,7 @@ namespace QuanLyKiTucXa
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(832, 75);
+            this.label9.Location = new System.Drawing.Point(742, 86);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 20);
@@ -1371,7 +1295,7 @@ namespace QuanLyKiTucXa
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(383, 162);
+            this.label7.Location = new System.Drawing.Point(388, 171);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 20);
@@ -1383,7 +1307,7 @@ namespace QuanLyKiTucXa
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(381, 91);
+            this.label6.Location = new System.Drawing.Point(388, 94);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 20);
@@ -1395,7 +1319,7 @@ namespace QuanLyKiTucXa
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(65, 330);
+            this.label5.Location = new System.Drawing.Point(27, 335);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 20);
@@ -1419,7 +1343,7 @@ namespace QuanLyKiTucXa
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(20, 162);
+            this.label3.Location = new System.Drawing.Point(32, 171);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 20);
@@ -1449,7 +1373,7 @@ namespace QuanLyKiTucXa
             this.cbbStudent_Sex.Location = new System.Drawing.Point(151, 326);
             this.cbbStudent_Sex.Margin = new System.Windows.Forms.Padding(4);
             this.cbbStudent_Sex.Name = "cbbStudent_Sex";
-            this.cbbStudent_Sex.Size = new System.Drawing.Size(207, 29);
+            this.cbbStudent_Sex.Size = new System.Drawing.Size(197, 29);
             this.cbbStudent_Sex.TabIndex = 40;
             this.cbbStudent_Sex.UseSelectable = true;
             // 
@@ -1459,7 +1383,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStudent_PhoneNumber.CustomButton.Image = null;
-            this.txtStudent_PhoneNumber.CustomButton.Location = new System.Drawing.Point(237, 2);
+            this.txtStudent_PhoneNumber.CustomButton.Location = new System.Drawing.Point(147, 2);
             this.txtStudent_PhoneNumber.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_PhoneNumber.CustomButton.Name = "";
             this.txtStudent_PhoneNumber.CustomButton.Size = new System.Drawing.Size(31, 31);
@@ -1470,7 +1394,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_PhoneNumber.CustomButton.Visible = false;
             this.txtStudent_PhoneNumber.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtStudent_PhoneNumber.Lines = new string[0];
-            this.txtStudent_PhoneNumber.Location = new System.Drawing.Point(537, 236);
+            this.txtStudent_PhoneNumber.Location = new System.Drawing.Point(506, 236);
             this.txtStudent_PhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_PhoneNumber.MaxLength = 32767;
             this.txtStudent_PhoneNumber.Name = "txtStudent_PhoneNumber";
@@ -1480,7 +1404,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_PhoneNumber.SelectionLength = 0;
             this.txtStudent_PhoneNumber.SelectionStart = 0;
             this.txtStudent_PhoneNumber.ShortcutsEnabled = true;
-            this.txtStudent_PhoneNumber.Size = new System.Drawing.Size(271, 36);
+            this.txtStudent_PhoneNumber.Size = new System.Drawing.Size(181, 36);
             this.txtStudent_PhoneNumber.TabIndex = 37;
             this.txtStudent_PhoneNumber.UseSelectable = true;
             this.txtStudent_PhoneNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1492,9 +1416,9 @@ namespace QuanLyKiTucXa
             this.dtpStudent_BirthDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpStudent_BirthDay.Location = new System.Drawing.Point(151, 242);
             this.dtpStudent_BirthDay.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpStudent_BirthDay.MinimumSize = new System.Drawing.Size(4, 29);
+            this.dtpStudent_BirthDay.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtpStudent_BirthDay.Name = "dtpStudent_BirthDay";
-            this.dtpStudent_BirthDay.Size = new System.Drawing.Size(209, 29);
+            this.dtpStudent_BirthDay.Size = new System.Drawing.Size(199, 29);
             this.dtpStudent_BirthDay.TabIndex = 39;
             // 
             // txtStudent_Class
@@ -1503,7 +1427,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStudent_Class.CustomButton.Image = null;
-            this.txtStudent_Class.CustomButton.Location = new System.Drawing.Point(237, 2);
+            this.txtStudent_Class.CustomButton.Location = new System.Drawing.Point(147, 2);
             this.txtStudent_Class.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Class.CustomButton.Name = "";
             this.txtStudent_Class.CustomButton.Size = new System.Drawing.Size(31, 31);
@@ -1515,7 +1439,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Class.Enabled = false;
             this.txtStudent_Class.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtStudent_Class.Lines = new string[0];
-            this.txtStudent_Class.Location = new System.Drawing.Point(537, 158);
+            this.txtStudent_Class.Location = new System.Drawing.Point(506, 165);
             this.txtStudent_Class.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Class.MaxLength = 32767;
             this.txtStudent_Class.Name = "txtStudent_Class";
@@ -1525,7 +1449,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Class.SelectionLength = 0;
             this.txtStudent_Class.SelectionStart = 0;
             this.txtStudent_Class.ShortcutsEnabled = true;
-            this.txtStudent_Class.Size = new System.Drawing.Size(271, 36);
+            this.txtStudent_Class.Size = new System.Drawing.Size(181, 36);
             this.txtStudent_Class.TabIndex = 38;
             this.txtStudent_Class.UseSelectable = true;
             this.txtStudent_Class.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1537,10 +1461,10 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStudent_Note.CustomButton.Image = null;
-            this.txtStudent_Note.CustomButton.Location = new System.Drawing.Point(53, 2);
+            this.txtStudent_Note.CustomButton.Location = new System.Drawing.Point(39, 2);
             this.txtStudent_Note.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Note.CustomButton.Name = "";
-            this.txtStudent_Note.CustomButton.Size = new System.Drawing.Size(181, 181);
+            this.txtStudent_Note.CustomButton.Size = new System.Drawing.Size(195, 195);
             this.txtStudent_Note.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStudent_Note.CustomButton.TabIndex = 1;
             this.txtStudent_Note.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1548,7 +1472,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Note.CustomButton.Visible = false;
             this.txtStudent_Note.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtStudent_Note.Lines = new string[0];
-            this.txtStudent_Note.Location = new System.Drawing.Point(922, 164);
+            this.txtStudent_Note.Location = new System.Drawing.Point(838, 162);
             this.txtStudent_Note.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Note.MaxLength = 32767;
             this.txtStudent_Note.Multiline = true;
@@ -1559,7 +1483,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Note.SelectionLength = 0;
             this.txtStudent_Note.SelectionStart = 0;
             this.txtStudent_Note.ShortcutsEnabled = true;
-            this.txtStudent_Note.Size = new System.Drawing.Size(237, 186);
+            this.txtStudent_Note.Size = new System.Drawing.Size(237, 200);
             this.txtStudent_Note.TabIndex = 36;
             this.txtStudent_Note.UseSelectable = true;
             this.txtStudent_Note.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1571,10 +1495,10 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStudent_Address.CustomButton.Image = null;
-            this.txtStudent_Address.CustomButton.Location = new System.Drawing.Point(153, 2);
+            this.txtStudent_Address.CustomButton.Location = new System.Drawing.Point(167, 2);
             this.txtStudent_Address.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Address.CustomButton.Name = "";
-            this.txtStudent_Address.CustomButton.Size = new System.Drawing.Size(81, 81);
+            this.txtStudent_Address.CustomButton.Size = new System.Drawing.Size(67, 67);
             this.txtStudent_Address.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtStudent_Address.CustomButton.TabIndex = 1;
             this.txtStudent_Address.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1582,7 +1506,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Address.CustomButton.Visible = false;
             this.txtStudent_Address.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtStudent_Address.Lines = new string[0];
-            this.txtStudent_Address.Location = new System.Drawing.Point(922, 70);
+            this.txtStudent_Address.Location = new System.Drawing.Point(838, 82);
             this.txtStudent_Address.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Address.MaxLength = 32767;
             this.txtStudent_Address.Multiline = true;
@@ -1593,7 +1517,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Address.SelectionLength = 0;
             this.txtStudent_Address.SelectionStart = 0;
             this.txtStudent_Address.ShortcutsEnabled = true;
-            this.txtStudent_Address.Size = new System.Drawing.Size(237, 86);
+            this.txtStudent_Address.Size = new System.Drawing.Size(237, 72);
             this.txtStudent_Address.TabIndex = 35;
             this.txtStudent_Address.UseSelectable = true;
             this.txtStudent_Address.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1605,7 +1529,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStudent_Faculty.CustomButton.Image = null;
-            this.txtStudent_Faculty.CustomButton.Location = new System.Drawing.Point(237, 2);
+            this.txtStudent_Faculty.CustomButton.Location = new System.Drawing.Point(147, 2);
             this.txtStudent_Faculty.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Faculty.CustomButton.Name = "";
             this.txtStudent_Faculty.CustomButton.Size = new System.Drawing.Size(31, 31);
@@ -1617,7 +1541,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Faculty.Enabled = false;
             this.txtStudent_Faculty.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtStudent_Faculty.Lines = new string[0];
-            this.txtStudent_Faculty.Location = new System.Drawing.Point(537, 82);
+            this.txtStudent_Faculty.Location = new System.Drawing.Point(506, 82);
             this.txtStudent_Faculty.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Faculty.MaxLength = 32767;
             this.txtStudent_Faculty.Name = "txtStudent_Faculty";
@@ -1627,7 +1551,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Faculty.SelectionLength = 0;
             this.txtStudent_Faculty.SelectionStart = 0;
             this.txtStudent_Faculty.ShortcutsEnabled = true;
-            this.txtStudent_Faculty.Size = new System.Drawing.Size(271, 36);
+            this.txtStudent_Faculty.Size = new System.Drawing.Size(181, 36);
             this.txtStudent_Faculty.TabIndex = 34;
             this.txtStudent_Faculty.UseSelectable = true;
             this.txtStudent_Faculty.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1639,7 +1563,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStudent_Name.CustomButton.Image = null;
-            this.txtStudent_Name.CustomButton.Location = new System.Drawing.Point(177, 2);
+            this.txtStudent_Name.CustomButton.Location = new System.Drawing.Point(167, 2);
             this.txtStudent_Name.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Name.CustomButton.Name = "";
             this.txtStudent_Name.CustomButton.Size = new System.Drawing.Size(31, 31);
@@ -1651,7 +1575,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Name.Enabled = false;
             this.txtStudent_Name.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtStudent_Name.Lines = new string[0];
-            this.txtStudent_Name.Location = new System.Drawing.Point(151, 158);
+            this.txtStudent_Name.Location = new System.Drawing.Point(151, 165);
             this.txtStudent_Name.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Name.MaxLength = 32767;
             this.txtStudent_Name.Name = "txtStudent_Name";
@@ -1661,7 +1585,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Name.SelectionLength = 0;
             this.txtStudent_Name.SelectionStart = 0;
             this.txtStudent_Name.ShortcutsEnabled = true;
-            this.txtStudent_Name.Size = new System.Drawing.Size(211, 36);
+            this.txtStudent_Name.Size = new System.Drawing.Size(201, 36);
             this.txtStudent_Name.TabIndex = 33;
             this.txtStudent_Name.UseSelectable = true;
             this.txtStudent_Name.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1673,7 +1597,7 @@ namespace QuanLyKiTucXa
             // 
             // 
             this.txtStudent_Idenity.CustomButton.Image = null;
-            this.txtStudent_Idenity.CustomButton.Location = new System.Drawing.Point(177, 2);
+            this.txtStudent_Idenity.CustomButton.Location = new System.Drawing.Point(167, 2);
             this.txtStudent_Idenity.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudent_Idenity.CustomButton.Name = "";
             this.txtStudent_Idenity.CustomButton.Size = new System.Drawing.Size(31, 31);
@@ -1696,7 +1620,7 @@ namespace QuanLyKiTucXa
             this.txtStudent_Idenity.SelectionLength = 0;
             this.txtStudent_Idenity.SelectionStart = 0;
             this.txtStudent_Idenity.ShortcutsEnabled = true;
-            this.txtStudent_Idenity.Size = new System.Drawing.Size(211, 36);
+            this.txtStudent_Idenity.Size = new System.Drawing.Size(201, 36);
             this.txtStudent_Idenity.TabIndex = 32;
             this.txtStudent_Idenity.UseSelectable = true;
             this.txtStudent_Idenity.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1704,6 +1628,7 @@ namespace QuanLyKiTucXa
             // 
             // pRoom
             // 
+            this.pRoom.Controls.Add(this.label29);
             this.pRoom.Controls.Add(this.dgvRoom_ShowDevice);
             this.pRoom.Controls.Add(this.txtRoom_Type);
             this.pRoom.Controls.Add(this.label66);
@@ -1738,9 +1663,9 @@ namespace QuanLyKiTucXa
             // 
             this.dgvRoom_ShowDevice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRoom_ShowDevice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRoom_ShowDevice.Location = new System.Drawing.Point(548, 13);
+            this.dgvRoom_ShowDevice.Location = new System.Drawing.Point(564, 74);
             this.dgvRoom_ShowDevice.Name = "dgvRoom_ShowDevice";
-            this.dgvRoom_ShowDevice.Size = new System.Drawing.Size(531, 390);
+            this.dgvRoom_ShowDevice.Size = new System.Drawing.Size(515, 329);
             this.dgvRoom_ShowDevice.TabIndex = 51;
             // 
             // txtRoom_Type
@@ -1760,7 +1685,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_Type.Enabled = false;
             this.txtRoom_Type.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_Type.Lines = new string[0];
-            this.txtRoom_Type.Location = new System.Drawing.Point(414, 13);
+            this.txtRoom_Type.Location = new System.Drawing.Point(411, 33);
             this.txtRoom_Type.MaxLength = 32767;
             this.txtRoom_Type.Name = "txtRoom_Type";
             this.txtRoom_Type.PasswordChar = '\0';
@@ -1781,7 +1706,7 @@ namespace QuanLyKiTucXa
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.ForeColor = System.Drawing.Color.Black;
-            this.label66.Location = new System.Drawing.Point(289, 230);
+            this.label66.Location = new System.Drawing.Point(286, 250);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(87, 20);
             this.label66.TabIndex = 65;
@@ -1804,7 +1729,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_Money.Enabled = false;
             this.txtRoom_Money.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_Money.Lines = new string[0];
-            this.txtRoom_Money.Location = new System.Drawing.Point(414, 227);
+            this.txtRoom_Money.Location = new System.Drawing.Point(411, 247);
             this.txtRoom_Money.MaxLength = 32767;
             this.txtRoom_Money.Name = "txtRoom_Money";
             this.txtRoom_Money.PasswordChar = '\0';
@@ -1825,7 +1750,7 @@ namespace QuanLyKiTucXa
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label65.ForeColor = System.Drawing.Color.Black;
-            this.label65.Location = new System.Drawing.Point(33, 90);
+            this.label65.Location = new System.Drawing.Point(30, 110);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(89, 20);
             this.label65.TabIndex = 63;
@@ -1848,7 +1773,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_Living.Enabled = false;
             this.txtRoom_Living.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_Living.Lines = new string[0];
-            this.txtRoom_Living.Location = new System.Drawing.Point(139, 87);
+            this.txtRoom_Living.Location = new System.Drawing.Point(136, 107);
             this.txtRoom_Living.MaxLength = 32767;
             this.txtRoom_Living.Name = "txtRoom_Living";
             this.txtRoom_Living.PasswordChar = '\0';
@@ -1869,7 +1794,7 @@ namespace QuanLyKiTucXa
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label64.ForeColor = System.Drawing.Color.Black;
-            this.label64.Location = new System.Drawing.Point(289, 153);
+            this.label64.Location = new System.Drawing.Point(286, 173);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(75, 20);
             this.label64.TabIndex = 61;
@@ -1892,7 +1817,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_S.Enabled = false;
             this.txtRoom_S.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_S.Lines = new string[0];
-            this.txtRoom_S.Location = new System.Drawing.Point(414, 150);
+            this.txtRoom_S.Location = new System.Drawing.Point(411, 170);
             this.txtRoom_S.MaxLength = 32767;
             this.txtRoom_S.Name = "txtRoom_S";
             this.txtRoom_S.PasswordChar = '\0';
@@ -1913,7 +1838,7 @@ namespace QuanLyKiTucXa
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(289, 90);
+            this.label54.Location = new System.Drawing.Point(286, 110);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(119, 20);
             this.label54.TabIndex = 59;
@@ -1936,7 +1861,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_Max.Enabled = false;
             this.txtRoom_Max.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_Max.Lines = new string[0];
-            this.txtRoom_Max.Location = new System.Drawing.Point(414, 87);
+            this.txtRoom_Max.Location = new System.Drawing.Point(411, 107);
             this.txtRoom_Max.MaxLength = 32767;
             this.txtRoom_Max.Name = "txtRoom_Max";
             this.txtRoom_Max.PasswordChar = '\0';
@@ -1957,7 +1882,7 @@ namespace QuanLyKiTucXa
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(33, 309);
+            this.label47.Location = new System.Drawing.Point(30, 329);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(68, 20);
             this.label47.TabIndex = 57;
@@ -1980,7 +1905,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_Note.Enabled = false;
             this.txtRoom_Note.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_Note.Lines = new string[0];
-            this.txtRoom_Note.Location = new System.Drawing.Point(139, 306);
+            this.txtRoom_Note.Location = new System.Drawing.Point(136, 326);
             this.txtRoom_Note.MaxLength = 32767;
             this.txtRoom_Note.Multiline = true;
             this.txtRoom_Note.Name = "txtRoom_Note";
@@ -2002,7 +1927,7 @@ namespace QuanLyKiTucXa
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(33, 230);
+            this.label45.Location = new System.Drawing.Point(30, 250);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(71, 20);
             this.label45.TabIndex = 55;
@@ -2025,7 +1950,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_Building.Enabled = false;
             this.txtRoom_Building.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_Building.Lines = new string[0];
-            this.txtRoom_Building.Location = new System.Drawing.Point(139, 227);
+            this.txtRoom_Building.Location = new System.Drawing.Point(136, 247);
             this.txtRoom_Building.MaxLength = 32767;
             this.txtRoom_Building.Name = "txtRoom_Building";
             this.txtRoom_Building.PasswordChar = '\0';
@@ -2046,7 +1971,7 @@ namespace QuanLyKiTucXa
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(33, 159);
+            this.label44.Location = new System.Drawing.Point(30, 179);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(41, 20);
             this.label44.TabIndex = 53;
@@ -2069,7 +1994,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_Area.Enabled = false;
             this.txtRoom_Area.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_Area.Lines = new string[0];
-            this.txtRoom_Area.Location = new System.Drawing.Point(139, 156);
+            this.txtRoom_Area.Location = new System.Drawing.Point(136, 176);
             this.txtRoom_Area.MaxLength = 32767;
             this.txtRoom_Area.Name = "txtRoom_Area";
             this.txtRoom_Area.PasswordChar = '\0';
@@ -2090,7 +2015,7 @@ namespace QuanLyKiTucXa
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(284, 16);
+            this.label51.Location = new System.Drawing.Point(281, 36);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(92, 20);
             this.label51.TabIndex = 50;
@@ -2101,7 +2026,7 @@ namespace QuanLyKiTucXa
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(33, 16);
+            this.label52.Location = new System.Drawing.Point(30, 36);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(84, 20);
             this.label52.TabIndex = 49;
@@ -2124,7 +2049,7 @@ namespace QuanLyKiTucXa
             this.txtRoom_ID.Enabled = false;
             this.txtRoom_ID.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRoom_ID.Lines = new string[0];
-            this.txtRoom_ID.Location = new System.Drawing.Point(139, 13);
+            this.txtRoom_ID.Location = new System.Drawing.Point(136, 33);
             this.txtRoom_ID.MaxLength = 32767;
             this.txtRoom_ID.Name = "txtRoom_ID";
             this.txtRoom_ID.PasswordChar = '\0';
@@ -2543,13 +2468,14 @@ namespace QuanLyKiTucXa
             // 
             this.dgvBill_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBill_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBill_Show.Location = new System.Drawing.Point(22, 103);
+            this.dgvBill_Show.Location = new System.Drawing.Point(22, 123);
             this.dgvBill_Show.MultiSelect = false;
             this.dgvBill_Show.Name = "dgvBill_Show";
             this.dgvBill_Show.ReadOnly = true;
             this.dgvBill_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBill_Show.Size = new System.Drawing.Size(1053, 511);
+            this.dgvBill_Show.Size = new System.Drawing.Size(1053, 491);
             this.dgvBill_Show.TabIndex = 73;
+            this.dgvBill_Show.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBill_Show_CellDoubleClick);
             // 
             // cbbBill_SearchType
             // 
@@ -2562,7 +2488,7 @@ namespace QuanLyKiTucXa
             this.cbbBill_SearchType.Items.AddRange(new object[] {
             "Mã hóa đơn",
             "Mã hợp đồng"});
-            this.cbbBill_SearchType.Location = new System.Drawing.Point(55, 33);
+            this.cbbBill_SearchType.Location = new System.Drawing.Point(54, 55);
             this.cbbBill_SearchType.Name = "cbbBill_SearchType";
             this.cbbBill_SearchType.Size = new System.Drawing.Size(181, 29);
             this.cbbBill_SearchType.TabIndex = 69;
@@ -2583,7 +2509,7 @@ namespace QuanLyKiTucXa
             this.txtBill_SearchInput.CustomButton.UseSelectable = true;
             this.txtBill_SearchInput.CustomButton.Visible = false;
             this.txtBill_SearchInput.Lines = new string[0];
-            this.txtBill_SearchInput.Location = new System.Drawing.Point(450, 33);
+            this.txtBill_SearchInput.Location = new System.Drawing.Point(449, 55);
             this.txtBill_SearchInput.MaxLength = 32767;
             this.txtBill_SearchInput.Name = "txtBill_SearchInput";
             this.txtBill_SearchInput.PasswordChar = '\0';
@@ -2604,13 +2530,14 @@ namespace QuanLyKiTucXa
             this.btnBill_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBill_Search.Image = global::QuanLyKiTucXa.Properties.Resources.icons8_search_30;
             this.btnBill_Search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBill_Search.Location = new System.Drawing.Point(924, 33);
+            this.btnBill_Search.Location = new System.Drawing.Point(923, 55);
             this.btnBill_Search.Name = "btnBill_Search";
-            this.btnBill_Search.Size = new System.Drawing.Size(119, 33);
+            this.btnBill_Search.Size = new System.Drawing.Size(135, 33);
             this.btnBill_Search.TabIndex = 71;
             this.btnBill_Search.Text = "TÌM KIẾM";
             this.btnBill_Search.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBill_Search.UseVisualStyleBackColor = true;
+            this.btnBill_Search.Click += new System.EventHandler(this.btnBill_Search_Click);
             // 
             // cbbBill_SearchStatus
             // 
@@ -2624,7 +2551,7 @@ namespace QuanLyKiTucXa
             "Tất cả",
             "Đủ",
             "Thiếu"});
-            this.cbbBill_SearchStatus.Location = new System.Drawing.Point(283, 33);
+            this.cbbBill_SearchStatus.Location = new System.Drawing.Point(282, 55);
             this.cbbBill_SearchStatus.Name = "cbbBill_SearchStatus";
             this.cbbBill_SearchStatus.Size = new System.Drawing.Size(125, 29);
             this.cbbBill_SearchStatus.TabIndex = 72;
@@ -2633,6 +2560,8 @@ namespace QuanLyKiTucXa
             // pBill
             // 
             this.pBill.BackColor = System.Drawing.Color.White;
+            this.pBill.Controls.Add(this.label31);
+            this.pBill.Controls.Add(this.label30);
             this.pBill.Controls.Add(this.cbbBill_SearchStatus);
             this.pBill.Controls.Add(this.btnBill_Search);
             this.pBill.Controls.Add(this.txtBill_SearchInput);
@@ -2649,6 +2578,110 @@ namespace QuanLyKiTucXa
             this.pBill.VerticalScrollbarHighlightOnWheel = false;
             this.pBill.VerticalScrollbarSize = 10;
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(741, 36);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(154, 20);
+            this.label29.TabIndex = 67;
+            this.label29.Text = "Thiết bị trong phòng:";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(126, 32);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(43, 20);
+            this.label30.TabIndex = 74;
+            this.label30.Text = "Loại:";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(304, 32);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(84, 20);
+            this.label31.TabIndex = 75;
+            this.label31.Text = "Trạng thái:";
+            // 
+            // btnAccount
+            // 
+            this.btnAccount.BackColor = System.Drawing.Color.Transparent;
+            this.btnAccount.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources._8541895_house_user_icon;
+            this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAccount.HorizontalScrollbarBarColor = true;
+            this.btnAccount.HorizontalScrollbarHighlightOnWheel = false;
+            this.btnAccount.HorizontalScrollbarSize = 10;
+            this.btnAccount.Location = new System.Drawing.Point(3, 3);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(104, 97);
+            this.btnAccount.TabIndex = 11;
+            this.btnAccount.VerticalScrollbarBarColor = true;
+            this.btnAccount.VerticalScrollbarHighlightOnWheel = false;
+            this.btnAccount.VerticalScrollbarSize = 10;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources.images__3_;
+            this.metroPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroPanel1.Controls.Add(this.lbAccountName);
+            this.metroPanel1.Controls.Add(this.btnAccount);
+            this.metroPanel1.Controls.Add(this.llbLogOut);
+            this.metroPanel1.Controls.Add(this.label1);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(1, 34);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(1331, 104);
+            this.metroPanel1.TabIndex = 79;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Location = new System.Drawing.Point(304, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(530, 55);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "KÝ TÚC XÁ SINH VIÊN";
+            // 
+            // llbLogOut
+            // 
+            this.llbLogOut.AutoSize = true;
+            this.llbLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.llbLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llbLogOut.Location = new System.Drawing.Point(110, 46);
+            this.llbLogOut.Name = "llbLogOut";
+            this.llbLogOut.Size = new System.Drawing.Size(67, 16);
+            this.llbLogOut.TabIndex = 12;
+            this.llbLogOut.TabStop = true;
+            this.llbLogOut.Text = "Đăng xuất";
+            this.llbLogOut.Click += new System.EventHandler(this.llbLogOut_Click);
+            // 
+            // lbAccountName
+            // 
+            this.lbAccountName.AutoSize = true;
+            this.lbAccountName.BackColor = System.Drawing.Color.Transparent;
+            this.lbAccountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountName.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lbAccountName.Location = new System.Drawing.Point(109, 12);
+            this.lbAccountName.Name = "lbAccountName";
+            this.lbAccountName.Size = new System.Drawing.Size(70, 24);
+            this.lbAccountName.TabIndex = 80;
+            this.lbAccountName.Text = "label32";
+            // 
             // sinhvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2656,22 +2689,18 @@ namespace QuanLyKiTucXa
             this.BackgroundImage = global::QuanLyKiTucXa.Properties.Resources.background_xanh_duong;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1334, 789);
-            this.Controls.Add(this.pContract);
+            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.pBill);
+            this.Controls.Add(this.pContract);
             this.Controls.Add(this.pRoom);
             this.Controls.Add(this.pInfomation);
             this.Controls.Add(this.metroPanel3);
-            this.Controls.Add(this.metroPanel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "sinhvien";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Load += new System.EventHandler(this.sinhvien_Load);
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
             this.metroPanel3.ResumeLayout(false);
-            this.metroPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pInfomation.ResumeLayout(false);
             this.pInfomation.PerformLayout();
             this.pRoom.ResumeLayout(false);
@@ -2681,6 +2710,9 @@ namespace QuanLyKiTucXa
             this.pContract.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill_Show)).EndInit();
             this.pBill.ResumeLayout(false);
+            this.pBill.PerformLayout();
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2734,17 +2766,11 @@ namespace QuanLyKiTucXa
         private MetroFramework.Controls.MetroComboBox metroComboBox3;
         private MetroFramework.Controls.MetroTextBox metroTextBox10;
         private System.Windows.Forms.Button button4;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroPanel metroPanel3;
         private System.Windows.Forms.Button btnContract;
         private System.Windows.Forms.Button btnBill;
         private System.Windows.Forms.Button btnRoom;
         private System.Windows.Forms.Button btnInfomation;
-        private MetroFramework.Controls.MetroLabel lbAccountName;
-        private MetroFramework.Controls.MetroPanel btnAccount;
-        private System.Windows.Forms.LinkLabel llbLogOut;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroPanel pInfomation;
         private System.Windows.Forms.Button btnStudent_Save;
         private System.Windows.Forms.Button btnStudent_Change;
@@ -2813,5 +2839,13 @@ namespace QuanLyKiTucXa
         private System.Windows.Forms.Button btnBill_Search;
         private MetroFramework.Controls.MetroComboBox cbbBill_SearchStatus;
         private MetroFramework.Controls.MetroPanel pBill;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private MetroFramework.Controls.MetroPanel btnAccount;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private System.Windows.Forms.LinkLabel llbLogOut;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbAccountName;
     }
 }

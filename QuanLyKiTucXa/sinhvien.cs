@@ -54,7 +54,7 @@ namespace QuanLyKiTucXa
 
         private void LoadStudentData()
         {
-            student.SetDataSINHVIEN(CSDL.CSDL.Instance.ExecuteQuery($@"select * from SINHVIEN"));
+            //student.SetDataSINHVIEN(CSDL.CSDL.Instance.ExecuteQuery($@"select * from SINHVIEN"));
             txtStudent_Idenity.Text = student.MaSV;
             txtStudent_Name.Text = student.TenSV;
             txtStudent_Faculty.Text = student.Khoa;
